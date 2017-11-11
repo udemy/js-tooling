@@ -1,0 +1,19 @@
+{
+  "name": "eslint-config-udemy-jasmine",
+  "version": "2.0.0",
+  "description": "Udemy's Jasmine related ESLint configuration",
+  "main": "index.js",
+  "author": {
+    "name": "Udemy Developers",
+    "url": "https://www.udemy.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/udemy/eslint-udemy/packages/eslint-config-udemy-jasmine",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/udemy/eslint-udemy.git"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}

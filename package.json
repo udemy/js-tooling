@@ -1,5 +1,17 @@
 {
   "private": true,
+  "name": "eslint-udemy",
+  "description": "Udemy's ESLint codebase",
+  "author": {
+    "name": "Udemy Developers",
+    "url": "https://www.udemy.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/udemy/eslint-udemy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/udemy/eslint-udemy.git"
+  },
   "devDependencies": {
     "lerna": "2.5.1"
   },
@@ -9,5 +21,10 @@
   "engines": {
     "node": ">=8.4.0",
     "yarn": "^1.3.2"
+  },
+  "scripts": {
+    "lint": "eslint ./",
+    "publish": "lerna publish",
+    "test": "lerna bootstrap && npm run lint"
   }
 }
