@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "devDependencies": {
+    "lerna": "2.5.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=8.4.0",
+    "yarn": "^1.3.2"
+  }
+}
