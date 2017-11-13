@@ -1,7 +1,7 @@
-Set Timeout ESLint Plugin
+Angular Module Names ESLint Plugin
 ===================
 
-`window.setTimeout` linting rules for ESLint.
+`angular.module('name')` linting rules for ESLint.
 
 # Installation
 
@@ -9,18 +9,19 @@ Install [ESLint](https://www.github.com/eslint/eslint) locally.
 
     $ yarn add eslint --dev
 
-Install Set Timeout ESLint Plugin locally.
+Install Angular Module Names ESLint Plugin locally.
 
-    $ yarn add eslint-plugin-settimeout --dev
+    $ yarn add eslint-plugin-angular-module-names --dev
 
 # Configuration
 
-Add a `plugins` section and specify `settimeout` as a plugin.
+Add a `plugins` section and specify `angular-module-names` as a plugin.
 You can additionally add settings for the plugin.
 
 # List of provided rules
 
-* [settimeout/no-nonzero](rules/no-nonzero): Prevent `setTimeout` usages with a nonzero delay value.
+* [angular-module-names/match-their-paths](rules/match-their-paths): 
+Checks the consistency between `angular.module('name', ...)` and file's name.
 
 # Contributing
 
