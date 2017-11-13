@@ -5,15 +5,5 @@
   "packages": [
     "packages/*"
   ],
-  "version": "independent",
-  "commands": {
-    "init": {
-      "exact": true
-    },
-    "publish": {
-      "ignore": [
-        "*.md"
-      ]
-    }
-  }
+  "version": "independent"
 }

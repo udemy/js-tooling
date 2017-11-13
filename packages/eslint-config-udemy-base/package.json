@@ -13,8 +13,15 @@
     "type": "git",
     "url": "https://github.com/udemy/eslint-udemy.git"
   },
+  "dependencies": {
+    "@udemy/eslint-plugin-udemy": "^1.0.3",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-promise": "^3.6.0"
+  },
   "peerDependencies": {
-    "@udemy/eslint-plugin-udemy": "^1.0.3"
+    "babel-eslint": "^8.0.2",
+    "eslint": "^4.11.0"
   },
   "engines": {
     "node": ">=4"

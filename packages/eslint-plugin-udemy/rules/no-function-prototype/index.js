@@ -11,11 +11,11 @@ module.exports.rules = {
                         context.report({
                             node,
                             message: 'Avoid using `Function.prototype`; instead use `_.noop` from Underscore.js, ' +
-                            'or `_.noop` from Lodash, or () => {} otherwise.'
+                            'or `_.noop` from Lodash, or () => {} otherwise.',
                         });
                     }
                 },
             };
-        }
-    }
+        },
+    },
 };

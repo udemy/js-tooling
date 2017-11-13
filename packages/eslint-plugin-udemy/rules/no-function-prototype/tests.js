@@ -1,9 +1,10 @@
 const rule = require('./index').rules['no-function-prototype'];
 const RuleTester = require('eslint').RuleTester;
+
 RuleTester.setDefaultConfig({
     parserOptions: {
         ecmaVersion: 6,
-    }
+    },
 });
 const ruleTester = new RuleTester();
 
@@ -39,5 +40,5 @@ ruleTester.run('no-function-prototype', rule, {
                 'or `_.noop` from Lodash, or () => {} otherwise.',
             }],
         },
-    ]
+    ],
 });
