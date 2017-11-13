@@ -728,25 +728,9 @@ eslint-config-udemy-import@^0.14.3:
   version "0.14.3"
   resolved "https://registry.yarnpkg.com/eslint-config-udemy-import/-/eslint-config-udemy-import-0.14.3.tgz#2cc8b5e948e09699990fe65e5f1339252c84b520"
 
-eslint-config-udemy-jasmine@^0.14.2:
-  version "0.14.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-udemy-jasmine/-/eslint-config-udemy-jasmine-0.14.2.tgz#9b59a0a027e4d6ac239e637b326f94e5246a3954"
-
 eslint-config-udemy-legacy@^0.14.2:
   version "0.14.2"
   resolved "https://registry.yarnpkg.com/eslint-config-udemy-legacy/-/eslint-config-udemy-legacy-0.14.2.tgz#a06125c70422469f25f829d015b9d4ebe88770dd"
-
-eslint-config-udemy-react@^0.14.9:
-  version "0.14.9"
-  resolved "https://registry.yarnpkg.com/eslint-config-udemy-react/-/eslint-config-udemy-react-0.14.9.tgz#fab9f156cd3e8ea80fc7520ee1029cba0ee8c78e"
-
-eslint-config-udemy@^0.14.13:
-  version "0.14.13"
-  resolved "https://registry.yarnpkg.com/eslint-config-udemy/-/eslint-config-udemy-0.14.13.tgz#f1570a70434927797cf33a72bb9341424569d0ec"
-  dependencies:
-    eslint-config-udemy-base "^0.14.8"
-    eslint-config-udemy-jasmine "^0.14.2"
-    eslint-config-udemy-react "^0.14.9"
 
 eslint-import-resolver-node@^0.3.1:
   version "0.3.1"

@@ -1,12 +1,12 @@
 # Match Their Paths
 
-`angular-module-names/match-their-paths` rule checks the consistency between `angular.module('name', ...)` 
-and file's name. 
+`angular-module-names/match-their-paths` rule requires your `angular.module` name to match the path of the file the 
+module is in relative to some specified root.
 
-The main difference between this rule and [`angular/file-name`](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/rules/file-name.md) 
-is the module name should be the filesystem path of the file from the root (the second argument of this rule) and 
-it works only for `angular.module('name', ...)`, not for other `angular` methods for creation components, in 
-`angular/file-name` it can't be configured. Available fixing.
+There's another rule, [`angular/file-name`](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/rules/file-name.md), 
+which can be used to ensure that the `angular.module` name follows some established pattern. However, that rule doesn't 
+pay any attention to the name of the file the module is in. Hence, it permits files and modules to be named radically 
+different things.
 
 ## Rule Details
 

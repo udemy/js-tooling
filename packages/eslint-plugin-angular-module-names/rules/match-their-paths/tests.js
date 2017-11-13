@@ -1,6 +1,7 @@
 const join = require('path').join;
 const rule = require('./index').rules['match-their-paths'];
 const RuleTester = require('eslint').RuleTester;
+
 const ruleTester = new RuleTester();
 const options = [__dirname];
 const filename1 = join(__dirname, 'foo/bar.js');
@@ -17,34 +18,34 @@ ruleTester.run('match-their-paths', rule, {
             options, filename: filename2,
         },
         {
-            code: 'angular.module("foo/bar")',
+            code: 'angular.module("rules/match-their-paths/foo/bar")',
             filename: filename1,
         },
         {
-            code: 'angular.module("bar/foo")',
+            code: 'angular.module("rules/match-their-paths/bar/foo")',
             filename: filename2,
         },
     ],
     invalid: [
         {
             code: 'angular.module("bar/foo")',
-            errors: [{message: 'Angular module name should be related filesystem path'}],
+            errors: [{ message: 'Angular module name should match relative file path' }],
             options, filename: filename1,
         },
         {
             code: 'angular.module("foo/bar")',
-            errors: [{message: 'Angular module name should be related filesystem path'}],
+            errors: [{ message: 'Angular module name should match relative file path' }],
             options, filename: filename2,
         },
         {
             code: 'angular.module("bar/foo")',
-            errors: [{message: 'Angular module name should be related filesystem path'}],
+            errors: [{ message: 'Angular module name should match relative file path' }],
             filename: filename1,
         },
         {
             code: 'angular.module("foo/bar")',
-            errors: [{message: 'Angular module name should be related filesystem path'}],
+            errors: [{ message: 'Angular module name should match relative file path' }],
             filename: filename2,
         },
-    ]
+    ],
 });

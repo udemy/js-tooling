@@ -25,18 +25,18 @@ module.exports.rules = {
                             if (!startsWith || name !== required) {
                                 context.report({
                                     node,
-                                    message: 'Angular module name should be related filesystem path',
+                                    message: 'Angular module name should match relative file path',
                                     fix(fixer) {
                                         if (startsWith) {
                                             return fixer.replaceText(argument, `'${required.replace(/'/g, '\\')}'`);
                                         }
-                                    }
+                                    },
                                 });
                             }
                         }
                     }
-                }
+                },
             };
-        }
-    }
+        },
+    },
 };
