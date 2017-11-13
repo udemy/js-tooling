@@ -13,6 +13,9 @@
     "type": "git",
     "url": "https://github.com/udemy/eslint-udemy.git"
   },
+  "peerDependencies": {
+    "@udemy/eslint-plugin-udemy": "^1.0.3"
+  },
   "engines": {
     "node": ">=4"
   }
