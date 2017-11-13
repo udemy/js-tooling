@@ -1,7 +1,7 @@
 ESLint-Plugin-Udemy
 ===================
 
-_Udemy-specific_ linting rules for ESLint.
+`window.setTimeout` linting rules for ESLint.
 
 # Installation
 
@@ -15,12 +15,12 @@ If you installed `ESLint` globally, you have to install the Udemy plugin globall
 
 # Configuration
 
-Add a `plugins` section and specify `udemy` as a plugin.
+Add a `plugins` section and specify `settimeout` as a plugin.
 You can additionally add settings for the plugin.
 
 # List of provided rules
 
-* [@udemy/udemy/no-function-prototype](rules/no-function-prototype): Prefer `_.noop` or `() => {}` over `Function.prototype`.
+* [settimeout/no-nonzero](rules/no-nonzero): Prevent `setTimeout` usages with a nonzero delay value.
 
 # Contributing
 

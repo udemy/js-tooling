@@ -1,0 +1,23 @@
+{
+  "name": "eslint-plugin-settimeout",
+  "version": "2.0.0",
+  "description": "ESLint plugin for window.setTimeout",
+  "main": "index.js",
+  "author": {
+    "name": "Udemy Developers",
+    "url": "https://www.udemy.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/udemy/eslint-udemy/packages/eslint-plugin-settimeout",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/udemy/eslint-udemy.git"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "npm run lint && node tests"
+  }
+}
