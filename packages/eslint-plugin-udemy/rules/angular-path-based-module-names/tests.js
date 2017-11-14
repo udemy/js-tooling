@@ -1,5 +1,5 @@
 const join = require('path').join;
-const rule = require('./index').rules['match-their-paths'];
+const rule = require('./index').rules['angular-path-based-module-names'];
 const RuleTester = require('eslint').RuleTester;
 
 const ruleTester = new RuleTester();
@@ -18,11 +18,11 @@ ruleTester.run('match-their-paths', rule, {
             options, filename: filename2,
         },
         {
-            code: 'angular.module("rules/match-their-paths/foo/bar")',
+            code: 'angular.module("rules/angular-path-based-module-names/foo/bar")',
             filename: filename1,
         },
         {
-            code: 'angular.module("rules/match-their-paths/bar/foo")',
+            code: 'angular.module("rules/angular-path-based-module-names/bar/foo")',
             filename: filename2,
         },
     ],
@@ -39,12 +39,12 @@ ruleTester.run('match-their-paths', rule, {
         },
         {
             code: 'angular.module("bar/foo")',
-            errors: [{ message: 'Angular module name must match file\'s relative path: `rules/match-their-paths/foo/bar`' }],
+            errors: [{ message: 'Angular module name must match file\'s relative path: `rules/angular-path-based-module-names/foo/bar`' }],
             filename: filename1,
         },
         {
             code: 'angular.module("foo/bar")',
-            errors: [{ message: 'Angular module name must match file\'s relative path: `rules/match-their-paths/bar/foo`' }],
+            errors: [{ message: 'Angular module name must match file\'s relative path: `rules/angular-path-based-module-names/bar/foo`' }],
             filename: filename2,
         },
     ],

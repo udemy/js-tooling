@@ -1,4 +1,4 @@
-const rule = require('./index').rules['no-nonzero'];
+const rule = require('./index').rules['no-non-zero-settimeout'];
 const RuleTester = require('eslint').RuleTester;
 
 const ruleTester = new RuleTester();

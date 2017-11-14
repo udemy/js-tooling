@@ -9,7 +9,7 @@ module.exports = {
         // require camel case names
         camelcase: ['error', { properties: 'never' }],
         // allow trailing commas in multiline object literals
-        'comma-dangle': ['error', 'never'],
+        'comma-dangle': ['error', 'always-multiline'],
         // enforce spacing after comma
         'comma-spacing': 'error',
         // enforce one true comma style
