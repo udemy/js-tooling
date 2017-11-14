@@ -1,5 +1,6 @@
 const rule = require('./index').rules['no-nonzero'];
 const RuleTester = require('eslint').RuleTester;
+
 const ruleTester = new RuleTester();
 
 ruleTester.run('no-nonzero', rule, {
@@ -54,5 +55,5 @@ ruleTester.run('no-nonzero', rule, {
                 message: 'Found setTimeout used in a spec file with nonzero delay',
             }],
         },
-    ]
+    ],
 });

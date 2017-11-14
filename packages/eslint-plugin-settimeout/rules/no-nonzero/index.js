@@ -8,8 +8,12 @@ module.exports.rules = {
                 ExpressionStatement(node) {
                     if (node.expression.callee && node.expression.callee.name === 'setTimeout') {
                         const fails = node.expression.arguments.filter(val => {
-                            if (val.type === 'Literal' && val.value !== 0) return true;
-                            if (val.type === 'UnaryExpression' && val.argument.value !== 0) return true;
+                            if (val.type === 'Literal' && val.value !== 0) {
+                                return true;
+                            }
+                            if (val.type === 'UnaryExpression' && val.argument.value !== 0) {
+                                return true;
+                            }
                             return false;
                         });
                         if (fails.length) {
@@ -18,12 +22,12 @@ module.exports.rules = {
                                 message: 'Found setTimeout used in a spec file with nonzero delay',
                                 fix: fixer => {
                                     return fixer.remove(fails);
-                                }
+                                },
                             });
                         }
                     }
                 },
             };
-        }
-    }
+        },
+    },
 };
