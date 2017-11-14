@@ -1,5 +1,8 @@
 module.exports = {
     plugins: ['import'],
+    settings: {
+        'import/extensions': ['.js', '.json'],
+    },
     rules: {
         // enforce a newline after import statements
         'import/newline-after-import': 'error',
