@@ -20,7 +20,9 @@ You can additionally add settings for the plugin.
 
 # List of provided rules
 
+* [udemy/angular-path-based-module-names](rules/angular-path-based-module-names): Require `angular.module` name to match relative file path.
 * [udemy/no-function-prototype](rules/no-function-prototype): Prefer `_.noop` or `() => {}` over `Function.prototype`.
+* [udemy/no-non-zero-settimeout](rules/no-non-zero-settimeout): Prevent `setTimeout` usages with a non-zero delay value.
 
 # Contributing
 

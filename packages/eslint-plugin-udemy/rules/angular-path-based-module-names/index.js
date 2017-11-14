@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports.rules = {
-    'match-their-paths': {
+    'angular-path-based-module-names': {
         meta: {
             fixable: 'code',
         },

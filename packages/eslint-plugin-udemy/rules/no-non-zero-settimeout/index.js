@@ -1,5 +1,5 @@
 module.exports.rules = {
-    'no-nonzero': {
+    'no-non-zero-settimeout': {
         meta: {
             fixable: 'code',
         },

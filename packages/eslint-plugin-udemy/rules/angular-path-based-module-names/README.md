@@ -1,6 +1,6 @@
-# Match Their Paths
+# Angular Path Based Module Names
 
-`angular-module-names/match-their-paths` rule requires your `angular.module` name to match the path of the file the 
+`udemy/angular-path-based-module-names` rule requires your `angular.module` name to match the path of the file the 
 module is in relative to some specified root.
 
 There's another rule, [`angular/file-name`](https://github.com/Gillespie59/eslint-plugin-angular/blob/master/docs/rules/file-name.md), 
@@ -16,7 +16,7 @@ The following patterns are considered warnings:
 
 ```js 
 
-// in some-path/that-has/some-nice.ng-directive.js
+// in some-path/that-has/some-nice-directive.js
 
 angular.module('some-random/module-name', () => {});
 
@@ -26,8 +26,8 @@ The following patterns are not considered warnings:
 
 ```js
 
-// in some-path/that-has/some-nice.ng-directive.js
+// in some-path/that-has/some-nice-directive.js
 
-angular.module('some-path/that-has/some-nice.ng-directive', () => {});
+angular.module('some-path/that-has/some-nice-directive', () => {});
  
 ```
