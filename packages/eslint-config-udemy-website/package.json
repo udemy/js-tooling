@@ -13,6 +13,11 @@
     "type": "git",
     "url": "https://github.com/udemy/eslint-udemy.git"
   },
+  "dependencies": {
+    "eslint-config-udemy-basics": "^3.0.1",
+    "eslint-config-udemy-jasmine-addons": "^3.0.0",
+    "eslint-config-udemy-react-addons": "^3.0.0"
+  },
   "peerDependencies": {
     "babel-eslint": "^8.0.2",
     "eslint": "^4.11.0"
