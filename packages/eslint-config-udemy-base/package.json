@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udemy-base",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Udemy's Base ESLint configuration",
   "main": "index.js",
   "author": {
@@ -17,7 +17,7 @@
     "eslint-plugin-babel": "^4.1.2",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-udemy": "^2.0.1"
+    "eslint-plugin-udemy": "^2.1.0"
   },
   "peerDependencies": {
     "babel-eslint": "^8.0.2",
