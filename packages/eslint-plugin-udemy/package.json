@@ -16,7 +16,7 @@
   "devDependencies": {
     "babel-eslint": "^8.0.2",
     "eslint": "^4.11.0",
-    "eslint-config-udemy-base": "^0.14.8"
+    "eslint-config-udemy-base": "^2.0.0"
   },
   "engines": {
     "node": ">=4"

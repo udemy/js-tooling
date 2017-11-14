@@ -54,10 +54,6 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@udemy/eslint-plugin-udemy@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@udemy/eslint-plugin-udemy/-/eslint-plugin-udemy-1.0.3.tgz#c04d080583482ce916995fc3aec75b380d3433e8"
-
 JSONStream@^1.0.4:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/JSONStream/-/JSONStream-1.3.1.tgz#707f761e01dae9e16f1bcf93703b78c70966579a"
@@ -715,22 +711,6 @@ es-to-primitive@^1.1.1:
 escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
-
-eslint-config-udemy-base@^0.14.8:
-  version "0.14.8"
-  resolved "https://registry.yarnpkg.com/eslint-config-udemy-base/-/eslint-config-udemy-base-0.14.8.tgz#a75813aa6585a96c3663e2a6eb5866a3b143869e"
-  dependencies:
-    "@udemy/eslint-plugin-udemy" "^1.0.3"
-    eslint-config-udemy-import "^0.14.3"
-    eslint-config-udemy-legacy "^0.14.2"
-
-eslint-config-udemy-import@^0.14.3:
-  version "0.14.3"
-  resolved "https://registry.yarnpkg.com/eslint-config-udemy-import/-/eslint-config-udemy-import-0.14.3.tgz#2cc8b5e948e09699990fe65e5f1339252c84b520"
-
-eslint-config-udemy-legacy@^0.14.2:
-  version "0.14.2"
-  resolved "https://registry.yarnpkg.com/eslint-config-udemy-legacy/-/eslint-config-udemy-legacy-0.14.2.tgz#a06125c70422469f25f829d015b9d4ebe88770dd"
 
 eslint-import-resolver-node@^0.3.1:
   version "0.3.1"
