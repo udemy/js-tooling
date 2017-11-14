@@ -25,7 +25,7 @@ module.exports.rules = {
                             if (!startsWith || name !== required) {
                                 context.report({
                                     node,
-                                    message: 'Angular module name should match relative file path',
+                                    message: `Angular module name must match file's relative path: \`${required}\``,
                                     fix(fixer) {
                                         if (startsWith) {
                                             return fixer.replaceText(argument, `'${required.replace(/'/g, '\\')}'`);
