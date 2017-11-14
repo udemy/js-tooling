@@ -4,8 +4,8 @@ function resolve(it) {
 
 module.exports = {
     extends: [
-        resolve('base'),
-        resolve('react'),
-        resolve('jasmine')
+        resolve('basics'),
+        resolve('react-addons'),
+        resolve('jasmine-addons'),
     ],
 };

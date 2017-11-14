@@ -1,14 +1,14 @@
 {
-  "name": "eslint-config-udemy",
+  "name": "eslint-config-udemy-website",
   "version": "2.0.1",
-  "description": "Udemy's ESLint configuration",
+  "description": "Udemy Website's ESLint configuration",
   "main": "index.js",
   "author": {
     "name": "Udemy Developers",
     "url": "https://www.udemy.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/udemy/eslint-udemy/packages/eslint-config-udemy",
+  "homepage": "https://github.com/udemy/eslint-udemy/packages/eslint-config-udemy-website",
   "repository": {
     "type": "git",
     "url": "https://github.com/udemy/eslint-udemy.git"
