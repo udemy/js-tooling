@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-udemy-jasmine",
+  "name": "eslint-config-udemy-jasmine-addons",
   "version": "2.0.1",
   "description": "Udemy's Jasmine related ESLint configuration",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "url": "https://www.udemy.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/udemy/eslint-udemy/packages/eslint-config-udemy-jasmine",
+  "homepage": "https://github.com/udemy/eslint-udemy/packages/eslint-config-udemy-jasmine-addons",
   "repository": {
     "type": "git",
     "url": "https://github.com/udemy/eslint-udemy.git"
