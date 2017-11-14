@@ -3,7 +3,7 @@ function resolve(it) {
 }
 
 module.exports = {
-    extends: [
+    'extends': [
         resolve('basics'),
         resolve('react-addons'),
         resolve('jasmine-addons'),

@@ -59,7 +59,7 @@ module.exports = {
         // enforce style prop value being an object
         'react/style-prop-object': 'error',
         // prevent missing parentheses around multilines JSX
-        'react/jsx-wrap-multilines': ['error', { declaration: true, assignment: true, return: true }],
+        'react/jsx-wrap-multilines': ['error', { declaration: true, assignment: true, 'return': true }],
         // enforce spacing around jsx equals signs
         'react/jsx-equals-spacing': ['error', 'never'],
         // enforce JSX indentation
