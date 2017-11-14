@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-udemy-base",
+  "name": "eslint-config-udemy-basics",
   "version": "2.0.2",
   "description": "Udemy's Base ESLint configuration",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "url": "https://www.udemy.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/udemy/eslint-udemy/packages/eslint-config-udemy-base",
+  "homepage": "https://github.com/udemy/eslint-udemy/packages/eslint-config-udemy-basics",
   "repository": {
     "type": "git",
     "url": "https://github.com/udemy/eslint-udemy.git"

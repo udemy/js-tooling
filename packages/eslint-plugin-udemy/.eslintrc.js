@@ -1,3 +1,3 @@
 module.exports = {
-    extends: 'udemy-base',
+    extends: 'udemy-basics',
 };

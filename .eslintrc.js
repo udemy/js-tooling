@@ -1,3 +1,3 @@
 module.exports = {
-    extends: './packages/eslint-config-udemy-base/index.js',
+    extends: './packages/eslint-config-udemy-basics/index.js',
 };
