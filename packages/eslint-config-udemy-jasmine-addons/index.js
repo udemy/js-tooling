@@ -1,5 +1,8 @@
+const fs = require('fs');
+const path = require('path');
+
+const parts = fs.readdirSync(path.join(__dirname, 'parts'));
+
 module.exports = {
-    'extends': require('fs').readdirSync(require('path').join(__dirname, 'parts'))
-        .filter(name => name.endsWith('.js'))
-        .map(name => `./parts/${name}`),
+    'extends': parts.filter(name => name.endsWith('.js')).map(name => `./parts/${name}`),
 };
