@@ -6,7 +6,7 @@ module.exports.rules = {
             fixable: 'code',
         },
         create(context) {
-            const root = typeof context.options[0] === 'string' ? path.normalize(context.options[0]) : process.cwd();
+            const root = path.resolve(typeof context.options[0] === 'string' ? path.normalize(context.options[0]) : '');
             const filename = context.getFilename();
 
             return {
