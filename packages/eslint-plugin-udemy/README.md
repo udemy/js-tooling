@@ -29,6 +29,12 @@ You can additionally add settings for the plugin.
 Contributions are always welcome! The main approach described at 
 [top-level Contributing section](/#contributing) applies to this package, as all packages.
 
+### Updating an existing rule
+
+Just follow the approach described at [top-level Contributing section](/#contributing), and do not forget to update
+both rule-specific `README.md` file and this package's 
+[List of provided rules](#list-of-provided-rules) section.
+
 
 ### Adding a new rule
 

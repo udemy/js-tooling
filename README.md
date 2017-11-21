@@ -74,23 +74,34 @@ Run tests to verify everything is working.
 
     $ npm run test
 
-Once you are good to go, a typical contribution to this repository would require you to:
+### Updating an existing package
 
-1. Create a new branch,
-1. Add any new dependencies to any of the packages via `lerna add`,
-1. Run `lerna bootstrap` to make sure everything is installed,
-1. Make your necessary source file changes,
-1. Write your tests if applicable,
-1. Do *NOT* update version numbers in `package.json` files (`lerna publish` does it for you),
-1. Run `npm run test` to make sure all tests pass,
-1. Commit/push your changes,
-1. Create a PR against master,
-1. Once your PR is approved, merge it to master,
-1. Pull latest master locally,
-1. Run `lerna publish` in order to publish your changes to npm,
-1. Go to the repository where you'd use these new ESLint rule changes,
+1. Create a new branch.
+1. Add any new dependencies to any of the packages via `lerna add`.
+1. Run `lerna bootstrap` to make sure everything is installed.
+1. Make your necessary source file changes.
+1. Write your tests if applicable.
+1. Do *NOT* update version numbers in `package.json` files (`lerna publish` does it for you).
+1. Run `npm run test` to make sure all tests pass.
+1. Commit/push your changes.
+1. Create a pull request against master.
+1. Once your pull request is approved, merge it to master.
+1. Pull latest master locally.
+1. Run `lerna publish` in order to publish your changes to npm.
+1. Go to the repository where you'd use these new ESLint rule changes.
 1. Update the `package.json` dependencies to any `eslint-config|plugin-udemy-*` package as necessary.
 
 You can always reach out to [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f) at 
 [#dev-team-f Slack channel](https://udemy.slack.com/messages/dev-team-f).
  
+### Adding a new package
+
+1. Get in touch with [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f) at 
+[#dev-team-f Slack channel](https://udemy.slack.com/messages/dev-team-f) to assess the need for a
+new npm package to avoid any duplicate work.
+1. Once there is consensus, create a new folder under [packages](packages/) folder with the
+desired npm package name.
+1. Use `index.js` as package's main entry point, `tests.js` as its entry point for tests.
+1. Make sure `package.json` has necessary information, following existing examples.
+1. Make sure the new package has a meaningful `README.md`, and a valid `LICENSE` file.
+1. Follow the regular pull request and `lerna publish` flow as described above.
