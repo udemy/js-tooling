@@ -15,8 +15,8 @@ Install Udemy ESLint Plugin locally.
 
 # Configuration
 
-Add a `plugins` section and specify `udemy` as a plugin.
-You can additionally add settings for the plugin.
+Add a `plugins` section to your `.eslintrc.js` and specify `udemy` as a plugin.
+You can then add the rules provided by this plugin to your `rules` section.
 
 # List of provided rules
 
