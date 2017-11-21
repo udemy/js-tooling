@@ -24,7 +24,6 @@
   },
   "scripts": {
     "lint": "eslint ./",
-    "publish": "lerna publish",
     "test": "lerna bootstrap && npm run lint && node tests"
   }
 }

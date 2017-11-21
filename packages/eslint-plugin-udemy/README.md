@@ -34,7 +34,3 @@ following the existing code pattern.
 1. *Do* update `version` number in `package.json` file as necessary.
 1. Run `npm run test` and make sure all tests and lints are passing.
 1. Finally, run `npm publish` to publish your changes to npm.
-
-# License
-
-(c) Copyright 2017 Udemy, Inc., all rights reserved.
