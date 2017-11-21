@@ -1,7 +1,7 @@
 Udemy ESLint Plugin
 ===================
 
-Udemy specific linting rules for ESLint.
+This package has Udemy specific ESLint rules.
 
 # Installation
 
@@ -26,11 +26,24 @@ You can additionally add settings for the plugin.
 
 # Contributing
 
-Contributions are always welcome! For more info, please get in touch with @udemy/team-f team. In a nutshell:
+Contributions are always welcome! The main approach described at 
+[top-level Contributing section](/#contributing) applies to this package, as all packages.
 
-1. Run `npm install` to install all dependencies.
-1. Make your desired changes to any rule under `rules` folder. Or add a new rule under `rules` folder
-following the existing code pattern.
-1. *Do* update `version` number in `package.json` file as necessary.
-1. Run `npm run test` and make sure all tests and lints are passing.
-1. Finally, run `npm publish` to publish your changes to npm.
+
+### Adding a new rule
+
+This repository has a set of custom ESLint rules implemented under [`rules`](packages/eslint-plugin-udemy/rules)
+folder. In order to create a new rule, you should:
+
+1. Create a new folder under [`rules`](packages/eslint-plugin-udemy/rules) folder with the desired rule name.
+1. Implement the rule at `index.js` file, following existing examples. *You can also refer to ESLint's 
+[Working with Rules](https://eslint.org/docs/developer-guide/working-with-rules) documentation to learn
+more.*
+1. Once the rule is implemented, create `tests.js` file where you will write necessary tests for the rule,
+again following existing examples. *You can refer to ESLint's 
+[RuleTester](https://eslint.org/docs/developer-guide/nodejs-api#ruletester) documentation to learn more.*
+1. Create a `README.md` file that describes the details of the rule, based on 
+[`rules/README_TEMPLATE.md`](packages/eslint-plugin-udemy/rules/README_TEMPLATE.md) file.
+1. Add an entry to the [List of provided rules](#list-of-provided-rules) above, and describe the rule in a sentence.
+1. Push your changes, and continue with creating a PR, publishing to npm as described at
+[top-level Contributing section](/#contributing). 

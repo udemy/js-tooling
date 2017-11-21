@@ -1,5 +1,5 @@
-Udemy ESLint
-============
+Udemy ESLint Packages
+=====================
 
 This repository has [*ESLint*](https://www.github.com/eslint/eslint) related packages used by various Udemy projects. 
 It is owned by [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f), but everyone is welcome to contribute.
