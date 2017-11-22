@@ -26,7 +26,7 @@ You can then add the rules provided by this plugin to your `rules` section.
 
 # Contributing
 
-See [Contributing](/#contributing).
+See [Contributing](/README.md#contributing).
 
 ### Updating an existing rule
 
@@ -52,4 +52,4 @@ again following existing examples. *You can refer to ESLint's
 [`rules/README_TEMPLATE.md`](packages/eslint-plugin-udemy/rules/README_TEMPLATE.md) file.
 1. Add an entry to the [List of provided rules](#list-of-provided-rules) above, and describe the rule in a sentence.
 1. Push your changes, and continue with creating a PR, publishing to npm as described in
-[Contributing](/#contributing). 
+[Contributing](/README.md#contributing). 
