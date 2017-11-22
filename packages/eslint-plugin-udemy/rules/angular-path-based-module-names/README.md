@@ -8,7 +8,7 @@ which can be used to ensure that the `angular.module` name follows some establis
 pay any attention to the name of the file the module is in. Hence, it permits files and modules to be named radically 
 different things.
 
-## Rule Details
+## Rule details
 
 This rule takes no arguments.
 

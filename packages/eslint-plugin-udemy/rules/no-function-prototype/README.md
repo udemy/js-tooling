@@ -9,7 +9,7 @@ This rule prevents some of the weird errors when `Function.prototype`
 `func.apply is not a function`, which seems to be related with [Raven.js](https://github.com/getsentry/raven-js); or 
 `timeupdate` event handlers only fire once instead of on every time update).
 
-## Rule Details
+## Rule details
 
 This rule takes no arguments.
 

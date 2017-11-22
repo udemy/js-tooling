@@ -2,9 +2,9 @@
 
 < A sentence or two describing the details of what this rule is trying to achieve. >
 
-## Rule Details
+## Rule details
 
-< Explanation of any existing arguments for the rule. Or a statement lack thereof. >
+< Explain any arguments that the rule accepts or explain that it does not accept any arguments. >
 
 The following patterns are considered warnings:
 
