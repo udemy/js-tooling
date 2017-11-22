@@ -33,4 +33,4 @@ module.exports = {
 
 # Contributing
 
-See [Contributing](/#contributing).
+See [Contributing](/README.md#contributing).
