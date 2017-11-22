@@ -2,7 +2,7 @@
 
 `settimeout/no-nonzero` rule checks for any uses of `window.setTimeout` with a non-zero delay value.
 
-## Rule Details
+## Rule details
 
 This rule takes no arguments.
 
