@@ -5,5 +5,7 @@
   "packages": [
     "packages/*"
   ],
-  "version": "independent"
+  "version": "independent",
+  "conventionalCommits": true,
+  "changelogPreset": "eslint"
 }
