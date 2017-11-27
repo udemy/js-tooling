@@ -49,7 +49,7 @@ examples).
 again following existing examples. *You can refer to ESLint's 
 [RuleTester](https://eslint.org/docs/developer-guide/nodejs-api#ruletester) documentation to learn more.*
 1. Create a `README.md` file that describes the details of the rule, based on the
-[`rules/README_TEMPLATE.md`](packages/eslint-plugin-udemy/rules/README_TEMPLATE.md) file.
+[`RULE_README_TEMPLATE.md`](packages/eslint-plugin-udemy/RULE_README_TEMPLATE.md) file.
 1. Add an entry to the [List of provided rules](#list-of-provided-rules) above, and describe the rule in a sentence.
 1. Push your changes, and continue with creating a PR, publishing to npm as described in
 [Contributing](/README.md#contributing). 
