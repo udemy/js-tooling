@@ -5,6 +5,6 @@ module.exports = {
         'filenames',
     ],
     rules: {
-        'filenames/match-regex': ['error', '^(?:\\.eslintrc|[a-z0-9\\-]+)$'],
+        'filenames/match-regex': ['error', '^(?:\\.eslintrc|Gruntfile|[a-z0-9\\-]+)$'],
     },
 };
