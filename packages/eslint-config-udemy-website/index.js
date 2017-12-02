@@ -1,6 +1,9 @@
+'use strict';
+
 module.exports = {
     'extends': [
         'udemy-basics',
+        'udemy-babel-addons',
         'udemy-react-addons',
         'udemy-jasmine-addons',
     ],

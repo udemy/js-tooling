@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
     rules: {
         // disallow new operators with calls to require
