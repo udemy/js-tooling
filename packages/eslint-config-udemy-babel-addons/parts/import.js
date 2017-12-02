@@ -1,5 +1,7 @@
 module.exports = {
-    plugins: ['import'],
+    plugins: [
+        'import',
+    ],
     settings: {
         'import/extensions': ['.js', '.json'],
     },
@@ -8,6 +10,8 @@ module.exports = {
         'import/newline-after-import': 'error',
         // forbid AMD imports
         'import/no-amd': 'error',
+        // forbid CommonJS imports
+        'import/no-commonjs': 'error',
         // ensure imports point to files / modules that can be resolved
         'import/no-unresolved': ['error', { commonjs: true, amd: true }],
         // disallow invalid exports, e.g. multiple defaults
