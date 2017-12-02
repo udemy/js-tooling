@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udemy-website",
-  "version": "3.3.10",
+  "version": "3.3.11",
   "description": "Udemy Website's ESLint configuration",
   "main": "index.js",
   "author": {
@@ -14,7 +14,7 @@
     "url": "https://github.com/udemy/eslint-udemy.git"
   },
   "dependencies": {
-    "eslint-config-udemy-babel-addons": "^1.0.2",
+    "eslint-config-udemy-babel-addons": "^1.0.3",
     "eslint-config-udemy-basics": "^3.1.7",
     "eslint-config-udemy-jasmine-addons": "^3.1.5",
     "eslint-config-udemy-react-addons": "^3.1.5",
