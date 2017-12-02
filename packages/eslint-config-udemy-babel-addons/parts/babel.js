@@ -6,7 +6,7 @@ module.exports = {
         'babel',
     ],
     rules: {
-        // require use of semicolons instead of ASI, includes class properties
+        // require use of semicolons, includes class properties
         'babel/semi': ['error', 'always'],
     },
 };
