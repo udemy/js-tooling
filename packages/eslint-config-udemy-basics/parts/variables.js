@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
     rules: {
         // disallow catch clause parameters from shadowing variables in the outer scope

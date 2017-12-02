@@ -1,3 +1,5 @@
+'use strict';
+
 const rule = require('./index').rules['no-function-prototype'];
 const RuleTester = require('eslint').RuleTester;
 

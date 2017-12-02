@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = {
     rules: {
         // disallow window alert / confirm / prompt calls

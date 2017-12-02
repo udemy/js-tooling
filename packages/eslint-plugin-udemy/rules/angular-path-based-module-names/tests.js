@@ -1,3 +1,5 @@
+'use strict';
+
 const path = require('path');
 const rule = require('./index').rules['angular-path-based-module-names'];
 const RuleTester = require('eslint').RuleTester;
