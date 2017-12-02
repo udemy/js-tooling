@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udemy-babel-addons",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Udemy's Babel related ESLint configuration",
   "main": "index.js",
   "author": {
