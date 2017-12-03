@@ -22,9 +22,11 @@ there are three important commands to know:
 
 * **[`lerna add`](https://github.com/lerna/lerna#add):** In order to add a new dependency to an existing package's 
 `package.json` file, you'd run `` `yarn bin`/lerna add dependency-name --scope=package-name``. E.g.:
+    
     ```
     $ `yarn bin`/lerna add eslint-plugin-lodash --scope=eslint-config-udemy-website
     ``` 
+    
 * **[`lerna bootstrap`](https://github.com/lerna/lerna#bootstrap):** In order to install all of the dependencies
 for every package, you can simply run `` `yarn bin`/lerna bootstrap``.
 * **[`lerna publish`](https://github.com/lerna/lerna#publish):** In order to publish your changes to npm, you
@@ -74,7 +76,7 @@ Run tests to verify everything is working.
 
     $ yarn run test
 
-### Updating an existing package
+## Updating an existing package
 
 1. Create a new branch.
 1. Add any new dependencies to any of the packages via `lerna add`.
@@ -95,7 +97,7 @@ Run tests to verify everything is working.
 You can always reach out to [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f) on the 
 [#dev-team-f Slack channel](https://udemy.slack.com/messages/dev-team-f).
  
-### Adding a new package
+## Adding a new package
 
 1. Get in touch with [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f) on the 
 [#dev-team-f Slack channel](https://udemy.slack.com/messages/dev-team-f) to assess the need for a
@@ -106,3 +108,38 @@ desired npm package name.
 1. Make sure `package.json` has the necessary information, per existing examples.
 1. Make sure the new package has a meaningful `README.md` and a valid `LICENSE` file.
 1. Follow the regular pull request and `lerna publish` flow as described above.
+
+## Writing commit messages
+
+We use [Conventional Commits](https://conventionalcommits.org) for commit guidelines. This enables us to create a changelog for each release per package. Our commit message format is as follows:
+
+```
+Tag: Short description (fixes #1234)
+
+Longer description here if necessary
+```
+
+The first line of the commit message (the summary) must have a specific format.
+
+The `Tag` is one of the following:
+
+* `Fix` - for a bug fix.
+* `Update` - either for a backwards-compatible enhancement or for a rule change that adds reported problems.
+* `New` - implemented a new feature.
+* `Breaking` - for a backwards-incompatible enhancement or feature.
+* `Docs` - changes to documentation only.
+* `Build` - changes to build process only.
+* `Upgrade` - for a dependency upgrade.
+* `Chore` - for refactoring, adding tests, etc. (anything that isn't user-facing).
+
+The message summary should be a one-sentence description of the change, and it must be 72 characters in length or shorter. If the pull request addresses an issue, then the issue number should be mentioned at the end. If the commit doesn't completely fix the issue, then use `(refs #1234)` instead of `(fixes #1234)`.
+
+Here are some good commit message summary examples:
+
+```
+Build: Update Travis to only test Node 0.10 (refs #734)
+Fix: Semi rule incorrectly flagging extra semicolon (fixes #840)
+Upgrade: Esprima to 1.2, switch to using comment attachment (fixes #730)
+```
+
+The commit message format is important because these messages are used to create a changelog for each release. The tag and issue number help to create more consistent and useful changelogs.
