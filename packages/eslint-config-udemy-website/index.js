@@ -10,6 +10,7 @@ module.exports = {
     plugins: [
         'udemy',
         'filenames',
+        'lodash',
         'underscore',
     ],
     settings: {
@@ -21,6 +22,7 @@ module.exports = {
     },
     rules: {
         'filenames/match-regex': ['error', '^(?:[a-z0-9\\-]+(?:\\.(?:jqui-widget|ng-(?:constant|controller|directive|factory|filter|provider|service)|react-(?:component|proptypes)|mobx-(?:model|store)))?(?:\\.spec)?)$'],
+        'lodash/import-scope': ['error', 'method'],
         'udemy/angular-path-based-module-names': ['error', 'src/udemy/js'],
         'underscore/prefer-noop': ['error', 'always'],
     },
