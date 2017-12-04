@@ -19,13 +19,11 @@
     "packages/*"
   ],
   "engines": {
-    "node": ">=6.10.1",
+    "node": ">=8.4.0",
     "yarn": "^1.3.2"
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap",
     "lint": "eslint ./",
-    "publish": "lerna publish",
     "test": "lerna bootstrap && npm run lint && node tests"
   }
 }
