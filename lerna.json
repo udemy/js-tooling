@@ -1,11 +1,15 @@
 {
+  "command": {
+    "publish": {
+      "changelogPreset": "eslint",
+      "conventionalCommits": true
+    }
+  },
   "lerna": "2.5.1",
   "npmClient": "yarn",
-  "useWorkspaces": true,
   "packages": [
     "packages/*"
   ],
-  "version": "independent",
-  "conventionalCommits": true,
-  "changelogPreset": "eslint"
+  "useWorkspaces": true,
+  "version": "independent"
 }
