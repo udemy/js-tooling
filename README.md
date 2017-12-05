@@ -40,6 +40,9 @@ owned by our [Udemy npm organization](https://www.npmjs.com/org/udemy).
 
 * **[`eslint-config-udemy-basics`](packages/eslint-config-udemy-basics):** A basic ESLint configuration for writing 
 ES2015 JavaScript code. This is used by various Udemy projects.
+* **[`eslint-config-udemy-babel-addons`](packages/eslint-config-udemy-babel-addons):** 
+[*Babel*](https://github.com/babel/babel) specific ESLint configuration. Extended by 
+[`eslint-config-udemy-website`](packages/eslint-config-udemy-website).
 * **[`eslint-config-udemy-jasmine-addons`](packages/eslint-config-udemy-jasmine-addons):** 
 [*Jasmine*](https://github.com/jasmine/jasmine) specific ESLint configuration. Extended by 
 [`eslint-config-udemy-website`](packages/eslint-config-udemy-website).

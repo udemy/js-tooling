@@ -1,7 +1,7 @@
 Udemy ESLint Config for Babel
 =============================
 
-This configuration groups [*Babel*](https://babeljs.io/) specific ESLint rules.
+This configuration groups [*Babel*](https://github.com/babel/babel) specific ESLint rules.
 It is recommended to be used by any Babel compiled codebase developed at Udemy. 
 It is mainly used by [`eslint-config-udemy-website`](packages/eslint-config-udemy-website).
 
