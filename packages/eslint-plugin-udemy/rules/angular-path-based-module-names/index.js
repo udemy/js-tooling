@@ -8,7 +8,7 @@ module.exports.rules = {
             fixable: 'code',
         },
         create(context) {
-            const root = path.resolve(typeof context.options[0] === 'string' ? path.normalize(context.options[0]) : '');
+            const root = path.resolve(context.settings.udemy && path.normalize(context.settings.udemy.srcPath) || '');
             const filename = context.getFilename();
 
             return {
