@@ -1,7 +1,6 @@
 {
   "command": {
     "publish": {
-      "changelogPreset": "eslint",
       "conventionalCommits": true
     }
   },
