@@ -1,22 +1,20 @@
 {
-  "name": "eslint-plugin-udemy",
-  "version": "4.0.0",
-  "description": "Udemy's ESLint plugin",
+  "name": "eslint-config-tester",
+  "version": "0.0.1",
+  "description": "ESLint configuration tester",
   "main": "index.js",
   "author": {
     "name": "Udemy Developers",
     "url": "https://www.udemy.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/udemy/eslint-udemy/packages/eslint-plugin-udemy",
+  "homepage": "https://github.com/udemy/eslint-udemy/packages/eslint-config-tester",
   "repository": {
     "type": "git",
     "url": "https://github.com/udemy/eslint-udemy.git"
   },
-  "devDependencies": {
-    "babel-eslint": "^8.0.2",
-    "eslint": "^4.11.0",
-    "eslint-config-tester": "^0.0.1"
+  "peerDependencies": {
+    "eslint": "^4.11.0"
   },
   "engines": {
     "node": ">=8.9.1",
