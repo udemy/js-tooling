@@ -15,7 +15,8 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",
-    "eslint": "^4.11.0"
+    "eslint": "^4.11.0",
+    "eslint-config-tester": "^0.0.1"
   },
   "engines": {
     "node": ">=8.9.1",
