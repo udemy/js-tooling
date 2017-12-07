@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-udemy",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Udemy's ESLint plugin",
   "main": "index.js",
   "author": {
@@ -16,7 +16,7 @@
   "devDependencies": {
     "babel-eslint": "^8.0.2",
     "eslint": "^4.11.0",
-    "eslint-config-tester": "^0.0.1"
+    "eslint-config-tester": "^0.1.0"
   },
   "engines": {
     "node": ">=8.9.1",
