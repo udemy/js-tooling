@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udemy-website",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Udemy Website's ESLint configuration",
   "main": "index.js",
   "author": {
