@@ -87,7 +87,9 @@ Run tests to verify everything is working.
      creates a "Publish" commit which would have to be pushed to master, and non-admins cannot push
      directly to master.
    - If this is your first time running `lerna publish`, you will be prompted to first run
-     `npm adduser`. If you don't have an npm account, create one at <https://www.npmjs.com/signup>.
+     `npm adduser`. If you don't have an npm account, create one at <https://www.npmjs.com/signup>,
+     and ping [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f) to add your account to
+     the [Udemy npm organization](https://www.npmjs.com/org/udemy).
    - If `lerna publish` doesn't pick up your changes (this happens if you had to run `npm adduser`),
      you can manually publish a package via e.g. `cd packages/eslint-config-udemy-website; npm publish`.
 1. Confirm your changes were published to npm by checking the npm website,
