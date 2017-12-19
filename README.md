@@ -61,18 +61,10 @@ A set of custom ESLint rules written for Udemy, by Udemy. These rules are mainly
 Install [*Yarn v1.3.2*](https://github.com/yarnpkg/yarn/releases/tag/v1.3.2) globally. 
 
     $ npm install -g yarn@1.3.2
-    
-<small>**Note:** Since our main `udemy/website-django` codebase
-uses a different Yarn version at the moment (v0.22), you might want to utilize 
-[*nvm*](https://github.com/creationix/nvm) to maintain multiple Yarn versions. E.g. use 
-`nvm use system && npm install -g yarn@0.22` for `udemy/website-django`, and 
-`nvm install 6.10.1 && nvm use 6.10.1 && npm install -g yarn@1.3.2` for `udemy/eslint-udemy`. 
-If you do so, you need to remember to switch between `6.10.1` vs `system` whenever you are working on
-one project or the other. This is a temporary measure until 
-[@udemy/sre](https://github.com/orgs/udemy/teams/sre) unifies Yarn versions across the board.</small>
 
 Install all dependencies locally.
 
+    $ yarn install
     $ `yarn bin`/lerna bootstrap
     
 Run tests to verify everything is working.
@@ -83,16 +75,28 @@ Run tests to verify everything is working.
 
 1. Create a new branch.
 1. Add any new dependencies to any of the packages via `lerna add`.
-1. Run `lerna bootstrap` to make sure everything is installed.
+1. Install all dependencies (see above).
 1. Make your necessary source file changes.
 1. Write your tests if applicable.
 1. Do *NOT* update version numbers in `package.json` files (`lerna publish` does it for you).
 1. Run `yarn run test` to make sure all tests pass.
 1. Commit/push your changes.
 1. Create a pull request against master.
-1. Once your pull request is approved, merge it to master.
-1. Pull latest master locally.
-1. Run `lerna publish` in order to publish your changes to npm.
+1. Once your pull request is approved, run `lerna publish` in order to publish your changes to npm.
+   - Ideally we would first merge the pull request to master, then publish master to npm, but `lerna publish`
+     creates a "Publish" commit which would have to be pushed to master, and non-admins cannot push
+     directly to master.
+   - If this is your first time running `lerna publish`, you will be prompted to first run
+     `npm adduser`. If you don't have an npm account, create one at <https://www.npmjs.com/signup>,
+     and ping [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f) to add your account to
+     the [Udemy npm organization](https://www.npmjs.com/org/udemy).
+   - If `lerna publish` doesn't pick up your changes (this happens if you had to run `npm adduser`),
+     you can manually publish a package via e.g. `cd packages/eslint-config-udemy-website; npm publish`.
+1. Confirm your changes were published to npm by checking the npm website,
+   e.g. <https://www.npmjs.com/package/eslint-config-udemy-website>.
+1. `lerna publish` should have created a "Publish" commit, which includes changes to CHANGELOG.md and package.json.
+   See [#4a7ba34](https://github.com/udemy/eslint-udemy/commit/4a7ba340cee2bbbabe37b88efe5404a820bc1316) for example.
+   Push this commit. Merge your pull request.
 1. Go to the repository where you'd use these new ESLint rule changes.
 1. Update the `package.json` dependencies to any `eslint-config|plugin-udemy-*` package as necessary.
 1. Run `yarn install` to install the changes and to be able to start using the package.
