@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.15"></a>
+## [3.1.15](https://github.com/udemy/eslint-udemy/compare/eslint-config-udemy-basics@3.1.14...eslint-config-udemy-basics@3.1.15) (2018-02-07)
+
+
+
+
+**Note:** Version bump only for package eslint-config-udemy-basics
+
 <a name="3.1.14"></a>
 ## [3.1.14](https://github.com/udemy/eslint-udemy/compare/eslint-config-udemy-basics@3.1.13...eslint-config-udemy-basics@3.1.14) (2017-12-07)
 
