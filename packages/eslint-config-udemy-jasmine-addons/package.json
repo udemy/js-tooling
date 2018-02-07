@@ -8,10 +8,10 @@
     "url": "https://www.udemy.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/udemy/eslint-udemy/packages/eslint-config-udemy-jasmine-addons",
+  "homepage": "https://github.com/udemy/js-tooling/packages/eslint-config-udemy-jasmine-addons",
   "repository": {
     "type": "git",
-    "url": "https://github.com/udemy/eslint-udemy.git"
+    "url": "https://github.com/udemy/js-tooling.git"
   },
   "dependencies": {
     "eslint-plugin-jasmine": "^2.9.1"

@@ -9,4 +9,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* Introduce babel-*-udemy-* packages to the repo. ([5547c82](https://github.com/udemy/eslint-udemy/commit/5547c82))
+* Introduce babel-*-udemy-* packages to the repo. ([5547c82](https://github.com/udemy/js-tooling/commit/5547c82))

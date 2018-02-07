@@ -1,16 +1,16 @@
 {
   "private": true,
-  "name": "eslint-udemy",
-  "description": "Udemy's ESLint codebase",
+  "name": "js-tooling",
+  "description": "Udemy's JS tooling related public NPM packages",
   "author": {
     "name": "Udemy Developers",
     "url": "https://www.udemy.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/udemy/eslint-udemy",
+  "homepage": "https://github.com/udemy/js-tooling",
   "repository": {
     "type": "git",
-    "url": "https://github.com/udemy/eslint-udemy.git"
+    "url": "https://github.com/udemy/js-tooling.git"
   },
   "devDependencies": {
     "lerna": "2.5.1"
