@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-udemy-website",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Udemy Website's Babel preset",
   "main": "index.js",
   "author": {
