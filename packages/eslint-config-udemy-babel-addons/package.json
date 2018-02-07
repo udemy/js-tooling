@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udemy-babel-addons",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Udemy's Babel related ESLint configuration",
   "main": "index.js",
   "author": {
@@ -8,10 +8,10 @@
     "url": "https://www.udemy.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/udemy/eslint-udemy/packages/eslint-config-udemy-babel-addons",
+  "homepage": "https://github.com/udemy/js-tooling/packages/eslint-config-udemy-babel-addons",
   "repository": {
     "type": "git",
-    "url": "https://github.com/udemy/eslint-udemy.git"
+    "url": "https://github.com/udemy/js-tooling.git"
   },
   "dependencies": {
     "eslint-plugin-babel": "^4.1.2",
@@ -26,6 +26,6 @@
     "yarn": "^1.3.2"
   },
   "devDependencies": {
-    "eslint-config-tester": "^0.1.1"
+    "eslint-config-tester": "^0.1.2"
   }
 }

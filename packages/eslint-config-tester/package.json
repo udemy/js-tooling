@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tester",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "ESLint configuration tester",
   "main": "index.js",
   "author": {
@@ -8,10 +8,10 @@
     "url": "https://www.udemy.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/udemy/eslint-udemy/packages/eslint-config-tester",
+  "homepage": "https://github.com/udemy/js-tooling/packages/eslint-config-tester",
   "repository": {
     "type": "git",
-    "url": "https://github.com/udemy/eslint-udemy.git"
+    "url": "https://github.com/udemy/js-tooling.git"
   },
   "peerDependencies": {
     "eslint": "^4.11.0"

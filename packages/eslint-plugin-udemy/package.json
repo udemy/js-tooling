@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-udemy",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "Udemy's ESLint plugin",
   "main": "index.js",
   "author": {
@@ -8,15 +8,15 @@
     "url": "https://www.udemy.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/udemy/eslint-udemy/packages/eslint-plugin-udemy",
+  "homepage": "https://github.com/udemy/js-tooling/packages/eslint-plugin-udemy",
   "repository": {
     "type": "git",
-    "url": "https://github.com/udemy/eslint-udemy.git"
+    "url": "https://github.com/udemy/js-tooling.git"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.2",
     "eslint": "^4.11.0",
-    "eslint-config-tester": "^0.1.1"
+    "eslint-config-tester": "^0.1.2"
   },
   "engines": {
     "node": ">=8.9.1",

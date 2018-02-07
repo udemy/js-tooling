@@ -1,6 +1,6 @@
 {
   "name": "babel-polyfill-udemy-website",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Udemy Website's Babel polyfill",
   "main": "index.js",
   "author": {
@@ -8,10 +8,10 @@
     "url": "https://www.udemy.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/udemy/eslint-udemy/packages/babel-polyfill-udemy-website",
+  "homepage": "https://github.com/udemy/js-tooling/packages/babel-polyfill-udemy-website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/udemy/eslint-udemy.git"
+    "url": "https://github.com/udemy/js-tooling.git"
   },
   "engines": {
     "node": ">=8.9.1",
@@ -20,8 +20,8 @@
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "eslint": "^4.11.0",
-    "eslint-config-udemy-basics": "^3.1.15",
-    "eslint-config-udemy-website": "^4.0.3"
+    "eslint-config-udemy-basics": "^3.1.16",
+    "eslint-config-udemy-website": "^4.0.4"
   },
   "dependencies": {
     "babel-cli": "6.18.0",

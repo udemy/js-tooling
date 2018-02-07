@@ -1,5 +1,5 @@
-Udemy's Babel and ESLint Packages
-=====================
+Udemy's JS tooling related public NPM packages
+==============================================
 
 This repository has [*Babel*](https://www.github.com/babel/babel) and [*ESLint*](https://www.github.com/eslint/eslint) 
 related packages used by various Udemy projects. It is owned by [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f), 
@@ -99,10 +99,10 @@ Run tests to verify everything is working.
 1. Confirm your changes were published to npm by checking the npm website,
    e.g. <https://www.npmjs.com/package/eslint-config-udemy-website>.
 1. `lerna publish` should have created a "Publish" commit, which includes changes to CHANGELOG.md and package.json.
-   See [#4a7ba34](https://github.com/udemy/eslint-udemy/commit/4a7ba340cee2bbbabe37b88efe5404a820bc1316) for example.
+   See [#4a7ba34](https://github.com/udemy/js-tooling/commit/4a7ba340cee2bbbabe37b88efe5404a820bc1316) for example.
    Push this commit. Merge your pull request.
-1. Go to the repository where you'd use these new ESLint rule changes.
-1. Update the `package.json` dependencies to any `eslint-config|plugin-udemy-*` package as necessary.
+1. Go to the repository where you'd use these new package changes.
+1. Update the `package.json` dependencies to any `babel|eslint-*-udemy-*` package as necessary.
 1. Run `yarn install` to install the changes and to be able to start using the package.
 
 You can always reach out to [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f) on the 
