@@ -1,9 +1,9 @@
-Udemy ESLint Packages
+Udemy's Babel and ESLint Packages
 =====================
 
-This repository has [*ESLint*](https://www.github.com/eslint/eslint) related packages used by various Udemy projects. 
-It is owned by [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f), but everyone is welcome to contribute.
-Please refer to the [Contributing](#contributing) section to learn more.
+This repository has [*Babel*](https://www.github.com/babel/babel) and [*ESLint*](https://www.github.com/eslint/eslint) 
+related packages used by various Udemy projects. It is owned by [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f), 
+but everyone is welcome to contribute. Please refer to the [Contributing](#contributing) section to learn more.
 
 This repository uses [*Lerna*](https://github.com/lerna/lerna) to manage multiple [*npm*](https://www.npmjs.com/) packages. We 
 configured Lerna to use [*Yarn Workspaces*](https://yarnpkg.com/lang/en/docs/workspaces/) under the hood.
@@ -38,6 +38,10 @@ changed.
 We individually publish all folders inside [`packages`](packages) as a separate npm package. These packages are
 owned by our [Udemy npm organization](https://www.npmjs.com/org/udemy).
 
+* **[`babel-polyfill-udemy-website`](packages/babel-polyfill-udemy-website):** The Babel polyfills used by 
+[`udemy/website-django/static/`](https://github.com/udemy/website-django/tree/master/static/src/udemy/js/entry/main.js#L1) codebase.
+* **[`babel-preset-udemy-website`](packages/babel-preset-udemy-website):** The Babel preset used by 
+[`udemy/website-django/static/`](https://github.com/udemy/website-django/tree/master/static/.babelrc) codebase.
 * **[`eslint-config-udemy-basics`](packages/eslint-config-udemy-basics):** A basic ESLint configuration for writing 
 ES2015 JavaScript code. This is used by various Udemy projects.
 * **[`eslint-config-udemy-babel-addons`](packages/eslint-config-udemy-babel-addons):** 
