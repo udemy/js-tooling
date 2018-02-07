@@ -57,7 +57,7 @@ ES2015 JavaScript code. This is used by various Udemy projects.
 The ESLint configuration used by 
 [`udemy/website-django/static/`](https://github.com/udemy/website-django/tree/master/static/.eslintrc.js) codebase.
 * **[`eslint-plugin-udemy`](packages/eslint-plugin-udemy):**
-A set of custom ESLint rules written for Udemy, by Udemy. These rules are mainly used by  
+A set of custom ESLint rules written for Udemy, by Udemy. These rules are mainly used by
 [`eslint-config-udemy-website`](packages/eslint-config-udemy-website).
 
 # Contributing
