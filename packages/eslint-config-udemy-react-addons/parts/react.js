@@ -8,7 +8,7 @@ module.exports = {
         // enforce boolean attributes notation in JSX
         'react/jsx-boolean-value': ['error', 'never'],
         // enforce or disallow spaces inside of curly braces in JSX attributes
-        'react/jsx-curly-spacing': ['error', 'always', { allowMultiline: true }],
+        'react/jsx-curly-spacing': ['error', { when: 'always', children: true }],
         // prevent usage of .bind() in JSX props
         'react/jsx-no-bind': ['error', { ignoreRefs: true, allowArrowFunctions: false, allowBind: false }],
         // prevent duplicate props in JSX
