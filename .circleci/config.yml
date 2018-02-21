@@ -30,4 +30,8 @@ jobs:
       # run tests!
       - run: yarn test
 
-
+experimental:
+  notify:
+    branches:
+      only:
+        - master
