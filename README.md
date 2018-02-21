@@ -1,4 +1,4 @@
-Udemy's JS tooling related public NPM packages
+Udemy's JS tooling related public NPM packages [![CircleCI Status](https://circleci.com/gh/udemy/js-tooling.png?style=shield)](https://circleci.com/gh/udemy/js-tooling/tree/master)
 ==============================================
 
 This repository has [*Babel*](https://www.github.com/babel/babel) and [*ESLint*](https://www.github.com/eslint/eslint) 
