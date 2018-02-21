@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.1.11"></a>
+## [3.1.11](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@3.1.10...eslint-config-udemy-react-addons@3.1.11) (2018-02-21)
+
+
+### Bug Fixes
+
+* Enable children curly bracket spacing attribute for jsx-curly-spacing rule. ([cb61a10](https://github.com/udemy/js-tooling/commit/cb61a10))
+
+
+
+
 <a name="3.1.10"></a>
 ## [3.1.10](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@3.1.9...eslint-config-udemy-react-addons@3.1.10) (2018-02-07)
 
