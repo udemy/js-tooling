@@ -1,5 +1,5 @@
-Udemy Babel Polyfill
-====================
+Udemy Babel Polyfill for our Website
+====================================
 
 This is the main polyfill used by our 
 [`udemy/website-django/static/`](https://github.com/udemy/website-django/tree/master/static/src/udemy/js/entry/main.js#L1) codebase.
