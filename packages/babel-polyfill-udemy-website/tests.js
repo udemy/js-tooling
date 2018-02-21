@@ -9,7 +9,7 @@ require('./index');
 
 // eslint-disable-next-line no-console
 console.log('\tcheck `core-js`');
-assert.ok(typeof core === 'DELIBERATE FAILURE');
+assert.ok(typeof core === 'object');
 
 // eslint-disable-next-line no-console
 console.log('\tcheck `regeneratorRuntime`');
