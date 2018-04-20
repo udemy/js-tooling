@@ -22,7 +22,52 @@ module.exports = {
     rules: {
         'filenames/match-regex': ['error', '^(?:[a-z0-9\\-]+(?:\\.(?:ng-(?:constant|controller|directive|factory|filter|provider|service)|react-(?:component|proptypes)|mobx-(?:model|store)))?(?:\\.spec)?)$'],
         'udemy/angular-path-based-module-names': ['error', 'always'],
-        'udemy/import-blacklist': ['error'],
+        'udemy/import-blacklist': ['error', [
+            {
+                // For correct configuration
+                pattern: '^currencyformatter(?:\\.js)?$',
+                message: 'Please import from utils/currency-formatter/, not from currencyformatter',
+                exceptions: ['utils/currency-formatter(?:\\.spec)?\\.js$'],
+            },
+            {
+                // For improved JS bundling
+                pattern: '^lodash(?:\\.js)?$',
+                message: 'Please import from e.g. lodash/foo, not from lodash directly',
+            },
+            {
+                // For code consistency
+                pattern: '^mobx/lib/mobx(?:\\.js)?$',
+                message: 'Please import from mobx, not from mobx/lib/mobx',
+            },
+            {
+                // For correct configuration
+                pattern: '^moment(?:\\.js)?$',
+                message: 'Please import from utils/ud-moment, not from moment',
+                exceptions: ['utils/ud-moment(?:\\.spec)?\\.js$'],
+            },
+            {
+                // For correct configuration
+                pattern: '^numeral(?:\\.js)?$',
+                message: 'Please import from utils/ud-numeral, not from numeral',
+                exceptions: ['utils/ud-numeral(?:\\.spec)?\\.js$'],
+            },
+            {
+                // For improved JS bundling
+                pattern: '^react-bootstrap(?:\\.js)?$',
+                message: 'Please import from e.g. react-bootstrap/lib/foo, not from react-bootstrap directly',
+            },
+            {
+                // For correct implementation
+                pattern: '^react-bootstrap.*?$',
+                message: 'Please import from base-components/, not from react-bootstrap/',
+                exceptions: ['/base-components/'],
+            },
+            {
+                // For improved JS bundling
+                pattern: '^react-overlays(?:\\.js)?$',
+                message: 'Please import from e.g. react-overlays/lib/foo, not from react-overlays directly',
+            },
+        ]],
         'underscore/prefer-noop': ['error', 'always'],
     },
     overrides: [
