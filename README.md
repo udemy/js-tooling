@@ -26,6 +26,13 @@ there are three important commands to know:
     ```
     $ `yarn bin`/lerna add eslint-plugin-lodash --scope=eslint-config-udemy-website
     ``` 
+
+* **[`lerna remove` is not implemented yet](https://github.com/lerna/lerna/issues/833#issuecomment-375850356):** In order to remove a dependency from an existing package's `package.json` file, for now you'd run `` `cd packages/package-name; yarn remove dependency-name` ``. E.g.:
+
+    ```
+    $ cd packages/eslint-config-udemy-website
+    $ yarn remove eslint-plugin-lodash
+    ``` 
     
 * **[`lerna bootstrap`](https://github.com/lerna/lerna#bootstrap):** In order to install all of the dependencies
 for every package, you can simply run `` `yarn bin`/lerna bootstrap``.
