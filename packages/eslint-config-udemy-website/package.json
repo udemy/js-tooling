@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udemy-website",
-  "version": "4.0.5",
+  "version": "4.1.0",
   "description": "Udemy Website's ESLint configuration",
   "main": "index.js",
   "author": {
@@ -15,13 +15,12 @@
   },
   "dependencies": {
     "eslint-config-udemy-babel-addons": "^1.0.9",
-    "eslint-config-udemy-basics": "^3.1.16",
+    "eslint-config-udemy-basics": "^3.1.17",
     "eslint-config-udemy-jasmine-addons": "^3.1.10",
     "eslint-config-udemy-react-addons": "^3.1.11",
     "eslint-import-resolver-webpack": "^0.8.3",
     "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-lodash": "^2.5.0",
     "eslint-plugin-underscore": "^0.0.10"
   },
   "peerDependencies": {

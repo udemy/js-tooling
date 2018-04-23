@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@4.0.5...eslint-config-udemy-website@4.1.0) (2018-04-23)
+
+
+### Features
+
+* Introduce udemy/import-blacklist ([3e922cd](https://github.com/udemy/js-tooling/commit/3e922cd))
+
+
+
+
 <a name="4.0.5"></a>
 ## [4.0.5](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@4.0.4...eslint-config-udemy-website@4.0.5) (2018-02-21)
 
