@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.1.1"></a>
+## [4.1.1](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@4.1.0...eslint-config-udemy-website@4.1.1) (2018-04-24)
+
+
+
+
+**Note:** Version bump only for package eslint-config-udemy-website
+
 <a name="4.1.0"></a>
 # [4.1.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@4.0.5...eslint-config-udemy-website@4.1.0) (2018-04-23)
 
