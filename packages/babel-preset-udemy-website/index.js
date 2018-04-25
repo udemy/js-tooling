@@ -7,8 +7,9 @@ module.exports = {
         const name = it[0];
         const options = it[1] || {};
         // eslint-disable-next-line import/no-dynamic-require
-        const plugin = require(`babel-plugin-${name}`);
+        let plugin = require(`babel-plugin-${name}`);
         // https://github.com/loganfsmyth/babel-plugin-transform-builtin-extend/issues/1
-        return [name.includes('legacy') ? plugin.default : plugin, options];
+        plugin = plugin.default || plugin;
+        return [plugin, options];
     }),
 };

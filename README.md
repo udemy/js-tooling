@@ -80,7 +80,7 @@ Install all dependencies locally.
     
 Run tests to verify everything is working.
 
-    $ yarn run test
+    $ yarn test
 
 ## Updating an existing package
 
@@ -90,7 +90,7 @@ Run tests to verify everything is working.
 1. Make your necessary source file changes.
 1. Write your tests if applicable.
 1. Do *NOT* update version numbers in `package.json` files (`lerna publish` does it for you).
-1. Run `yarn run test` to make sure all tests pass.
+1. Run `yarn test` to make sure all tests pass.
 1. Commit/push your changes.
 1. Create a pull request against master.
 1. Once your pull request is approved, run `lerna publish` in order to publish your changes to npm.
