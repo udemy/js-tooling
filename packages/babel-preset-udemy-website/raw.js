@@ -116,6 +116,7 @@ module.exports = {
                     syntax: 'postcss-less',
                 },
             },
+            // This pattern also exists in udemy-django/static/webpack/helpers/less-loaders.js.
             generateScopedName: '[name]--[local]--[hash:base64:5]',
         }],
 
