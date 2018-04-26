@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@0.6.5...babel-preset-udemy-website@0.7.0) (2018-04-26)
+
+
+### Features
+
+* Added babel-plugin-react-css-modules ([949dbb7](https://github.com/udemy/js-tooling/commit/949dbb7))
+
+
+
+
 <a name="0.6.5"></a>
 ## [0.6.5](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@0.6.4...babel-preset-udemy-website@0.6.5) (2018-04-24)
 

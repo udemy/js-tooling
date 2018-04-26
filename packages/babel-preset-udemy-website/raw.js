@@ -109,6 +109,17 @@ module.exports = {
         // ES2015 generators and ES2017 async functions (transform)
         ['transform-regenerator', { generators: true, async: true, asyncGenerators: false }],
 
+        // babel-plugin-react-css-modules
+        ['react-css-modules', {
+            filetypes: {
+                '.less': {
+                    syntax: 'postcss-less',
+                },
+            },
+            // This pattern also exists in udemy-django/static/webpack/helpers/less-loaders.js.
+            generateScopedName: '[name]--[local]--[hash:base64:5]',
+        }],
+
         // Deduplication helpers
         ['external-helpers'],
     ],

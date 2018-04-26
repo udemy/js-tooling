@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-udemy-website",
-  "version": "0.6.5",
+  "version": "0.7.0",
   "description": "Udemy Website's Babel preset",
   "main": "index.js",
   "author": {
@@ -26,6 +26,7 @@
   "dependencies": {
     "babel-plugin-check-es2015-constants": "6.8.0",
     "babel-plugin-external-helpers": "6.18.0",
+    "babel-plugin-react-css-modules": "3.3.3",
     "babel-plugin-syntax-async-functions": "6.13.0",
     "babel-plugin-syntax-dynamic-import": "6.18.0",
     "babel-plugin-syntax-jsx": "6.18.0",
@@ -53,6 +54,7 @@
     "babel-plugin-transform-react-display-name": "6.8.0",
     "babel-plugin-transform-react-jsx": "6.8.0",
     "babel-plugin-transform-regenerator": "6.21.0",
-    "babel-plugin-transform-strict-mode": "6.18.0"
+    "babel-plugin-transform-strict-mode": "6.18.0",
+    "postcss-less": "1.1.5"
   }
 }

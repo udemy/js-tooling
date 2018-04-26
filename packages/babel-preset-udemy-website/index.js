@@ -9,6 +9,6 @@ module.exports = {
         // eslint-disable-next-line import/no-dynamic-require
         const plugin = require(`babel-plugin-${name}`);
         // https://github.com/loganfsmyth/babel-plugin-transform-builtin-extend/issues/1
-        return [name.includes('legacy') ? plugin.default : plugin, options];
+        return [plugin.default || plugin, options];
     }),
 };
