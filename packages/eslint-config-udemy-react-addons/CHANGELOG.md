@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@3.1.11...eslint-config-udemy-react-addons@3.2.0) (2018-04-30)
+
+
+### Features
+
+* Introduce jsx-no-literals ([86c2b5c](https://github.com/udemy/js-tooling/commit/86c2b5c))
+
+
+
+
 <a name="3.1.11"></a>
 ## [3.1.11](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@3.1.10...eslint-config-udemy-react-addons@3.1.11) (2018-02-21)
 
