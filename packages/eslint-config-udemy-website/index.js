@@ -67,6 +67,14 @@ module.exports = {
                 source: '^react-overlays(?:\\.js)?$',
                 message: 'Please import from e.g. react-overlays/lib/foo, not from react-overlays directly',
             },
+            {
+                // For correct configuration
+                source: '^react-router-dom(?:\\.js)?$',
+                specifier: '^(BrowserRouter|HashRouter|Router)$',
+                message: 'Please `import MemoizedBrowserRouter from \'base-components/memoized-browser-router.react-component\';`, ' +
+                'not `import { BrowserRouter, HashRouter, Router } from \'react-router-dom\';`.',
+                exceptions: ['base-components/memoized-browser-router.react-component(?:\\.spec)?\\.js$'],
+            },
         ]],
         'underscore/prefer-noop': ['error', 'always'],
     },
