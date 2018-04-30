@@ -13,22 +13,27 @@ const ruleTester = new RuleTester({
 
 const options = [[
     {
-        pattern: '^apple(?:\\.js)?$',
-        message: 'Please import from fruit/apple/, not from apple',
+        source: '^apple(?:\\.js)?$',
+        message: 'Please import from fruit/apple, not from apple',
         exceptions: ['fruit/apple(?:\\.spec)?\\.js$'],
     },
     {
-        pattern: '^grape/lib/grape(?:\\.js)?$',
+        source: '^grape/lib/grape(?:\\.js)?$',
         message: 'Please import from grape, not from grape/lib/grape',
     },
     {
-        pattern: '^lemon(?:\\.js)?$',
+        source: '^lemon(?:\\.js)?$',
         message: 'Please import from e.g. lemon/lib/foo, not from lemon directly',
     },
     {
-        pattern: '^lemon.*?$',
+        source: '^lemon.*?$',
         message: 'Please import from lime/, not from lemon/',
         exceptions: ['/lime/'],
+    },
+    {
+        source: '^pear(?:\\.js)?$',
+        specifier: '^Comice$',
+        message: 'Please import OurComice from our/comice, not import { Comice } from pear',
     },
 ]];
 
@@ -54,17 +59,22 @@ ruleTester.run('import-blacklist', rule, {
             filename: path.join(__dirname, 'lime/example.js'),
             options,
         },
+        {
+            code: "import { Bosc } from 'pear';",
+            filename: path.join(__dirname, 'example.js'),
+            options,
+        },
     ],
     invalid: [
         {
             code: "import apple from 'apple.js';",
-            errors: [{ message: 'Please import from fruit/apple/, not from apple' }],
+            errors: [{ message: 'Please import from fruit/apple, not from apple' }],
             filename: path.join(__dirname, 'example.js'),
             options,
         },
         {
             code: "import apple from 'apple';",
-            errors: [{ message: 'Please import from fruit/apple/, not from apple' }],
+            errors: [{ message: 'Please import from fruit/apple, not from apple' }],
             filename: path.join(__dirname, 'example.js'),
             options,
         },
@@ -83,6 +93,12 @@ ruleTester.run('import-blacklist', rule, {
         {
             code: "import foo from 'lemon/lib/foo';",
             errors: [{ message: 'Please import from lime/, not from lemon/' }],
+            filename: path.join(__dirname, 'example.js'),
+            options,
+        },
+        {
+            code: "import { Comice } from 'pear';",
+            errors: [{ message: 'Please import OurComice from our/comice, not import { Comice } from pear' }],
             filename: path.join(__dirname, 'example.js'),
             options,
         },

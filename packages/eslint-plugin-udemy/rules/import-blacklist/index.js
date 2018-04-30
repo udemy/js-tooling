@@ -8,7 +8,10 @@ module.exports.rules = {
                 items: {
                     type: 'object',
                     properties: {
-                        pattern: {
+                        source: {
+                            type: 'string',
+                        },
+                        specifier: {
                             type: 'string',
                         },
                         message: {
@@ -21,7 +24,7 @@ module.exports.rules = {
                             },
                         },
                     },
-                    required: ['pattern', 'message'],
+                    required: ['source', 'message'],
                 },
             }],
         },
@@ -38,7 +41,13 @@ module.exports.rules = {
                         if (isException) {
                             return;
                         }
-                        const isBlacklisted = new RegExp(rule.pattern).test(node.source.value);
+
+                        let isBlacklisted = new RegExp(rule.source).test(node.source.value);
+                        if (rule.specifier) {
+                            isBlacklisted = isBlacklisted && node.specifiers.some(specifier => {
+                                return new RegExp(rule.specifier).test(specifier.imported && specifier.imported.name);
+                            });
+                        }
                         if (isBlacklisted) {
                             context.report({ node, message: rule.message });
                         }
