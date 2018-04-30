@@ -32,6 +32,8 @@ The following imports would error:
 ```js 
 import { bar } from 'foo';
 
+import { baz } from 'foo';
+
 import foo from 'foo';
 
 import foo from 'foo.js';
@@ -57,7 +59,7 @@ If we added:
 exceptions: ['bar\\.js'],
 ```
 
-then none of the imports in some-path/bar.js would error.
+then none of the imports in `some-path/bar.js` would error.
 
 ---
 
@@ -79,6 +81,8 @@ import { foo } from 'foo';
 The following imports would not error:
 
 ```js
+import { baz } from 'foo';
+
 import foo from 'foo';
 
 import foo from 'foo.js';
