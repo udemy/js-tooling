@@ -25,47 +25,55 @@ module.exports = {
         'udemy/import-blacklist': ['error', [
             {
                 // For correct configuration
-                pattern: '^currencyformatter(?:\\.js)?$',
+                source: '^currencyformatter(?:\\.js)?$',
                 message: 'Please import from utils/currency-formatter/, not from currencyformatter',
                 exceptions: ['utils/currency-formatter(?:\\.spec)?\\.js$'],
             },
             {
                 // For improved JS bundling
-                pattern: '^lodash(?:\\.js)?$',
+                source: '^lodash(?:\\.js)?$',
                 message: 'Please import from e.g. lodash/foo, not from lodash directly',
             },
             {
                 // For code consistency
-                pattern: '^mobx/lib/mobx(?:\\.js)?$',
+                source: '^mobx/lib/mobx(?:\\.js)?$',
                 message: 'Please import from mobx, not from mobx/lib/mobx',
             },
             {
                 // For correct configuration
-                pattern: '^moment(?:\\.js)?$',
+                source: '^moment(?:\\.js)?$',
                 message: 'Please import from utils/ud-moment, not from moment',
                 exceptions: ['utils/ud-moment(?:\\.spec)?\\.js$'],
             },
             {
                 // For correct configuration
-                pattern: '^numeral(?:\\.js)?$',
+                source: '^numeral(?:\\.js)?$',
                 message: 'Please import from utils/ud-numeral, not from numeral',
                 exceptions: ['utils/ud-numeral(?:\\.spec)?\\.js$'],
             },
             {
                 // For improved JS bundling
-                pattern: '^react-bootstrap(?:\\.js)?$',
+                source: '^react-bootstrap(?:\\.js)?$',
                 message: 'Please import from e.g. react-bootstrap/lib/foo, not from react-bootstrap directly',
             },
             {
                 // For correct implementation
-                pattern: '^react-bootstrap.*?$',
+                source: '^react-bootstrap.*?$',
                 message: 'Please import from base-components/, not from react-bootstrap/',
                 exceptions: ['/base-components/'],
             },
             {
                 // For improved JS bundling
-                pattern: '^react-overlays(?:\\.js)?$',
+                source: '^react-overlays(?:\\.js)?$',
                 message: 'Please import from e.g. react-overlays/lib/foo, not from react-overlays directly',
+            },
+            {
+                // For correct configuration
+                source: '^react-router-dom(?:\\.js)?$',
+                specifier: '^(BrowserRouter|HashRouter|Router)$',
+                message: 'Please `import MemoizedBrowserRouter from \'base-components/memoized-browser-router.react-component\';`, ' +
+                'not `import { BrowserRouter, HashRouter, Router } from \'react-router-dom\';`.',
+                exceptions: ['base-components/memoized-browser-router.react-component(?:\\.spec)?\\.js$'],
             },
         ]],
         'underscore/prefer-noop': ['error', 'always'],

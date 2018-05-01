@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@4.1.1...eslint-plugin-udemy@4.2.0) (2018-05-01)
+
+
+### Features
+
+* Add a way to blacklist import specifiers. ([a310ea7](https://github.com/udemy/js-tooling/commit/a310ea7))
+
+
+
+
 <a name="4.1.1"></a>
 ## [4.1.1](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@4.1.0...eslint-plugin-udemy@4.1.1) (2018-04-24)
 
