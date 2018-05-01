@@ -1,6 +1,6 @@
 {
   "name": "babel-polyfill-udemy-website",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "description": "Udemy Website's Babel polyfill",
   "main": "index.js",
   "author": {
@@ -20,8 +20,8 @@
   "devDependencies": {
     "babel-eslint": "^8.2.1",
     "eslint": "^4.11.0",
-    "eslint-config-udemy-basics": "^3.1.18",
-    "eslint-config-udemy-website": "^4.1.2"
+    "eslint-config-udemy-basics": "^3.1.19",
+    "eslint-config-udemy-website": "^4.2.0"
   },
   "dependencies": {
     "babel-cli": "6.18.0",

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udemy-react-addons",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "Udemy's React related ESLint configuration",
   "main": "index.js",
   "author": {
