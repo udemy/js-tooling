@@ -1,6 +1,6 @@
 {
   "name": "babel-polyfill-udemy-website",
-  "version": "0.6.7",
+  "version": "1.0.0",
   "description": "Udemy Website's Babel polyfill",
   "main": "index.js",
   "author": {

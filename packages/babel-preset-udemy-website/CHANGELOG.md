@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@0.8.2...babel-preset-udemy-website@1.0.0) (2018-05-21)
+
+
+### Features
+
+* include all of Babel's external helpers ([b1a84c5](https://github.com/udemy/js-tooling/commit/b1a84c5))
+
+
+### BREAKING CHANGES
+
+* renamed `helpers.js` to `babel-external-helpers.js`
+
+
+
+
 <a name="0.8.2"></a>
 ## [0.8.2](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@0.8.0...babel-preset-udemy-website@0.8.2) (2018-05-01)
 
