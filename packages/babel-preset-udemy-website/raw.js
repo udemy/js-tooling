@@ -1,8 +1,6 @@
 'use strict';
 
 module.exports = {
-    // Warning! Enabled `external-helpers` transform, so if you wanna add any plugin or change settings of existent -
-    // make sure that all required helpers added to `build-external-helpers` task in our `package.json`.
     plugins: [
         // Legacy decorator transform with the old decorator behavior from Babel@5
         ['transform-decorators-legacy'],

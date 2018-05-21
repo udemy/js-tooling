@@ -1,6 +1,6 @@
 {
   "name": "babel-polyfill-udemy-website",
-  "version": "0.6.7",
+  "version": "1.0.0",
   "description": "Udemy Website's Babel polyfill",
   "main": "index.js",
   "author": {
@@ -29,6 +29,6 @@
     "regenerator-runtime": "0.10.1"
   },
   "scripts": {
-    "build": "babel-external-helpers --whitelist classCallCheck,createClass,defineProperty,inherits,objectDestructuringEmpty,objectWithoutProperties,possibleConstructorReturn,slicedToArray,taggedTemplateLiteralLoose,toArray,toConsumableArray > helpers.js"
+    "build": "babel-external-helpers > babel-external-helpers.js"
   }
 }

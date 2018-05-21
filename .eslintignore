@@ -1,3 +1,3 @@
-packages/babel-polyfill-udemy-website/helpers.js
+packages/babel-polyfill-udemy-website/babel-external-helpers.js
 packages/babel-preset-udemy-website/tests/
 node_modules/
