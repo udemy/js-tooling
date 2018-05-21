@@ -29,6 +29,6 @@
     "regenerator-runtime": "0.10.1"
   },
   "scripts": {
-    "build": "babel-external-helpers --whitelist classCallCheck,createClass,defineProperty,inherits,objectDestructuringEmpty,objectWithoutProperties,possibleConstructorReturn,slicedToArray,taggedTemplateLiteralLoose,toArray,toConsumableArray > helpers.js"
+    "build": "babel-external-helpers > babel-external-helpers.js"
   }
 }

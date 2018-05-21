@@ -121,5 +121,5 @@ require('core-js/modules/web.dom.iterable');
 // Regenerator runtime for Babel ES2015 generators and ES2017 async functions
 require('regenerator-runtime/runtime');
 
-// Babel external helpers
-require('./helpers');
+// Babel's own helpers used internally but loaded externally
+require('./babel-external-helpers');
