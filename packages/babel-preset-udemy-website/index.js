@@ -1,14 +1,14 @@
 'use strict';
 
 const raw = require('./raw');
+const dynamicRequire = type => config => {
+    const [name, options] = config;
+    // eslint-disable-next-line import/no-dynamic-require
+    const module = require(`babel-${type}-${name}`);
+    return [module.default || module, options || {}];
+};
 
 module.exports = {
-    plugins: raw.plugins.map(it => {
-        const name = it[0];
-        const options = it[1] || {};
-        // eslint-disable-next-line import/no-dynamic-require
-        const plugin = require(`babel-plugin-${name}`);
-        // https://github.com/loganfsmyth/babel-plugin-transform-builtin-extend/issues/1
-        return [plugin.default || plugin, options];
-    }),
+    presets: raw.presets.map(dynamicRequire('preset')),
+    plugins: raw.plugins.map(dynamicRequire('plugin')),
 };
