@@ -54,6 +54,8 @@ var Class = deco(_class = (_class2 = function (_Component) {
     babelHelpers.inherits(Class, _Component);
 
     function Class() {
+        var _ref;
+
         var _temp, _this, _ret;
 
         babelHelpers.classCallCheck(this, Class);
@@ -62,22 +64,25 @@ var Class = deco(_class = (_class2 = function (_Component) {
             args[_key] = arguments[_key];
         }
 
-        return _ret = (_temp = (_this = babelHelpers.possibleConstructorReturn(this, _Component.call.apply(_Component, [this].concat(args))), _this), _initDefineProp(_this, "prop1", _descriptor, _this), _this.prop2 = 14, _temp), babelHelpers.possibleConstructorReturn(_this, _ret);
+        return _ret = (_temp = (_this = babelHelpers.possibleConstructorReturn(this, (_ref = Class.__proto__ || Object.getPrototypeOf(Class)).call.apply(_ref, [this].concat(args))), _this), _initDefineProp(_this, "prop1", _descriptor, _this), _this.prop2 = 14, _temp), babelHelpers.possibleConstructorReturn(_this, _ret);
     }
 
-    Class.prototype.method1 = function method1() {};
-
-    Class.prototype.method2 = function method2() {};
-
-    Class.prototype.render = function render() {
-        return React.createElement(
-            "div",
-            null,
-            React.createElement(Element, { store: this.store })
-        );
-    };
-
     babelHelpers.createClass(Class, [{
+        key: "method1",
+        value: function method1() {}
+    }, {
+        key: "method2",
+        value: function method2() {}
+    }, {
+        key: "render",
+        value: function render() {
+            return React.createElement(
+                "div",
+                null,
+                React.createElement(Element, { store: this.store })
+            );
+        }
+    }, {
         key: "getter",
         get: function get() {
             return 42;

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@1.0.0...babel-preset-udemy-website@2.0.0) (2018-06-04)
+
+
+### Features
+
+* Use babel-polyfill and babel-preset-env ([76ab8a5](https://github.com/udemy/js-tooling/commit/76ab8a5))
+
+
+### BREAKING CHANGES
+
+* And remove custom config for polyfills and plugins.
+
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@0.8.2...babel-preset-udemy-website@1.0.0) (2018-05-21)
 
