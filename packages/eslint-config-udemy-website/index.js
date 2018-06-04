@@ -20,7 +20,7 @@ module.exports = {
         },
     },
     rules: {
-        'filenames/match-regex': ['error', '^(?:[a-z0-9\\-]+(?:\\.(?:ng-(?:constant|controller|directive|factory|filter|provider|service)|react-(?:component|proptypes)|mobx-(?:model|store)))?(?:\\.spec)?)$'],
+        'filenames/match-regex': ['error', '^(?:[a-z0-9\\-]+(?:\\.(?:ng-(?:constant|controller|directive|factory|filter|provider|service)|videojs-component|react-(?:component|proptypes)|mobx-(?:model|store)))?(?:\\.spec)?)$'],
         'udemy/angular-path-based-module-names': ['error', 'always'],
         'udemy/import-blacklist': ['error', [
             {
