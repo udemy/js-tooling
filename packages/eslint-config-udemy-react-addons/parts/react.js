@@ -58,6 +58,8 @@ module.exports = {
         'react/react-in-jsx-scope': 'error',
         // require render() methods to return something
         'react/require-render-return': 'error',
+        // enforce a defaultProps definition for every prop that is not a required prop
+        'react/require-default-props': [2, { forbidDefaultForRequired: true }],
         // enforce component methods order
         'react/sort-comp': 'error',
         // enforce style prop value being an object
