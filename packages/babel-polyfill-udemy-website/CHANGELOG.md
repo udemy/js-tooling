@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@0.6.6...babel-polyfill-udemy-website@3.0.0) (2018-06-05)
+
+
+### Features
+
+* include all of Babel's external helpers ([b1a84c5](https://github.com/udemy/js-tooling/commit/b1a84c5))
+* Use babel-polyfill and babel-preset-env ([#27](https://github.com/udemy/js-tooling/issues/27)) ([f59b2ee](https://github.com/udemy/js-tooling/commit/f59b2ee))
+
+
+### BREAKING CHANGES
+
+* And remove custom config for polyfills and plugins.
+* renamed `helpers.js` to `babel-external-helpers.js`
+
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@1.0.0...babel-polyfill-udemy-website@2.0.0) (2018-06-04)
 
