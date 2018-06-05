@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.3.0"></a>
+# [4.3.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@4.1.2...eslint-config-udemy-website@4.3.0) (2018-06-05)
+
+
+### Features
+
+* Add a way to blacklist import specifiers. ([a310ea7](https://github.com/udemy/js-tooling/commit/a310ea7))
+* Blacklist BrowserRouter, HashRouter, Router from react-router-dom ([60b299a](https://github.com/udemy/js-tooling/commit/60b299a))
+
+
+
+
 <a name="4.2.0"></a>
 # [4.2.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@4.1.1...eslint-config-udemy-website@4.2.0) (2018-05-01)
 
