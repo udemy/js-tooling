@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="3.0.1"></a>
+## [3.0.1](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@3.0.0...babel-polyfill-udemy-website@3.0.1) (2018-06-06)
+
+
+
+
+**Note:** Version bump only for package babel-polyfill-udemy-website
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@0.6.6...babel-polyfill-udemy-website@3.0.0) (2018-06-05)
 
