@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@3.0.1...babel-preset-udemy-website@4.0.0) (2018-06-11)
+
+
+### Features
+
+* Tweaked the React-related plugins ([a37fa62](https://github.com/udemy/js-tooling/commit/a37fa62))
+
+
+### BREAKING CHANGES
+
+* Removed the transform-react-display-name since
+we don't use createClass-based components.
+
+Also updated some docs.
+
+
+
+
 <a name="3.0.1"></a>
 ## [3.0.1](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@3.0.0...babel-preset-udemy-website@3.0.1) (2018-06-06)
 
