@@ -34,14 +34,13 @@ module.exports = {
         ['syntax-dynamic-import'],
 
         // JSX (syntax)
+        // We don't use the react preset because we don't want preset-flow (at least not yet)
+        // and don't need transform-react-display-name
         ['syntax-jsx'],
 
         // JSX (transform)
         // `useBuiltIns` option for usage `Object.assign` directly instead of `extends` helper
         ['transform-react-jsx', { useBuiltIns: true }],
-
-        // Adds `.displayName` property to `React.createClass`
-        ['transform-react-display-name'],
 
         // Stage-2 public class fields
         ['transform-class-properties'],

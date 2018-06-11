@@ -148,6 +148,9 @@ _Example_
 feat: Introduce eslint-config-tester
 
 It is a utility library to write tests for ESLint configurations.
+
+BREAKING CHANGE: Add a line like this if your code results in a breaking change. This will result
+in a major version change.
 ```
 
 The commit message format is 
