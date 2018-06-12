@@ -1,99 +1,59 @@
 "use strict";
 
-var _class, _desc, _value, _class2, _descriptor;
-
-function _initDefineProp(target, property, descriptor, context) {
-    if (!descriptor) return;
-    Object.defineProperty(target, property, {
-        enumerable: descriptor.enumerable,
-        configurable: descriptor.configurable,
-        writable: descriptor.writable,
-        value: descriptor.initializer ? descriptor.initializer.call(context) : void 0
-    });
-}
-
-function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) {
-    var desc = {};
-    Object['ke' + 'ys'](descriptor).forEach(function (key) {
-        desc[key] = descriptor[key];
-    });
-    desc.enumerable = !!desc.enumerable;
-    desc.configurable = !!desc.configurable;
-
-    if ('value' in desc || desc.initializer) {
-        desc.writable = true;
-    }
-
-    desc = decorators.slice().reverse().reduce(function (desc, decorator) {
-        return decorator(target, property, desc) || desc;
-    }, desc);
-
-    if (context && desc.initializer !== void 0) {
-        desc.value = desc.initializer ? desc.initializer.call(context) : void 0;
-        desc.initializer = undefined;
-    }
-
-    if (desc.initializer === void 0) {
-        Object['define' + 'Property'](target, property, desc);
-        desc = null;
-    }
-
-    return desc;
-}
-
-function _initializerWarningHelper(descriptor, context) {
-    throw new Error('Decorating class property failed. Please ensure that transform-class-properties is enabled.');
-}
+var _class, _class2, _descriptor;
 
 function React() {}
+
 function Component() {}
+
 function Element() {}
+
 function deco() {}
 
-var Class = deco(_class = (_class2 = function (_Component) {
-    babelHelpers.inherits(Class, _Component);
+var Class = deco(_class = (_class2 =
+/*#__PURE__*/
+function (_Component) {
+  babelHelpers.inherits(Class, _Component);
 
-    function Class() {
-        var _ref;
+  function Class() {
+    var _babelHelpers$getProt;
 
-        var _temp, _this, _ret;
+    var _temp, _this;
 
-        babelHelpers.classCallCheck(this, Class);
+    babelHelpers.classCallCheck(this, Class);
 
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
-
-        return _ret = (_temp = (_this = babelHelpers.possibleConstructorReturn(this, (_ref = Class.__proto__ || Object.getPrototypeOf(Class)).call.apply(_ref, [this].concat(args))), _this), _initDefineProp(_this, "prop1", _descriptor, _this), _this.prop2 = 14, _temp), babelHelpers.possibleConstructorReturn(_this, _ret);
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
     }
 
-    babelHelpers.createClass(Class, [{
-        key: "method1",
-        value: function method1() {}
-    }, {
-        key: "method2",
-        value: function method2() {}
-    }, {
-        key: "render",
-        value: function render() {
-            return React.createElement(
-                "div",
-                null,
-                React.createElement(Element, { store: this.store })
-            );
-        }
-    }, {
-        key: "getter",
-        get: function get() {
-            return 42;
-        }
-    }]);
-    return Class;
-}(Component), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "prop1", [deco], {
-    enumerable: true,
-    initializer: function initializer() {
-        return 13;
+    return babelHelpers.possibleConstructorReturn(_this, (_temp = _this = babelHelpers.possibleConstructorReturn(this, (_babelHelpers$getProt = babelHelpers.getPrototypeOf(Class)).call.apply(_babelHelpers$getProt, [this].concat(args))), babelHelpers.initializerDefineProperty(_this, "prop1", _descriptor, babelHelpers.assertThisInitialized(babelHelpers.assertThisInitialized(_this))), _this.prop2 = 14, _temp));
+  }
+
+  babelHelpers.createClass(Class, [{
+    key: "method1",
+    value: function method1() {}
+  }, {
+    key: "method2",
+    value: function method2() {}
+  }, {
+    key: "render",
+    value: function render() {
+      return React.createElement("div", null, React.createElement(Element, {
+        store: this.store
+      }));
     }
-}), _applyDecoratedDescriptor(_class2.prototype, "method1", [deco], Object.getOwnPropertyDescriptor(_class2.prototype, "method1"), _class2.prototype), _applyDecoratedDescriptor(_class2.prototype, "getter", [deco], Object.getOwnPropertyDescriptor(_class2.prototype, "getter"), _class2.prototype)), _class2)) || _class;
+  }, {
+    key: "getter",
+    get: function get() {
+      return 42;
+    }
+  }]);
+  return Class;
+}(Component), (_descriptor = babelHelpers.applyDecoratedDescriptor(_class2.prototype, "prop1", [deco], {
+  enumerable: true,
+  initializer: function initializer() {
+    return 13;
+  }
+}), babelHelpers.applyDecoratedDescriptor(_class2.prototype, "method1", [deco], Object.getOwnPropertyDescriptor(_class2.prototype, "method1"), _class2.prototype), babelHelpers.applyDecoratedDescriptor(_class2.prototype, "getter", [deco], Object.getOwnPropertyDescriptor(_class2.prototype, "getter"), _class2.prototype)), _class2)) || _class;
 
 module.exports = Class;

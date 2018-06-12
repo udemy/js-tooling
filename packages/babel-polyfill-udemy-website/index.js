@@ -2,4 +2,4 @@
 
 require('./babel-external-helpers');
 
-require('babel-polyfill');
+require('@babel/polyfill');

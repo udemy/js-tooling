@@ -22,18 +22,19 @@ there are three important commands to know:
 
 * **[`lerna add`](https://github.com/lerna/lerna#add):** In order to add a new dependency to an existing package's 
 `package.json` file, you'd run `` `yarn bin`/lerna add dependency-name --scope=package-name``. E.g.:
-    
+
     ```
     $ `yarn bin`/lerna add eslint-plugin-lodash --scope=eslint-config-udemy-website
-    ``` 
+    ```
 
 * **[`lerna remove` is not implemented yet](https://github.com/lerna/lerna/issues/833#issuecomment-375850356):** In order to remove a dependency from an existing package's `package.json` file, for now you'd run `` `cd packages/package-name; yarn remove dependency-name` ``. E.g.:
 
     ```
     $ cd packages/eslint-config-udemy-website
     $ yarn remove eslint-plugin-lodash
-    ``` 
-    
+    ```
+
+* `lerna upgrade` also doesn't exist: Follow the instructions above to do a remove and then re-add the package.
 * **[`lerna bootstrap`](https://github.com/lerna/lerna#bootstrap):** In order to install all of the dependencies
 for every package, you can simply run `` `yarn bin`/lerna bootstrap``.
 * **[`lerna publish`](https://github.com/lerna/lerna#publish):** In order to publish your changes to npm, you
@@ -77,7 +78,7 @@ Install all dependencies locally.
 
     $ yarn install
     $ `yarn bin`/lerna bootstrap
-    
+
 Run tests to verify everything is working.
 
     $ yarn test
@@ -114,7 +115,7 @@ Run tests to verify everything is working.
 
 You can always reach out to [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f) on the 
 [#dev-team-f Slack channel](https://udemy.slack.com/messages/dev-team-f).
- 
+
 ## Adding a new package
 
 1. Get in touch with [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f) on the 

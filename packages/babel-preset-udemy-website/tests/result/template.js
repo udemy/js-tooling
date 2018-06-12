@@ -1,5 +1,13 @@
 "use strict";
 
-var _templateObject = babelHelpers.taggedTemplateLiteral(["1", "3"], ["1", "3"]);
+function _templateObject() {
+  var data = babelHelpers.taggedTemplateLiteral(["1", "3"]);
 
-module.exports = String.raw(_templateObject, 2);
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+module.exports = String.raw(_templateObject(), 2);

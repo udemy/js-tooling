@@ -1,3 +1,3 @@
-'use strict';
+"use strict";
 
-module.exports = [].concat(babelHelpers.toConsumableArray('abcde'));
+module.exports = babelHelpers.toConsumableArray('abcde');
