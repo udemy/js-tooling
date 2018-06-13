@@ -1,5 +1,6 @@
 "use strict";
 
-module.exports = function (it) {
+import '../babel-polyfill';
+export default (function (it) {
   return it;
-};
+});

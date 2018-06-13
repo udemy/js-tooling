@@ -10,4 +10,5 @@ function _templateObject() {
   return data;
 }
 
-module.exports = String.raw(_templateObject(), 2);
+import '../babel-polyfill';
+export default String.raw(_templateObject(), 2);

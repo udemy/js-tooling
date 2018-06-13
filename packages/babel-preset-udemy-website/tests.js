@@ -17,12 +17,18 @@ fs.readdirSync(join(__dirname, 'tests/source')).filter(name => name.endsWith('.j
     console.log(`\tcheck ${name}`);
 
     // Uncomment this to debug the tests:
+    //
     // /* eslint-disable no-console */
     // console.log('===== expected =====');
     // console.log(expected);
     // console.log('===== result =====');
     // console.log(result);
     // /* eslint-enable no-console */
+    //
+    // If you just want to overwrite the result files and look at the diff, use the following, and
+    // get rid of the assertion:
+    //
+    // fs.writeFileSync(join(__dirname, 'tests/result', name), result + '\n', { encoding: 'UTF-8' });
 
     assert.equal(result.trim(), expected.trim());
 });

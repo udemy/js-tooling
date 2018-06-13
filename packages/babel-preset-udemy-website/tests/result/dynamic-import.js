@@ -1,9 +1,11 @@
 "use strict";
 
+import '../babel-polyfill';
+
 function f() {
   return import('./arrows').then(function () {
     return undefined;
   });
 }
 
-f();
+export default f();

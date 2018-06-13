@@ -1,3 +1,4 @@
 "use strict";
 
-module.exports = babelHelpers.toConsumableArray('abcde');
+import '../babel-polyfill';
+export default babelHelpers.toConsumableArray('abcde');

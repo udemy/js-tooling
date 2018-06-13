@@ -1,5 +1,6 @@
 "use strict";
 
+import '../babel-polyfill';
 var array = new Array(1e3).fill(1);
 var counter = 0;
 var _iteratorNormalCompletion = true;
@@ -29,4 +30,4 @@ try {
   }
 }
 
-module.exports = counter;
+export default counter;

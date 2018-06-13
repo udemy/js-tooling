@@ -7,19 +7,21 @@ module.exports = {
             {
                 // See:
                 //
-                //  * https://babeljs.io/docs/plugins/preset-env/
+                //  * https://new.babeljs.io/docs/en/next/babel-preset-env.html
                 //  * https://github.com/browserslist/browserslist#queries
                 //  * http://browserl.ist/
                 //  * https://support.udemy.com/hc/en-us/articles/229231047-System-Requirements
                 //  * https://github.com/babel/babel/blob/master/packages/babel-preset-env/src/available-plugins.js
                 //
-                // Actually, the defaults look like they match our requirements.
+                // To get some debugging information, add `debug: true`.
                 targets: {
                     browsers: [
-                        'defaults',
+                        '> 0.25%',
+                        'not dead',
                     ],
                 },
                 modules: false,
+                useBuiltIns: 'entry',
             },
         ],
     ],

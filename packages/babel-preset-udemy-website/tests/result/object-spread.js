@@ -1,10 +1,12 @@
 "use strict";
 
+import '../babel-polyfill';
+
 function React() {}
 
 function Component() {}
 
-module.exports = [babelHelpers.objectSpread({
+export default [babelHelpers.objectSpread({
   a: 1
 }, {
   b: 2

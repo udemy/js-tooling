@@ -2,6 +2,8 @@
 
 var _class, _class2, _descriptor;
 
+import '../babel-polyfill';
+
 function React() {}
 
 function Component() {}
@@ -56,4 +58,4 @@ function (_Component) {
   }
 }), babelHelpers.applyDecoratedDescriptor(_class2.prototype, "method1", [deco], Object.getOwnPropertyDescriptor(_class2.prototype, "method1"), _class2.prototype), babelHelpers.applyDecoratedDescriptor(_class2.prototype, "getter", [deco], Object.getOwnPropertyDescriptor(_class2.prototype, "getter"), _class2.prototype)), _class2)) || _class;
 
-module.exports = Class;
+export { Class as default };

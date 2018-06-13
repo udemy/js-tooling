@@ -1,3 +1,5 @@
+import '../babel-polyfill';
+
 import React, { Component } from 'react';
 
 import baseStyles from './css-modules.global.less';

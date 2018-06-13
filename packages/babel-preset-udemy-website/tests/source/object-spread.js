@@ -1,7 +1,9 @@
+import '../babel-polyfill';
+
 function React() {}
 function Component() {}
 
-module.exports = [
+export default [
     {a: 1, ...{b: 2}},
     <Component a={ 1 } { ...{b: 2} } />
 ];

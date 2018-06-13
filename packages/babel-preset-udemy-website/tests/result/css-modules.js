@@ -1,6 +1,7 @@
 "use strict";
 
 import _getClassName from "babel-plugin-react-css-modules/dist/browser/getClassName";
+import '../babel-polyfill';
 import React, { Component } from 'react';
 import baseStyles from './css-modules.global.less';
 import styles from './css-modules.less';
