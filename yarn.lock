@@ -500,6 +500,26 @@
     "@babel/helper-get-function-arity" "7.0.0-beta.49"
     "@babel/helper-plugin-utils" "7.0.0-beta.49"
 
+"@babel/plugin-transform-react-display-name@7.0.0-beta.49":
+  version "7.0.0-beta.49"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-display-name/-/plugin-transform-react-display-name-7.0.0-beta.49.tgz#242a006bf4122a93b273f69dfe6c394a0fcec638"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.49"
+
+"@babel/plugin-transform-react-jsx-self@7.0.0-beta.49":
+  version "7.0.0-beta.49"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.0.0-beta.49.tgz#a11828ba38035c1aa93fd44099b9897019fa546c"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.49"
+    "@babel/plugin-syntax-jsx" "7.0.0-beta.49"
+
+"@babel/plugin-transform-react-jsx-source@7.0.0-beta.49":
+  version "7.0.0-beta.49"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.0.0-beta.49.tgz#05bb7429b6dd44cbdca69585481347a809caa8ca"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.49"
+    "@babel/plugin-syntax-jsx" "7.0.0-beta.49"
+
 "@babel/plugin-transform-react-jsx@7.0.0-beta.49":
   version "7.0.0-beta.49"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx/-/plugin-transform-react-jsx-7.0.0-beta.49.tgz#0f2789fde305c3c14151848f8514a2af1441af58"
@@ -610,6 +630,16 @@
     browserslist "^3.0.0"
     invariant "^2.2.2"
     semver "^5.3.0"
+
+"@babel/preset-react@7.0.0-beta.49":
+  version "7.0.0-beta.49"
+  resolved "https://registry.yarnpkg.com/@babel/preset-react/-/preset-react-7.0.0-beta.49.tgz#0c86770f6e78a49af6f86942f5980beb5feb76c5"
+  dependencies:
+    "@babel/helper-plugin-utils" "7.0.0-beta.49"
+    "@babel/plugin-transform-react-display-name" "7.0.0-beta.49"
+    "@babel/plugin-transform-react-jsx" "7.0.0-beta.49"
+    "@babel/plugin-transform-react-jsx-self" "7.0.0-beta.49"
+    "@babel/plugin-transform-react-jsx-source" "7.0.0-beta.49"
 
 "@babel/template@7.0.0-beta.32":
   version "7.0.0-beta.32"

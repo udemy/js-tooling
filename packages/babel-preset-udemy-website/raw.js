@@ -24,6 +24,12 @@ module.exports = {
                 useBuiltIns: 'entry',
             },
         ],
+        [
+            '@babel/preset-react',
+            {
+                useBuiltIns: true,
+            },
+        ],
     ],
 
     plugins: [
@@ -34,11 +40,6 @@ module.exports = {
 
         // Dynamic imports in order to use Webpack's ModuleConcatenationPlugin
         ['@babel/plugin-syntax-dynamic-import'],
-
-        // JSX (syntax)
-        // We don't use the react preset because we don't want preset-flow (at least not yet)
-        // and don't need transform-react-display-name
-        ['@babel/plugin-transform-react-jsx', { useBuiltIns: true }],
 
         // Stage-2 public class fields
         // This interacts with @babel/plugin-proposal-decorators above.
