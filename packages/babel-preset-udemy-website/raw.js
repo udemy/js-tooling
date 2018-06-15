@@ -16,7 +16,8 @@ module.exports = {
                 // To get some debugging information, add `debug: true`.
                 targets: {
                     browsers: [
-                        '> 0.25%',
+                        '> 0.2%',
+                        'last 1 version',
                         'not dead',
                     ],
                 },
