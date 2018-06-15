@@ -1,5 +1,11 @@
 'use strict';
 
+function interpolate(string, matches) {
+    return string.replace(/\$(\d+)/g, (fullMatch, matchIndex) => {
+        return String(matches[matchIndex - 1]);
+    });
+}
+
 module.exports.rules = {
     'import-blacklist': {
         meta: {
@@ -42,14 +48,32 @@ module.exports.rules = {
                             return;
                         }
 
-                        let isBlacklisted = new RegExp(rule.source).test(node.source.value);
+                        const sourceMatches = (node.source.value || '')
+                            .match(new RegExp(rule.source));
+                        let isBlacklisted = !!sourceMatches;
+                        let specifierMatches = null;
                         if (rule.specifier) {
                             isBlacklisted = isBlacklisted && node.specifiers.some(specifier => {
-                                return new RegExp(rule.specifier).test(specifier.imported && specifier.imported.name);
+                                if (!specifier.imported) {
+                                    return false;
+                                }
+                                specifierMatches = (specifier.imported.name || '')
+                                    .match(new RegExp(rule.specifier));
+                                return !!specifierMatches;
                             });
                         }
                         if (isBlacklisted) {
-                            context.report({ node, message: rule.message });
+                            let matchedGroups = [];
+                            if (sourceMatches) {
+                                matchedGroups = matchedGroups.concat(sourceMatches.slice(1));
+                            }
+                            if (specifierMatches) {
+                                matchedGroups = matchedGroups.concat(specifierMatches.slice(1));
+                            }
+                            context.report({
+                                node,
+                                message: interpolate(rule.message, matchedGroups),
+                            });
                         }
                     });
                 },

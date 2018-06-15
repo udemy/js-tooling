@@ -93,3 +93,20 @@ import foo from 'foo/lib/foo';
 
 import foo from 'foo.less';
 ```
+
+---
+
+You may reference the regex matches in the error message. `$i` references the ith match. Matches in the `specifier` are ordered after matches in the `source`. For example, given the following config,
+
+```js
+source: '^(thing)$'
+specifier: '^(foo|bar)$'
+message: 'Please import { $2 } from custom/$1, not import { $2 } from $1
+```
+
+the following messages are possible:
+
+```js
+Please import { foo } from custom/thing, not import { foo } from thing
+Please import { bar } from custom/thing, not import { bar } from thing
+```
