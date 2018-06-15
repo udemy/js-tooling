@@ -1,4 +1,4 @@
-import '../babel-polyfill';
+import '@babel/polyfill';
 
 function f() {
     return import('./arrows').then(() => undefined);

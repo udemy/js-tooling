@@ -1,4 +1,4 @@
-import '../babel-polyfill';
+import '@babel/polyfill';
 
 const array = new Array(1e3).fill(1);
 let counter = 0;
