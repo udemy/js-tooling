@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.4.0"></a>
+# [4.4.0](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@4.3.0...eslint-plugin-udemy@4.4.0) (2018-06-15)
+
+
+### Features
+
+* regex matches can be referenced in the message ([484cf6b](https://github.com/udemy/js-tooling/commit/484cf6b))
+
+
+
+
 <a name="4.3.0"></a>
 # [4.3.0](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@4.1.1...eslint-plugin-udemy@4.3.0) (2018-06-05)
 
