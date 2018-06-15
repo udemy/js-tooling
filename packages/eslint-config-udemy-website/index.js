@@ -30,6 +30,11 @@ module.exports = {
                 exceptions: ['utils/currency-formatter(?:\\.spec)?\\.js$'],
             },
             {
+                // For code consistency
+                source: '^enzyme/build/index(?:\\.js)?$',
+                message: 'Please import from enzyme, not from enzyme/build/index',
+            },
+            {
                 // For improved JS bundling
                 source: '^lodash(?:\\.js)?$',
                 message: 'Please import from e.g. lodash/foo, not from lodash directly',
