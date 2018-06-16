@@ -1,1 +1,3 @@
-module.exports = String.raw`1${2}3`;
+import '@babel/polyfill';
+
+export default String.raw`1${2}3`;

@@ -1,5 +1,7 @@
+import '@babel/polyfill';
+
 function f() {
     return import('./arrows').then(() => undefined);
 }
 
-f();
+export default f();

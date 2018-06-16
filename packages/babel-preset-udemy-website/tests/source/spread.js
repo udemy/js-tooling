@@ -1,1 +1,3 @@
-module.exports = [...'abcde'];
+import '@babel/polyfill';
+
+export default [...'abcde'];

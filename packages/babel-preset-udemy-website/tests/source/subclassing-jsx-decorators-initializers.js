@@ -1,10 +1,12 @@
+import '@babel/polyfill';
+
 function React() {}
 function Component() {}
 function Element() {}
 function deco() {}
 
 @deco
-class Class extends Component {
+export default class Class extends Component {
     @deco prop1 = 13;
     prop2 = 14;
     @deco method1() {}
@@ -21,4 +23,3 @@ class Class extends Component {
     }
 }
 
-module.exports = Class;
