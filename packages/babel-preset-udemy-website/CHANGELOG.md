@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@4.0.1...babel-preset-udemy-website@5.0.0) (2018-06-16)
+
+
+### Features
+
+* Switched to using [@babel](https://github.com/babel)/preset-react ([f30a08f](https://github.com/udemy/js-tooling/commit/f30a08f))
+* Tweaked the babel-preset-env config, including for polyfills ([878329f](https://github.com/udemy/js-tooling/commit/878329f))
+* Upgraded Babel ([2d459dd](https://github.com/udemy/js-tooling/commit/2d459dd))
+
+
+### BREAKING CHANGES
+
+* The list of supported browsers is very slightly
+different with respect to some edge cases.
+* It may be possible this results in breakages.
+
+See: https://new.babeljs.io/docs/en/next/v7-migration.html
+
+
+
+
 <a name="4.0.1"></a>
 ## [4.0.1](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@4.0.0...babel-preset-udemy-website@4.0.1) (2018-06-15)
 

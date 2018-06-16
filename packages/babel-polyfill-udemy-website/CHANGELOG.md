@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@3.0.2...babel-polyfill-udemy-website@4.0.0) (2018-06-16)
+
+
+### Features
+
+* Upgraded Babel ([2d459dd](https://github.com/udemy/js-tooling/commit/2d459dd))
+
+
+### BREAKING CHANGES
+
+* It may be possible this results in breakages.
+
+See: https://new.babeljs.io/docs/en/next/v7-migration.html
+
+
+
+
 <a name="3.0.2"></a>
 ## [3.0.2](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@3.0.1...babel-polyfill-udemy-website@3.0.2) (2018-06-15)
 
