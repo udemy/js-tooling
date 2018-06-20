@@ -4,8 +4,8 @@
 ##### *What:*
 <Describe the changes you're introducing, along with the motivation for doing so>
 
-##### *Trello:*
-<Link to the Trello card for this PR or use the Trello/GitHub integration and remove this>
+##### *JIRA:*
+<Link to the JIRA issue for this PR or use the JIRA-Github integration and remove this>
 
 ##### *What did you test:*
 <Any manual testing you've done in addition to the automated tests>

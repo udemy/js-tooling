@@ -94,7 +94,10 @@ Run tests to verify everything is working.
 1. Run `yarn test` to make sure all tests pass.
 1. Commit/push your changes.
 1. Create a pull request against master.
-1. Once your pull request is approved, run `lerna publish` in order to publish your changes to npm.
+1. Get your pull request approved by a Team F member.
+1. Run `git fetch origin --tags`. This is important for the `lerna publish` step below, as lerna checks git tags to determine what changed. See [https://github.com/lerna/lerna#updated](https://github.com/lerna/lerna#updated).
+1. Get the latest code from master, via either pull or rebase. This is important for the `lerna publish` step below. If you have a merge conflict, lerna will fail to automatically push its "Publish" commit to your branch.
+1. Run `lerna publish` in order to publish your changes to npm.
    - Ideally we would first merge the pull request to master, then publish master to npm, but `lerna publish`
      creates a "Publish" commit which would have to be pushed to master, and non-admins cannot push
      directly to master.
