@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-udemy-website",
-  "version": "5.0.0",
+  "version": "6.0.0",
   "description": "Udemy Website's Babel preset",
   "main": "index.js",
   "author": {
@@ -21,7 +21,7 @@
     "babel-eslint": "^8.2.1",
     "eslint": "^4.11.0",
     "eslint-config-udemy-basics": "^3.1.21",
-    "eslint-config-udemy-website": "^4.3.2"
+    "eslint-config-udemy-website": "^4.4.0"
   },
   "dependencies": {
     "@babel/core": "7.0.0-beta.49",

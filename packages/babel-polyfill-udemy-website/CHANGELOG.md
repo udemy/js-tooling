@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="5.0.0"></a>
+# [5.0.0](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@3.0.2...babel-polyfill-udemy-website@5.0.0) (2018-06-20)
+
+
+* TF-3508 TF-3509 Upgraded babel, changed the defaults for @babel/preset-env, and added the react preset (#30) ([f0b4569](https://github.com/udemy/js-tooling/commit/f0b4569))
+
+
+### BREAKING CHANGES
+
+* It may be possible this results in breakages.
+
+See: https://new.babeljs.io/docs/en/next/v7-migration.html
+
+* feat: Tweaked the babel-preset-env config, including for polyfills
+* The list of supported browsers is very slightly
+different with respect to some edge cases.
+
+* feat: Switched to using @babel/preset-react
+
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@3.0.2...babel-polyfill-udemy-website@4.0.0) (2018-06-16)
 
