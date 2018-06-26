@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@3.3.2...eslint-config-udemy-react-addons@4.0.0) (2018-06-26)
+
+
+### Features
+
+* Upgraded [@babel](https://github.com/babel)/core to 7.0.0-beta.49 ([7f4f23a](https://github.com/udemy/js-tooling/commit/7f4f23a))
+
+
+### BREAKING CHANGES
+
+* You need to depend on @babel/core in your app directly.
+
+
+
+
 <a name="3.3.2"></a>
 ## [3.3.2](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@3.3.1...eslint-config-udemy-react-addons@3.3.2) (2018-06-06)
 
