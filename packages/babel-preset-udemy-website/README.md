@@ -6,9 +6,10 @@ This is the main configuration used by our
 
 # Installation
 
-Install [Babel](https://www.github.com/babel/babel) locally.
+Install [Babel](https://www.github.com/babel/babel) locally. See this package's package.json
+for the correct peer dependency version:
 
-    $ yarn add babel
+    $ yarn add @babel/core
 
 Install the Udemy Babel Preset locally.
 

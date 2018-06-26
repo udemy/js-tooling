@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udemy-react-addons",
-  "version": "3.3.2",
+  "version": "4.0.0",
   "description": "Udemy's React related ESLint configuration",
   "main": "index.js",
   "author": {
@@ -18,7 +18,7 @@
     "eslint-plugin-react": "^7.9.1"
   },
   "peerDependencies": {
-    "babel-eslint": "^8.0.2",
+    "babel-eslint": "^8.2.5",
     "eslint": "^4.11.0"
   },
   "engines": {

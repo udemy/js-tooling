@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="6.0.0"></a>
+# [6.0.0](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@5.0.0...babel-polyfill-udemy-website@6.0.0) (2018-06-26)
+
+
+### Features
+
+* Upgraded [@babel](https://github.com/babel)/core to 7.0.0-beta.49 ([7f4f23a](https://github.com/udemy/js-tooling/commit/7f4f23a))
+
+
+### BREAKING CHANGES
+
+* You need to depend on @babel/core in your app directly.
+
+
+
+
 <a name="5.0.0"></a>
 # [5.0.0](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@3.0.2...babel-polyfill-udemy-website@5.0.0) (2018-06-20)
 

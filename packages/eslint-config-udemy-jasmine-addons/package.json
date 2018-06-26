@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udemy-jasmine-addons",
-  "version": "3.1.10",
+  "version": "4.0.0",
   "description": "Udemy's Jasmine related ESLint configuration",
   "main": "index.js",
   "author": {
@@ -17,7 +17,7 @@
     "eslint-plugin-jasmine": "^2.9.1"
   },
   "peerDependencies": {
-    "babel-eslint": "^8.0.2",
+    "babel-eslint": "^8.2.5",
     "eslint": "^4.11.0"
   },
   "engines": {

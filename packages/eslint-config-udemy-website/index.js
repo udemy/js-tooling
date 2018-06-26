@@ -1,5 +1,7 @@
 'use strict';
 
+const path = require('path');
+
 module.exports = {
     'extends': [
         'udemy-basics',
@@ -15,7 +17,8 @@ module.exports = {
     settings: {
         'import/resolver': {
             webpack: {
-                config: 'webpack/config-local.js',
+                // Out of eslint-config-udemy-website, out of node_modules.
+                config: path.join(__dirname, '../../webpack/config-local.js'),
             },
         },
     },
