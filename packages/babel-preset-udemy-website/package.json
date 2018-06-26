@@ -18,13 +18,13 @@
     "yarn": "^1.3.2"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
+    "@babel/core": "7.0.0-beta.49",
+    "babel-eslint": "^8.2.5",
     "eslint": "^4.11.0",
     "eslint-config-udemy-basics": "^3.1.21",
     "eslint-config-udemy-website": "^4.4.0"
   },
   "dependencies": {
-    "@babel/core": "7.0.0-beta.49",
     "@babel/plugin-external-helpers": "7.0.0-beta.49",
     "@babel/plugin-proposal-class-properties": "7.0.0-beta.49",
     "@babel/plugin-proposal-decorators": "7.0.0-beta.49",
@@ -34,5 +34,8 @@
     "@babel/preset-react": "7.0.0-beta.49",
     "babel-plugin-react-css-modules": "3.4.2",
     "postcss-less": "1.1.5"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0-beta.49"
   }
 }
