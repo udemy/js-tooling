@@ -3,7 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-<a name="7.0.0"></a>
+       <a name="8.0.0"></a>
+# [8.0.0](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@6.0.0...babel-preset-udemy-website@8.0.0) (2018-06-29)
+
+
+* TF-3508 TF-3509 Upgraded @babel/core to 7.0.0-beta.49 (#33) ([8195cff](https://github.com/udemy/js-tooling/commit/8195cff))
+
+
+### Bug Fixes
+
+* Presets must now return functions, not objects ([869e7de](https://github.com/udemy/js-tooling/commit/869e7de))
+
+
+### BREAKING CHANGES
+
+* You need to depend on @babel/core in your app directly.
+
+* Publish
+
+- babel-polyfill-udemy-website@6.0.0
+- babel-preset-udemy-website@7.0.0
+- eslint-config-udemy-babel-addons@2.0.0
+- eslint-config-udemy-basics@4.0.0
+- eslint-config-udemy-jasmine-addons@4.0.0
+- eslint-config-udemy-react-addons@4.0.0
+- eslint-config-udemy-website@5.0.0
+- eslint-plugin-udemy@5.0.0
+
+
+
+
+       <a name="7.0.0"></a>
 # [7.0.0](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@6.0.0...babel-preset-udemy-website@7.0.0) (2018-06-26)
 
 
