@@ -8,7 +8,7 @@ const dynamicRequire = config => {
     return [module.default || module, options || {}];
 };
 
-module.exports = {
+module.exports = () => ({
     presets: raw.presets.map(dynamicRequire),
     plugins: raw.plugins.map(dynamicRequire),
-};
+});
