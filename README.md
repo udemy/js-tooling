@@ -112,6 +112,7 @@ Run tests to verify everything is working.
 1. `lerna publish` should have created a "Publish" commit, which includes changes to CHANGELOG.md and package.json.
    See [#4a7ba34](https://github.com/udemy/js-tooling/commit/4a7ba340cee2bbbabe37b88efe5404a820bc1316) for example.
    Push this commit. Merge your pull request.
+   - Do *NOT* squash merge after publishing since it confuses Lerna.
 1. Go to the repository where you'd use these new package changes.
 1. Update the `package.json` dependencies to any `babel|eslint-*-udemy-*` package as necessary.
 1. Run `yarn install` to install the changes and to be able to start using the package.
