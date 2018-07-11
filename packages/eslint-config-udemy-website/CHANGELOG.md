@@ -3,7 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-       <a name="6.0.0"></a>
+ <a name="7.0.0"></a>
+# [7.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@6.0.0...eslint-config-udemy-website@7.0.0) (2018-07-11)
+
+
+### Features
+
+* Improve lodash related linting for website-django ([c4b9fce](https://github.com/udemy/js-tooling/commit/c4b9fce))
+
+
+### BREAKING CHANGES
+
+* This change may cause new eslint failures related with lodash imports.
+
+
+
+
+ <a name="6.0.0"></a>
 # [6.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@4.4.0...eslint-config-udemy-website@6.0.0) (2018-06-29)
 
 
@@ -28,7 +44,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-       <a name="5.0.0"></a>
+<a name="5.0.0"></a>
 # [5.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@4.4.0...eslint-config-udemy-website@5.0.0) (2018-06-26)
 
 
