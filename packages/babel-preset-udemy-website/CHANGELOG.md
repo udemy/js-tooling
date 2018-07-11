@@ -3,7 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-       <a name="8.0.0"></a>
+ <a name="8.0.1"></a>
+## [8.0.1](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@8.0.0...babel-preset-udemy-website@8.0.1) (2018-07-11)
+
+
+
+
+**Note:** Version bump only for package babel-preset-udemy-website
+
+ <a name="8.0.0"></a>
 # [8.0.0](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@6.0.0...babel-preset-udemy-website@8.0.0) (2018-06-29)
 
 
@@ -33,7 +41,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-       <a name="7.0.0"></a>
+<a name="7.0.0"></a>
 # [7.0.0](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@6.0.0...babel-preset-udemy-website@7.0.0) (2018-06-26)
 
 
