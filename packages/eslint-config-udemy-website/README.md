@@ -18,7 +18,7 @@ Install the Udemy ESLint Plugin locally.
 # Configuration
 
 Add an `extends` section to your `.eslintrc.js` and specify `udemy-website` as an extended configuration.
-You can additionally adjust rules by overriding them in your `rules` section.
+You can additionally adjust rules by overriding them in your `rules` section. 
 
 ```js
 // At .eslintrc.js
