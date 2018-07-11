@@ -38,9 +38,19 @@ module.exports = {
                 message: 'Please import from enzyme, not from enzyme/build/index',
             },
             {
+                // Prefer lodash-es
+                source: '^lodash/(.*)$',
+                message: 'Please import from lodash-es/$1 instead of lodash/$1',
+            },
+            {
                 // For improved JS bundling
-                source: '^lodash(?:\\.js)?$',
-                message: 'Please import from e.g. lodash/foo, not from lodash directly',
+                source: '^(lodash(?:-es)?)(?:\\.js)?$',
+                message: 'Please import from e.g. lodash-es/foo, not from $1 directly',
+            },
+            {
+                // Suggest using native Javascript instead of depending on lodash
+                source: '^lodash-es/(each|reduce|filter|includes|map|every|some|keys|values|isArray|isString|findIndex|extend|max|first|head|tail|last)(?:\\.js)?$',
+                message: 'Please use the native Javascript alternative of lodash-es/$1 function.',
             },
             {
                 // For code consistency
