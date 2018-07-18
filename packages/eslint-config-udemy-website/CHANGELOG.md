@@ -3,7 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
- <a name="7.0.0"></a>
+       <a name="7.1.0"></a>
+# [7.1.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@7.0.0...eslint-config-udemy-website@7.1.0) (2018-07-18)
+
+
+### Features
+
+* import blacklist Link from react-router-dom ([3db4b23](https://github.com/udemy/js-tooling/commit/3db4b23))
+
+
+
+
+       <a name="7.0.0"></a>
 # [7.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@6.0.0...eslint-config-udemy-website@7.0.0) (2018-07-11)
 
 
@@ -19,7 +30,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
- <a name="6.0.0"></a>
+<a name="6.0.0"></a>
 # [6.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@4.4.0...eslint-config-udemy-website@6.0.0) (2018-06-29)
 
 
