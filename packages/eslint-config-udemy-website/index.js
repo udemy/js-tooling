@@ -89,16 +89,18 @@ module.exports = {
                 // For correct configuration
                 source: '^react-router-dom(?:\\.js)?$',
                 specifier: '^(BrowserRouter|HashRouter|Router)$',
-                message: 'Please `import MemoizedBrowserRouter from \'base-components/memoized-browser-router.react-component\';`, ' +
-                'not `import { BrowserRouter, HashRouter, Router } from \'react-router-dom\';`.',
+                message:
+                    'Please `import MemoizedBrowserRouter from \'base-components/memoized-browser-router.react-component\';`, ' +
+                    'not `import { BrowserRouter, HashRouter, Router } from \'react-router-dom\';`.',
                 exceptions: ['base-components/memoized-browser-router.react-component(?:\\.spec)?\\.js$'],
             },
             {
                 // For correct implementation
                 source: '^react-router-dom(?:\\.js)?$',
                 specifier: '^Link$',
-                message: 'Please `import Link from \'base-components/link.react-component\';`, ' +
-                'not `import { Link } from \'react-router-dom\';`.',
+                message:
+                    'Please `import Link from \'base-components/link.react-component\';`, ' +
+                    'not `import { Link } from \'react-router-dom\';`.',
                 exceptions: ['base-components/link.react-component(?:\\.spec)?\\.js$'],
             },
         ]],
