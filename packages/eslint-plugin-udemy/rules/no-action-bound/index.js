@@ -16,6 +16,7 @@ module.exports.rules = {
                     if (actionBoundDecorator) {
                         context.report({
                             node,
+                            loc: actionBoundDecorator.loc,
                             message: 'Avoid using `@action.bound`; instead use `@autobind @action`.',
                             fix(fixer) {
                                 return fixer.replaceText(actionBoundDecorator, '@autobind @action');
