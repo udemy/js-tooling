@@ -3,7 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
- <a name="6.0.1"></a>
+       <a name="6.0.2"></a>
+## [6.0.2](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@6.0.1...eslint-plugin-udemy@6.0.2) (2018-09-12)
+
+
+### Bug Fixes
+
+* checking that [@observer](https://github.com/observer) is the inner-most decorator ([586a715](https://github.com/udemy/js-tooling/commit/586a715))
+
+
+
+
+       <a name="6.0.1"></a>
 ## [6.0.1](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@6.0.0...eslint-plugin-udemy@6.0.1) (2018-09-12)
 
 
@@ -14,7 +25,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
- <a name="6.0.0"></a>
+<a name="6.0.0"></a>
 # [6.0.0](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@4.4.0...eslint-plugin-udemy@6.0.0) (2018-06-29)
 
 

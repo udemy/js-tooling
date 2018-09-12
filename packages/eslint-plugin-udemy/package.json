@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-udemy",
-  "version": "6.0.1",
+  "version": "6.0.2",
   "description": "Udemy's ESLint plugin",
   "main": "index.js",
   "author": {
