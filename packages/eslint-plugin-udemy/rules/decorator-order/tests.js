@@ -45,7 +45,7 @@ ruleTester.run('decorator-order', rule, {
                       @autobind @action mymethod() { return true; }
                    }`,
             errors: [{
-                message: '`@inject` should come before `@observer`.',
+                message: '`@observer` should be the inner-most decorator.',
             }],
         },
     ],

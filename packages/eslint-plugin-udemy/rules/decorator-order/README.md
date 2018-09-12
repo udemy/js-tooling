@@ -1,7 +1,7 @@
 # Decorator Order
 
-`udemy/decorator-order` rule checks the order of `@autobind @action` on
-method definitions and `@inject @observer` on class declarations.
+`udemy/decorator-order` rule checks the relative order of `@autobind` and  `@action` in
+method definitions and that `@observer` is inner-most in class declarations.
 
 ## Rule details
 
