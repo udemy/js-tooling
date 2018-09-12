@@ -3,7 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-       <a name="6.0.0"></a>
+ <a name="6.0.1"></a>
+## [6.0.1](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@6.0.0...eslint-plugin-udemy@6.0.1) (2018-09-12)
+
+
+### Bug Fixes
+
+* change location to decorator instead of method definition ([968d25e](https://github.com/udemy/js-tooling/commit/968d25e))
+
+
+
+
+ <a name="6.0.0"></a>
 # [6.0.0](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@4.4.0...eslint-plugin-udemy@6.0.0) (2018-06-29)
 
 
@@ -28,7 +39,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-       <a name="5.0.0"></a>
+<a name="5.0.0"></a>
 # [5.0.0](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@4.4.0...eslint-plugin-udemy@5.0.0) (2018-06-26)
 
 
