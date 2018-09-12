@@ -102,6 +102,7 @@ module.exports = {
                 exceptions: ['base-components/link.react-component(?:\\.spec)?\\.js$'],
             },
         ]],
+        'udemy/no-action-bound': ['error', 'always'],
         'underscore/prefer-noop': ['error', 'always'],
     },
     overrides: [
