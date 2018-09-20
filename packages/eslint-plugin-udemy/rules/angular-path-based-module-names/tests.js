@@ -1,8 +1,9 @@
 'use strict';
 
-const path = require('path');
-const rule = require('./index').rules['angular-path-based-module-names'];
 const RuleTester = require('eslint').RuleTester;
+const path = require('path');
+
+const rule = require('./index').rules['angular-path-based-module-names'];
 
 const ruleTester = new RuleTester();
 const relativePath = path.relative(process.cwd(), __dirname);

@@ -1,8 +1,9 @@
 'use strict';
 
-const path = require('path');
-const rule = require('./index').rules['import-blacklist'];
 const RuleTester = require('eslint').RuleTester;
+const path = require('path');
+
+const rule = require('./index').rules['import-blacklist'];
 
 const ruleTester = new RuleTester({
     parserOptions: {

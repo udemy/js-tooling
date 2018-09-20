@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = {
+    plugins: ['eslint-plugin-import-order-alphabetical'],
     rules: {
         // enforce spacing inside array brackets
         'array-bracket-spacing': ['error', 'never'],
@@ -24,6 +25,8 @@ module.exports = {
         'eol-last': ['error', 'always'],
         // disallow space between function identifier and application
         'func-call-spacing': 'error',
+        // enforce a convention in the order of require() and import statements with alphabetical sorting
+        'import-order-alphabetical/order': ['error', { 'newlines-between': 'always', groups: [['builtin', 'external'], 'internal', ['parent', 'sibling', 'index']] }],
         // this option sets a specific tab width for your code
         indent: ['error', 4, { SwitchCase: 1, VariableDeclarator: 1 }],
         // require a space before & after certain keywords
