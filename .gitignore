@@ -1,7 +1,5 @@
-node_modules
 .idea
-lerna-debug.log
-npm-debug.log
-
-# Visual Studio Code Settings
 .vscode
+lerna-debug.log
+node_modules
+npm-debug.log
