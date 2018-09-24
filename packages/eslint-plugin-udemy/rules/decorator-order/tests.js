@@ -1,7 +1,8 @@
 'use strict';
 
-const rule = require('./index').rules['decorator-order'];
 const RuleTester = require('eslint').RuleTester;
+
+const rule = require('./index').rules['decorator-order'];
 
 RuleTester.setDefaultConfig({
     parser: 'babel-eslint',

@@ -1,7 +1,8 @@
 'use strict';
 
-const rule = require('./index').rules['no-action-bound'];
 const RuleTester = require('eslint').RuleTester;
+
+const rule = require('./index').rules['no-action-bound'];
 
 RuleTester.setDefaultConfig({
     parser: 'babel-eslint',

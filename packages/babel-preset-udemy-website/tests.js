@@ -10,10 +10,11 @@
  * babel-plugin-react-css-modules generates will be different--go figure.
  */
 
+const babel = require('@babel/core');
 const assert = require('assert');
 const fs = require('fs');
 const join = require('path').join;
-const babel = require('@babel/core');
+
 const preset = require('./index');
 
 const MODE = Object.freeze({
