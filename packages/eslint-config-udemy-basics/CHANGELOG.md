@@ -3,7 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
- <a name="5.0.3"></a>
+       <a name="5.0.4"></a>
+## [5.0.4](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@5.0.3...eslint-config-udemy-basics@5.0.4) (2018-09-24)
+
+
+### Bug Fixes
+
+* adding eslint-import-resolver-node ([243009a](https://github.com/udemy/js-tooling/commit/243009a))
+
+
+
+
+       <a name="5.0.3"></a>
 ## [5.0.3](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@5.0.2...eslint-config-udemy-basics@5.0.3) (2018-09-24)
 
 
@@ -11,7 +22,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package eslint-config-udemy-basics
 
- <a name="5.0.2"></a>
+<a name="5.0.2"></a>
 ## [5.0.2](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@5.0.1...eslint-config-udemy-basics@5.0.2) (2018-09-12)
 
 
