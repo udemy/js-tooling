@@ -3,7 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-       <a name="7.1.4"></a>
+ <a name="7.1.5"></a>
+## [7.1.5](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@7.1.4...eslint-config-udemy-website@7.1.5) (2018-09-24)
+
+
+
+
+**Note:** Version bump only for package eslint-config-udemy-website
+
+ <a name="7.1.4"></a>
 ## [7.1.4](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@7.1.3...eslint-config-udemy-website@7.1.4) (2018-09-12)
 
 
@@ -11,7 +19,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package eslint-config-udemy-website
 
-       <a name="7.1.3"></a>
+<a name="7.1.3"></a>
 ## [7.1.3](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@7.1.2...eslint-config-udemy-website@7.1.3) (2018-09-12)
 
 
