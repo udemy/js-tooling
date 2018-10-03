@@ -124,6 +124,7 @@ module.exports = {
         angular: false,
         gettext: false,
         ngettext: false,
+        npgettext: false,
         pgettext: false,
         interpolate: false,
         ninterpolate: false,
