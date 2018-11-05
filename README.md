@@ -70,9 +70,9 @@ A set of custom ESLint rules written for Udemy, by Udemy. These rules are mainly
 
 # Contributing
 
-Install [*Yarn v1.3.2*](https://github.com/yarnpkg/yarn/releases/tag/v1.3.2) globally. 
+Install [*Yarn v1.9.4*](https://github.com/yarnpkg/yarn/releases/tag/v1.9.4) globally. 
 
-    $ npm install -g yarn@1.3.2
+    $ npm install -g yarn@1.9.4
 
 Install all dependencies locally.
 

@@ -99,6 +99,7 @@ import "core-js/modules/es6.string.fontsize";
 import "core-js/modules/es6.string.from-code-point";
 import "core-js/modules/es6.string.includes";
 import "core-js/modules/es6.string.italics";
+import "core-js/modules/es6.string.iterator";
 import "core-js/modules/es6.string.link";
 import "core-js/modules/es7.string.pad-start";
 import "core-js/modules/es7.string.pad-end";
@@ -144,7 +145,7 @@ function (_Component) {
   function Class() {
     var _babelHelpers$getProt;
 
-    var _temp, _this;
+    var _this;
 
     babelHelpers.classCallCheck(this, Class);
 
@@ -152,7 +153,10 @@ function (_Component) {
       args[_key] = arguments[_key];
     }
 
-    return babelHelpers.possibleConstructorReturn(_this, (_temp = _this = babelHelpers.possibleConstructorReturn(this, (_babelHelpers$getProt = babelHelpers.getPrototypeOf(Class)).call.apply(_babelHelpers$getProt, [this].concat(args))), babelHelpers.initializerDefineProperty(_this, "prop1", _descriptor, babelHelpers.assertThisInitialized(babelHelpers.assertThisInitialized(_this))), _this.prop2 = 14, _temp));
+    _this = babelHelpers.possibleConstructorReturn(this, (_babelHelpers$getProt = babelHelpers.getPrototypeOf(Class)).call.apply(_babelHelpers$getProt, [this].concat(args)));
+    babelHelpers.initializerDefineProperty(_this, "prop1", _descriptor, babelHelpers.assertThisInitialized(babelHelpers.assertThisInitialized(_this)));
+    _this.prop2 = 14;
+    return _this;
   }
 
   babelHelpers.createClass(Class, [{
@@ -176,7 +180,9 @@ function (_Component) {
   }]);
   return Class;
 }(Component), (_descriptor = babelHelpers.applyDecoratedDescriptor(_class2.prototype, "prop1", [deco], {
+  configurable: true,
   enumerable: true,
+  writable: true,
   initializer: function initializer() {
     return 13;
   }
