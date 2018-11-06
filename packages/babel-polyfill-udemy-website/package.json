@@ -14,12 +14,12 @@
     "url": "https://github.com/udemy/js-tooling.git"
   },
   "engines": {
-    "node": ">=8.10.0",
+    "node": ">=8.9.1",
     "yarn": "^1.9.4"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
+    "eslint": "^4.19.1",
     "eslint-config-udemy-basics": "^5.0.4",
     "eslint-config-udemy-website": "^7.1.7"
   },
