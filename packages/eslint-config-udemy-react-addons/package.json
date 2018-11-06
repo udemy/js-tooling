@@ -18,8 +18,8 @@
     "eslint-plugin-react": "^7.9.1"
   },
   "peerDependencies": {
-    "babel-eslint": "^8.2.5",
-    "eslint": "^4.11.0"
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1"
   },
   "engines": {
     "node": ">=8.9.1",
