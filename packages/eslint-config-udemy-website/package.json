@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udemy-website",
-  "version": "7.1.9",
+  "version": "7.1.10",
   "description": "Udemy Website's ESLint configuration",
   "main": "index.js",
   "author": {
@@ -14,7 +14,7 @@
     "url": "https://github.com/udemy/js-tooling.git"
   },
   "dependencies": {
-    "eslint-config-udemy-babel-addons": "^3.0.1",
+    "eslint-config-udemy-babel-addons": "^3.0.2",
     "eslint-config-udemy-basics": "^5.0.5",
     "eslint-config-udemy-jasmine-addons": "^5.0.1",
     "eslint-config-udemy-react-addons": "^5.0.2",
