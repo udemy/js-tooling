@@ -3,7 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
- <a name="3.0.1"></a>
+       <a name="3.0.2"></a>
+## [3.0.2](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-babel-addons@3.0.1...eslint-config-udemy-babel-addons@3.0.2) (2018-11-06)
+
+
+### Bug Fixes
+
+* Make sure to use legacy decorators for linting ([a6f52ee](https://github.com/udemy/js-tooling/commit/a6f52ee))
+
+
+
+
+       <a name="3.0.1"></a>
 ## [3.0.1](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-babel-addons@3.0.0...eslint-config-udemy-babel-addons@3.0.1) (2018-11-06)
 
 
@@ -11,7 +22,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package eslint-config-udemy-babel-addons
 
- <a name="3.0.0"></a>
+<a name="3.0.0"></a>
 # [3.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-babel-addons@1.0.9...eslint-config-udemy-babel-addons@3.0.0) (2018-06-29)
 
 
