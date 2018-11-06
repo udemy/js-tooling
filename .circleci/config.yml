@@ -15,14 +15,14 @@ jobs:
 
       - restore_cache:
           keys:
-          - v3-dependencies-{{ checksum "yarn.lock" }}
+          - v4-dependencies-{{ checksum "yarn.lock" }}
 
       - run: yarn install --frozen-lockfile && `yarn bin`/lerna bootstrap -- --frozen-lockfile
 
       - save_cache:
           paths:
             - node_modules
-          key: v3-dependencies-{{ checksum "yarn.lock" }}
+          key: v4-dependencies-{{ checksum "yarn.lock" }}
 
       - run: yarn test
 
