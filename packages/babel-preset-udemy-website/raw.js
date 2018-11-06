@@ -37,7 +37,7 @@ module.exports = {
         // Legacy decorator transform with the old decorator behavior from Babel@5
         // There are some caveats as to how to set this up:
         // https://new.babeljs.io/docs/en/next/babel-plugin-proposal-decorators.html
-        ['@babel/plugin-proposal-decorators', { legacy: true, decoratorsBeforeExport: true }],
+        ['@babel/plugin-proposal-decorators', { legacy: true }],
 
         // Dynamic imports in order to use Webpack's ModuleConcatenationPlugin
         ['@babel/plugin-syntax-dynamic-import'],
