@@ -3,7 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-       <a name="6.0.4"></a>
+ <a name="7.0.0"></a>
+# [7.0.0](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@6.0.4...eslint-plugin-udemy@7.0.0) (2018-11-09)
+
+
+### Features
+
+* Upgrade eslint to 5.x ([1655e2f](https://github.com/udemy/js-tooling/commit/1655e2f))
+
+
+### BREAKING CHANGES
+
+* Upgrade ESLint to ^5.9.0 and require node >=8.12.0 as an engine.
+
+
+
+
+ <a name="6.0.4"></a>
 ## [6.0.4](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@6.0.3...eslint-plugin-udemy@6.0.4) (2018-11-06)
 
 
@@ -11,7 +27,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package eslint-plugin-udemy
 
-       <a name="6.0.3"></a>
+<a name="6.0.3"></a>
 ## [6.0.3](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@6.0.2...eslint-plugin-udemy@6.0.3) (2018-09-24)
 
 

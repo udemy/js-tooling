@@ -3,7 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-       <a name="8.0.14"></a>
+ <a name="9.0.0"></a>
+# [9.0.0](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@8.0.14...babel-preset-udemy-website@9.0.0) (2018-11-09)
+
+
+### Features
+
+* Upgrade eslint to 5.x ([1655e2f](https://github.com/udemy/js-tooling/commit/1655e2f))
+
+
+### BREAKING CHANGES
+
+* Upgrade ESLint to ^5.9.0 and require node >=8.12.0 as an engine.
+
+
+
+
+ <a name="8.0.14"></a>
 ## [8.0.14](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@8.0.13...babel-preset-udemy-website@8.0.14) (2018-11-09)
 
 
@@ -14,7 +30,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-       <a name="8.0.13"></a>
+<a name="8.0.13"></a>
 ## [8.0.13](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@8.0.12...babel-preset-udemy-website@8.0.13) (2018-11-07)
 
 
