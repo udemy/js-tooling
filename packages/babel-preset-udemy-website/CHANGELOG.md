@@ -3,7 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
- <a name="8.0.13"></a>
+       <a name="8.0.14"></a>
+## [8.0.14](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@8.0.13...babel-preset-udemy-website@8.0.14) (2018-11-09)
+
+
+### Bug Fixes
+
+* Downgrade postcss-less to 1.1.5 ([6dc780b](https://github.com/udemy/js-tooling/commit/6dc780b))
+
+
+
+
+       <a name="8.0.13"></a>
 ## [8.0.13](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@8.0.12...babel-preset-udemy-website@8.0.13) (2018-11-07)
 
 
@@ -14,7 +25,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
- <a name="8.0.12"></a>
+<a name="8.0.12"></a>
 ## [8.0.12](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@8.0.11...babel-preset-udemy-website@8.0.12) (2018-11-06)
 
 
