@@ -32,7 +32,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-plugin-react-css-modules": "3.4.2",
-    "postcss-less": "^2.0.0"
+    "postcss-less": "^1.1.5"
   },
   "peerDependencies": {
     "@babel/core": "^7.1.2"
