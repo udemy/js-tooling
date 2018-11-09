@@ -3,7 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-       <a name="5.0.2"></a>
+ <a name="6.0.0"></a>
+# [6.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@5.0.2...eslint-config-udemy-react-addons@6.0.0) (2018-11-09)
+
+
+### Features
+
+* Upgrade eslint to 5.x ([1655e2f](https://github.com/udemy/js-tooling/commit/1655e2f))
+
+
+### BREAKING CHANGES
+
+* Upgrade ESLint to ^5.9.0 and require node >=8.12.0 as an engine.
+
+
+
+
+ <a name="5.0.2"></a>
 ## [5.0.2](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@5.0.1...eslint-config-udemy-react-addons@5.0.2) (2018-11-06)
 
 
@@ -14,7 +30,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-       <a name="5.0.1"></a>
+<a name="5.0.1"></a>
 ## [5.0.1](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@5.0.0...eslint-config-udemy-react-addons@5.0.1) (2018-11-06)
 
 
