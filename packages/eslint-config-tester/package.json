@@ -14,10 +14,10 @@
     "url": "https://github.com/udemy/js-tooling.git"
   },
   "peerDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^5.9.0"
   },
   "engines": {
-    "node": ">=8.9.1",
+    "node": ">=8.12.0",
     "yarn": "^1.9.4"
   }
 }
