@@ -110,7 +110,7 @@ module.exports = {
         {
             files: '**/*.spec.js',
             rules: {
-                'udemy/no-non-zero-settimeout': ['error', 'always'],
+                'udemy/no-settimeout': ['error', 'always'],
             },
         },
     ],
