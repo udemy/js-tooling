@@ -1,6 +1,6 @@
 # No then
 
-`udemy/no-then` rule checks for any uses of `then`
+`udemy/no-then` rule checks for any uses of `then` and suggests using await / async instead. As with a lot of rules in ESLint, there are valid times when you'll want to break this rule, but you can treat each such situation on a case-by-case basis by using eslint-disable-next-line.
 
 ## Rule details
 

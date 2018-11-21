@@ -21,13 +21,13 @@ ruleTester.run('no-then', rule, {
         {
             code: 'promise.then()',
             errors: [{
-                message: 'Found `then` used in a spec. Please use async / await instead.',
+                message: 'Found `then` usage. You should usually use async / await instead.',
             }],
         },
         {
             code: 'myfunc(arg).then()',
             errors: [{
-                message: 'Found `then` used in a spec. Please use async / await instead.',
+                message: 'Found `then` usage. You should usually use async / await instead.',
             }],
         },
     ],
