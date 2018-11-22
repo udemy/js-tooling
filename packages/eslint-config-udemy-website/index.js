@@ -122,7 +122,6 @@ module.exports = {
         UD: true,
         module: false,
         inject: false,
-        angular: false,
         gettext: false,
         ngettext: false,
         npgettext: false,
