@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udemy-website",
-  "version": "8.0.0",
+  "version": "8.0.1",
   "description": "Udemy Website's ESLint configuration",
   "main": "index.js",
   "author": {
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "eslint-config-udemy-babel-addons": "^4.0.0",
-    "eslint-config-udemy-basics": "^6.0.0",
+    "eslint-config-udemy-basics": "^6.0.1",
     "eslint-config-udemy-jasmine-addons": "^6.0.0",
     "eslint-config-udemy-react-addons": "^6.0.0",
     "eslint-import-resolver-webpack": "^0.10.1",

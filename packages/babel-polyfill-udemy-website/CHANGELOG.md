@@ -3,7 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
- <a name="8.0.0"></a>
+       <a name="8.0.1"></a>
+## [8.0.1](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@8.0.0...babel-polyfill-udemy-website@8.0.1) (2018-11-27)
+
+
+
+
+**Note:** Version bump only for package babel-polyfill-udemy-website
+
+       <a name="8.0.0"></a>
 # [8.0.0](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@7.0.12...babel-polyfill-udemy-website@8.0.0) (2018-11-09)
 
 
@@ -19,7 +27,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
- <a name="7.0.12"></a>
+<a name="7.0.12"></a>
 ## [7.0.12](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@7.0.11...babel-polyfill-udemy-website@7.0.12) (2018-11-06)
 
 
