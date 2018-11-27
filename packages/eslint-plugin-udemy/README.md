@@ -24,6 +24,7 @@ You can then add the rules provided by this plugin to your `rules` section.
 * [udemy/angular-path-based-module-names](rules/angular-path-based-module-names): Require `angular.module` name to match relative file path.
 * [udemy/no-function-prototype](rules/no-function-prototype): Prefer `_.noop` or `() => {}` over `Function.prototype`.
 * [udemy/no-settimeout](rules/no-settimeout): Prevent `setTimeout` usages.
+* [udemy/no-then](rules/no-then): Prevent `then` calls in favor of async / await.
 
 # Contributing
 
