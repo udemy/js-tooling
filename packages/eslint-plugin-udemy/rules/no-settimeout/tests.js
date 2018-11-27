@@ -17,61 +17,13 @@ ruleTester.run('no-settimeout', rule, {
         {
             code: 'setTimeout()',
             errors: [{
-                message: 'Found `setTimeout` used in a spec. Please use `await delay` instead.',
+                message: 'Found `setTimeout` called. Please use `await delay()` instead.',
             }],
         },
         {
-            code: 'setTimeout( function () {})',
+            code: 'window.setTimeout()',
             errors: [{
-                message: 'Found `setTimeout` used in a spec. Please use `await delay` instead.',
-            }],
-        },
-        {
-            code: 'setTimeout(function (val) { return val * 2 })',
-            errors: [{
-                message: 'Found `setTimeout` used in a spec. Please use `await delay` instead.',
-            }],
-        },
-        {
-            code: 'setTimeout(0)',
-            errors: [{
-                message: 'Found `setTimeout` used in a spec. Please use `await delay` instead.',
-            }],
-        },
-        {
-            code: 'setTimeout(function (val) {}, 0)',
-            errors: [{
-                message: 'Found `setTimeout` used in a spec. Please use `await delay` instead.',
-            }],
-        },
-        {
-            code: 'setTimeout(function (val) { return val * 2 }, 0)',
-            errors: [{
-                message: 'Found `setTimeout` used in a spec. Please use `await delay` instead.',
-            }],
-        },
-        {
-            code: 'setTimeout(100)',
-            errors: [{
-                message: 'Found `setTimeout` used in a spec. Please use `await delay` instead.',
-            }],
-        },
-        {
-            code: 'setTimeout(-100)',
-            errors: [{
-                message: 'Found `setTimeout` used in a spec. Please use `await delay` instead.',
-            }],
-        },
-        {
-            code: 'setTimeout(function (val) {}, 100)',
-            errors: [{
-                message: 'Found `setTimeout` used in a spec. Please use `await delay` instead.',
-            }],
-        },
-        {
-            code: 'setTimeout(function (val) { return val * 2 }, 100)',
-            errors: [{
-                message: 'Found `setTimeout` used in a spec. Please use `await delay` instead.',
+                message: 'Found `setTimeout` called. Please use `await delay()` instead.',
             }],
         },
     ],

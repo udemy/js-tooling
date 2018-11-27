@@ -1,6 +1,8 @@
 # No setTimeout
 
-`udemy/no-settimeout` rule checks for any uses of `window.setTimeout.
+`udemy/no-settimeout` rule checks for any uses of `window.setTimeout` and suggests the usage of `await delay()`.
+
+`delay` is a simple utility funtion which [wraps `setTimeout` in a promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises#Creating_a_Promise_around_an_old_callback_API). 
 
 ## Rule details
 
@@ -11,19 +13,7 @@ The following patterns are considered warnings:
 ```js
 setTimeout();
 
-setTimeout(function (val) { return val * 2 });
-
-setTimeout(0);
-
-setTimeout(function (val) {}, 0);
-
-setTimeout(100);
-
-setTimeout(-100);
-
-setTimeout(function (val) {}, 100);
-
-setTimeout(function (val) { return val * 2 }, 100);
+window.setTimeout();
 ```
 
 The following patterns are not considered warnings:
