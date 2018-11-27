@@ -23,7 +23,7 @@ You can then add the rules provided by this plugin to your `rules` section.
 * [udemy/import-blacklist](rules/import-blacklist): Blacklist certain imports in JS files.
 * [udemy/angular-path-based-module-names](rules/angular-path-based-module-names): Require `angular.module` name to match relative file path.
 * [udemy/no-function-prototype](rules/no-function-prototype): Prefer `_.noop` or `() => {}` over `Function.prototype`.
-* [udemy/no-non-zero-settimeout](rules/no-non-zero-settimeout): Prevent `setTimeout` usages with a non-zero delay value.
+* [udemy/no-settimeout](rules/no-settimeout): Prevent `setTimeout` usages.
 
 # Contributing
 
