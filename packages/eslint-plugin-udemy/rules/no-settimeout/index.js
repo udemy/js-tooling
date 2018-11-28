@@ -4,11 +4,12 @@ module.exports.rules = {
     'no-settimeout': {
         create(context) {
             return {
-                ExpressionStatement(node) {
-                    if (node.expression.callee && node.expression.callee.name === 'setTimeout') {
+                CallExpression(node) {
+                    if (node.callee && (node.callee.name === 'setTimeout' ||
+                        (node.callee.property && node.callee.property.name === 'setTimeout'))) {
                         context.report({
                             node,
-                            message: 'Found `setTimeout` used in a spec. Please use `await delay` instead.',
+                            message: 'Found `setTimeout` called. Please use `await delay()` instead.',
                         });
                     }
                 },
