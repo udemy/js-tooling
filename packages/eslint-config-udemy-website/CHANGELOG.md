@@ -3,7 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-       <a name="8.0.3"></a>
+ <a name="9.0.0"></a>
+# [9.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@8.0.3...eslint-config-udemy-website@9.0.0) (2018-12-05)
+
+
+### Features
+
+* Disalllow angular as a global keyword. ([177a98a](https://github.com/udemy/js-tooling/commit/177a98a))
+
+
+### BREAKING CHANGES
+
+* We no longer allow "angular" global keyword. Users need to `import angular from "angular";` in order to use `angular`.
+
+
+
+
+ <a name="8.0.3"></a>
 ## [8.0.3](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@8.0.2...eslint-config-udemy-website@8.0.3) (2018-11-28)
 
 
@@ -11,7 +27,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package eslint-config-udemy-website
 
-       <a name="8.0.2"></a>
+<a name="8.0.2"></a>
 ## [8.0.2](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@8.0.1...eslint-config-udemy-website@8.0.2) (2018-11-27)
 
 
