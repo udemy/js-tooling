@@ -3,7 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
- <a name="6.0.0"></a>
+       <a name="7.0.0"></a>
+# [7.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@6.0.0...eslint-config-udemy-react-addons@7.0.0) (2018-12-10)
+
+
+* Disallow JSX <img> tag. ([2f91708](https://github.com/udemy/js-tooling/commit/2f91708))
+
+
+### BREAKING CHANGES
+
+* We no longer allow `<img>` tag on JSX. Users need to rely on `<Image>` base component.
+
+
+
+
+       <a name="6.0.0"></a>
 # [6.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@5.0.2...eslint-config-udemy-react-addons@6.0.0) (2018-11-09)
 
 
@@ -19,7 +33,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
- <a name="5.0.2"></a>
+<a name="5.0.2"></a>
 ## [5.0.2](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@5.0.1...eslint-config-udemy-react-addons@5.0.2) (2018-11-06)
 
 
