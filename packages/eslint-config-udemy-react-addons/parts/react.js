@@ -5,6 +5,8 @@ module.exports = {
     rules: {
         // specify whether double or single quotes should be used in JSX attributes
         'jsx-quotes': ['error', 'prefer-double'],
+        // disallow <img> tags in JSX
+        'react/forbid-elements': ['error', { forbid: ['img'] }],
         // enforce boolean attributes notation in JSX
         'react/jsx-boolean-value': ['error', 'never'],
         // enforce or disallow spaces inside of curly braces in JSX attributes
