@@ -10,7 +10,10 @@ module.exports = {
         // enforce one true brace style
         'brace-style': ['error', '1tbs', { allowSingleLine: true }],
         // require camel case names
-        camelcase: ['error', { properties: 'never' }],
+        camelcase: ['error', {
+            properties: 'never',
+            allow: ['UNSAFE_componentWillMount', 'UNSAFE_componentWillReceiveProps', 'UNSAFE_componentWillUpdate'],
+        }],
         // allow trailing commas in multiline object literals
         'comma-dangle': ['error', 'always-multiline'],
         // enforce spacing after comma
