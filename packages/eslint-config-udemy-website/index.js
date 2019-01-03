@@ -121,7 +121,6 @@ module.exports = {
     globals: {
         UD: true,
         module: false,
-        inject: false,
         gettext: false,
         ngettext: false,
         npgettext: false,

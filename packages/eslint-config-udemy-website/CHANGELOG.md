@@ -3,7 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-       <a name="9.0.1"></a>
+ <a name="10.0.0"></a>
+# [10.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@9.0.1...eslint-config-udemy-website@10.0.0) (2019-01-03)
+
+
+### Bug Fixes
+
+* disallow inject as global ([139d514](https://github.com/udemy/js-tooling/commit/139d514))
+
+
+### BREAKING CHANGES
+
+* inject is no longer accepted as a global. previously, we accepted it in angularjs specs, but it is problematic because ESLint doesn't complain when we use inject from mobx without importing it. fix angularjs specs via `import mocks from 'angularMocks'; mocks.inject`.
+
+
+
+
+ <a name="9.0.1"></a>
 ## [9.0.1](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@9.0.0...eslint-config-udemy-website@9.0.1) (2018-12-10)
 
 
@@ -11,7 +27,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package eslint-config-udemy-website
 
-       <a name="9.0.0"></a>
+<a name="9.0.0"></a>
 # [9.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@8.0.3...eslint-config-udemy-website@9.0.0) (2018-12-05)
 
 
