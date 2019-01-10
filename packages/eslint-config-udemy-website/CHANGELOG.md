@@ -3,7 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
- <a name="10.0.0"></a>
+       <a name="10.1.0"></a>
+# [10.1.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@10.0.0...eslint-config-udemy-website@10.1.0) (2019-01-10)
+
+
+### Features
+
+* Add udemy/no-hardcoded-cdns ([daf4226](https://github.com/udemy/js-tooling/commit/daf4226))
+
+
+
+
+       <a name="10.0.0"></a>
 # [10.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@9.0.1...eslint-config-udemy-website@10.0.0) (2019-01-03)
 
 
@@ -19,7 +30,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
- <a name="9.0.1"></a>
+<a name="9.0.1"></a>
 ## [9.0.1](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@9.0.0...eslint-config-udemy-website@9.0.1) (2018-12-10)
 
 
