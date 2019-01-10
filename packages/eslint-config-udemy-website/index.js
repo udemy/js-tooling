@@ -104,6 +104,16 @@ module.exports = {
             },
         ]],
         'udemy/no-action-bound': ['error', 'always'],
+        'udemy/no-hardcoded-cdns': ['error', [
+            {
+                cdn: 'udemy-images.udemy.com',
+                fixWith: 'udLink.toS3Images()',
+            },
+            {
+                cdn: 's3.amazonaws.com/udemy-images',
+                fixWith: 'udLink.toS3Images()',
+            },
+        ]],
         'underscore/prefer-noop': ['error', 'always'],
     },
     overrides: [
