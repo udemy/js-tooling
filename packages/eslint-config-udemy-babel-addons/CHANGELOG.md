@@ -3,7 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-       <a name="5.0.0"></a>
+ <a name="6.0.0"></a>
+# [6.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-babel-addons@5.0.0...eslint-config-udemy-babel-addons@6.0.0) (2019-01-28)
+
+
+### Features
+
+* Add proper Prettier + ESLint testing in place. ([f60bfb1](https://github.com/udemy/js-tooling/commit/f60bfb1))
+
+
+### BREAKING CHANGES
+
+* Previously our `eslint --fix` was failing to fix certain cases. This has happened since I moved the `prettier` plugin next to the other plugins within this repositories. That configuration, unlike the initial setup, caused `prettier` to not be able to override the `rules` we explicitly set here. Hence, we needed to remove those explicit sets. I also integrated a test step that makes sure we won't mistakenly add any conflicting rules going forward.
+
+
+
+
+ <a name="5.0.0"></a>
 # [5.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-babel-addons@4.0.0...eslint-config-udemy-babel-addons@5.0.0) (2019-01-28)
 
 
@@ -19,7 +35,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-       <a name="4.0.0"></a>
+<a name="4.0.0"></a>
 # [4.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-babel-addons@3.0.2...eslint-config-udemy-babel-addons@4.0.0) (2018-11-09)
 
 
