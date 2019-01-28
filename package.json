@@ -13,7 +13,10 @@
     "url": "https://github.com/udemy/js-tooling.git"
   },
   "devDependencies": {
-    "lerna": "2.5.1"
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.9.0",
+    "lerna": "2.5.1",
+    "prettier": "^1.16.1"
   },
   "workspaces": [
     "packages/*"
@@ -24,6 +27,7 @@
   },
   "scripts": {
     "lint": "eslint ./",
-    "test": "lerna bootstrap && lerna run build && yarn run lint && node tests"
+    "lint-fix": "eslint ./ --fix",
+    "test": "lerna bootstrap && lerna run build && yarn lint && node tests"
   }
 }

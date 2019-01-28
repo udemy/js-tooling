@@ -14,6 +14,7 @@
     "url": "https://github.com/udemy/js-tooling.git"
   },
   "dependencies": {
+    "eslint-config-prettier": "^3.6.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.11.1"
   },

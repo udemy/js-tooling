@@ -17,8 +17,8 @@ module.exports = {
         // disallow initializing variables to undefined
         'no-undef-init': 'error',
         // disallow declaration of variables that are not used in the code
-        'no-unused-vars': ['error', { vars: 'local', args: 'after-used', ignoreRestSiblings: true }],
+        'no-unused-vars': ['error', {vars: 'local', args: 'after-used', ignoreRestSiblings: true}],
         // disallow use of variables before they are defined
-        'no-use-before-define': ['error', { functions: false, classes: false }],
+        'no-use-before-define': ['error', {functions: false, classes: false}],
     },
 };

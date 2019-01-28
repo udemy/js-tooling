@@ -3,35 +3,36 @@
 module.exports.rules = {
     'no-hardcoded-cdns': {
         meta: {
-            schema: [{
-                type: 'array',
-                items: {
-                    type: 'object',
-                    properties: {
-                        cdn: {
-                            type: 'string',
+            schema: [
+                {
+                    type: 'array',
+                    items: {
+                        type: 'object',
+                        properties: {
+                            cdn: {
+                                type: 'string',
+                            },
+                            fixWith: {
+                                type: 'string',
+                            },
                         },
-                        fixWith: {
-                            type: 'string',
-                        },
+                        required: ['cdn', 'fixWith'],
                     },
-                    required: ['cdn', 'fixWith'],
                 },
-            }],
+            ],
         },
         create(context) {
             const cdns = context.options[0] || [];
             const sourceCode = context.getSourceCode();
 
             function checkForCDNs(string, currentNode) {
-                cdns.forEach(({ cdn, fixWith }) => {
+                cdns.forEach(({cdn, fixWith}) => {
                     if (string.includes(cdn)) {
                         context.report({
                             node: currentNode,
-                            message: (
+                            message:
                                 `Please do not hardcode the CDN ${cdn}. ` +
-                                `Instead, build the url with ${fixWith}.`
-                            ),
+                                `Instead, build the url with ${fixWith}.`,
                         });
                     }
                 });

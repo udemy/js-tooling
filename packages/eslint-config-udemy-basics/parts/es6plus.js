@@ -12,7 +12,7 @@ module.exports = {
         // verify super() callings in constructors
         'constructor-super': 'error',
         // enforce the spacing around the * in generator functions
-        'generator-star-spacing': ['error', { before: false, after: true }],
+        'generator-star-spacing': ['error', {before: false, after: true}],
         // disallow modifying variables of class declarations
         'no-class-assign': 'error',
         // disallow modifying variables that are declared using const
@@ -34,7 +34,7 @@ module.exports = {
         // suggest using arrow functions as callbacks
         'prefer-arrow-callback': 'error',
         // suggest using of const declaration for variables that are never modified after declared
-        'prefer-const': ['error', { destructuring: 'all', ignoreReadBeforeAssign: false }],
+        'prefer-const': ['error', {destructuring: 'all', ignoreReadBeforeAssign: false}],
         // prefer destructuring from objects
         // 'prefer-destructuring': ['error', {array: false, object: true}, {enforceForRenamedProperties: false}],
         // disallow parseInt() in favor of binary, octal, and hexadecimal literals

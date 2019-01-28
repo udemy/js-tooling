@@ -8,7 +8,8 @@ module.exports.rules = {
                     if (node.property && node.property.name === 'then') {
                         context.report({
                             node,
-                            message: 'Found `then` usage. You should usually use async / await instead.',
+                            message:
+                                'Found `then` usage. You should usually use async / await instead.',
                         });
                     }
                 },

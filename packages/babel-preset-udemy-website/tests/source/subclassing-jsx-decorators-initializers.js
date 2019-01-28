@@ -17,9 +17,8 @@ export default class Class extends Component {
     render() {
         return (
             <div>
-                <Element store={ this.store } />
+                <Element store={this.store} />
             </div>
         );
     }
 }
-

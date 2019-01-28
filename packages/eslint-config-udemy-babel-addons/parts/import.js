@@ -1,9 +1,7 @@
 'use strict';
 
 module.exports = {
-    plugins: [
-        'import',
-    ],
+    plugins: ['import'],
     settings: {
         'import/extensions': ['.js', '.json'],
     },
@@ -15,7 +13,7 @@ module.exports = {
         // forbid CommonJS imports
         'import/no-commonjs': 'error',
         // ensure imports point to files / modules that can be resolved
-        'import/no-unresolved': ['error', { commonjs: true, amd: true }],
+        'import/no-unresolved': ['error', {commonjs: true, amd: true}],
         // disallow invalid exports, e.g. multiple defaults
         'import/export': 'error',
         // forbid import of modules using absolute paths

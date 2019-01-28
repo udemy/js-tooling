@@ -20,15 +20,19 @@ ruleTester.run('no-then', rule, {
     invalid: [
         {
             code: 'promise.then()',
-            errors: [{
-                message: 'Found `then` usage. You should usually use async / await instead.',
-            }],
+            errors: [
+                {
+                    message: 'Found `then` usage. You should usually use async / await instead.',
+                },
+            ],
         },
         {
             code: 'myfunc(arg).then()',
-            errors: [{
-                message: 'Found `then` usage. You should usually use async / await instead.',
-            }],
+            errors: [
+                {
+                    message: 'Found `then` usage. You should usually use async / await instead.',
+                },
+            ],
         },
     ],
 });
