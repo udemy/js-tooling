@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udemy-website",
-  "version": "11.0.0",
+  "version": "12.0.0",
   "description": "Udemy Website's ESLint configuration",
   "main": "index.js",
   "author": {
@@ -14,10 +14,10 @@
     "url": "https://github.com/udemy/js-tooling.git"
   },
   "dependencies": {
-    "eslint-config-udemy-babel-addons": "^5.0.0",
-    "eslint-config-udemy-basics": "^7.0.0",
-    "eslint-config-udemy-jasmine-addons": "^7.0.0",
-    "eslint-config-udemy-react-addons": "^8.0.0",
+    "eslint-config-udemy-babel-addons": "^6.0.0",
+    "eslint-config-udemy-basics": "^8.0.0",
+    "eslint-config-udemy-jasmine-addons": "^8.0.0",
+    "eslint-config-udemy-react-addons": "^9.0.0",
     "eslint-import-resolver-webpack": "^0.10.1",
     "eslint-plugin-filenames": "^1.3.2",
     "eslint-plugin-import": "^2.14.0",
@@ -33,6 +33,6 @@
     "yarn": "^1.9.4"
   },
   "devDependencies": {
-    "eslint-config-tester": "^2.0.0"
+    "eslint-config-tester": "^3.0.0"
   }
 }

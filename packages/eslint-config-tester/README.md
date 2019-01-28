@@ -29,6 +29,10 @@ const path = require('path');
 const pathToEslintConfig = path.resolve(__dirname, 'index.js');
 const jsSnippetToTest = "const hello = 'world';\nexport default hello;\n";
 
+eslintConfigTester.prettierCheck(
+    pathToYourEslintConfig,
+);
+
 eslintConfigTester.runOnText(
     pathToYourEslintConfig,
     jsSnippetToTest
