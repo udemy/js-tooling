@@ -3,7 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-       <a name="10.1.0"></a>
+ <a name="11.0.0"></a>
+# [11.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@9.0.1...eslint-config-udemy-website@11.0.0) (2019-01-28)
+
+
+### Bug Fixes
+
+* disallow inject as global ([139d514](https://github.com/udemy/js-tooling/commit/139d514))
+
+
+### Features
+
+* Add Prettier to ESLInt configuration. ([c648b1d](https://github.com/udemy/js-tooling/commit/c648b1d))
+* Add udemy/no-hardcoded-cdns ([daf4226](https://github.com/udemy/js-tooling/commit/daf4226))
+
+
+### BREAKING CHANGES
+
+* Prettier has its own way of formatting the code. Some of the ESLint rules is replaced and your ESLint run would fail after this upgrade.
+* inject is no longer accepted as a global. previously, we accepted it in angularjs specs, but it is problematic because ESLint doesn't complain when we use inject from mobx without importing it. fix angularjs specs via `import mocks from 'angularMocks'; mocks.inject`.
+
+
+
+
+ <a name="10.1.0"></a>
 # [10.1.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@10.0.0...eslint-config-udemy-website@10.1.0) (2019-01-10)
 
 
@@ -14,7 +37,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-       <a name="10.0.0"></a>
+<a name="10.0.0"></a>
 # [10.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@9.0.1...eslint-config-udemy-website@10.0.0) (2019-01-03)
 
 

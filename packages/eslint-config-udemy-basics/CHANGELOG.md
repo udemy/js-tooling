@@ -3,7 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-       <a name="6.0.4"></a>
+ <a name="7.0.0"></a>
+# [7.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@6.0.3...eslint-config-udemy-basics@7.0.0) (2019-01-28)
+
+
+### Features
+
+* Add Prettier to ESLInt configuration. ([c648b1d](https://github.com/udemy/js-tooling/commit/c648b1d))
+
+
+### BREAKING CHANGES
+
+* Prettier has its own way of formatting the code. Some of the ESLint rules is replaced and your ESLint run would fail after this upgrade.
+
+
+
+
+ <a name="6.0.4"></a>
 ## [6.0.4](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@6.0.3...eslint-config-udemy-basics@6.0.4) (2019-01-10)
 
 
@@ -11,7 +27,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package eslint-config-udemy-basics
 
-       <a name="6.0.3"></a>
+<a name="6.0.3"></a>
 ## [6.0.3](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@6.0.2...eslint-config-udemy-basics@6.0.3) (2018-11-28)
 
 
