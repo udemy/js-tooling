@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udemy-basics",
-  "version": "6.0.4",
+  "version": "7.0.0",
   "description": "Udemy's Base ESLint configuration",
   "main": "index.js",
   "author": {
@@ -20,7 +20,7 @@
     "eslint-plugin-import-order-alphabetical": "^0.0.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-udemy": "^8.1.0"
+    "eslint-plugin-udemy": "^9.0.0"
   },
   "peerDependencies": {
     "babel-eslint": "^10.0.1",
@@ -32,6 +32,6 @@
     "yarn": "^1.9.4"
   },
   "devDependencies": {
-    "eslint-config-tester": "^1.0.0"
+    "eslint-config-tester": "^2.0.0"
   }
 }

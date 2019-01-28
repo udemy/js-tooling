@@ -3,7 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-       <a name="8.0.7"></a>
+ <a name="9.0.0"></a>
+# [9.0.0](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@8.0.5...babel-polyfill-udemy-website@9.0.0) (2019-01-28)
+
+
+### Features
+
+* Add Prettier to ESLInt configuration. ([c648b1d](https://github.com/udemy/js-tooling/commit/c648b1d))
+
+
+### BREAKING CHANGES
+
+* Prettier has its own way of formatting the code. Some of the ESLint rules is replaced and your ESLint run would fail after this upgrade.
+
+
+
+
+ <a name="8.0.7"></a>
 ## [8.0.7](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@8.0.6...babel-polyfill-udemy-website@8.0.7) (2019-01-10)
 
 
@@ -11,7 +27,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package babel-polyfill-udemy-website
 
-       <a name="8.0.6"></a>
+<a name="8.0.6"></a>
 ## [8.0.6](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@8.0.5...babel-polyfill-udemy-website@8.0.6) (2019-01-03)
 
 
