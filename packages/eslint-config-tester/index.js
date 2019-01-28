@@ -2,6 +2,7 @@
 
 const assert = require('assert');
 const eslint = require('eslint');
+const prettierCheck = require('eslint-config-prettier/bin/cli');
 
 module.exports = {
     runOnText(configFile, text) {
@@ -15,5 +16,13 @@ module.exports = {
             0,
             `Should have no errors but had ${errorCount}:\n${formatter(report.results)}`,
         );
+    },
+    prettierCheck(configFile) {
+        const cli = new eslint.CLIEngine({configFile});
+        const result = prettierCheck.processString(
+            JSON.stringify(cli.getConfigForFile('a-random/path.js')),
+        );
+
+        assert.strictEqual(result.code, 0, result.stderr || result.stdout);
     },
 };

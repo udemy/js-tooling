@@ -1,11 +1,7 @@
 'use strict';
 
 module.exports = {
-    extends: ['prettier'],
-    plugins: ['prettier'],
-    rules: {
-        'prettier/prettier': 'error',
-    },
+    extends: ['plugin:prettier/recommended'],
     parserOptions: {
         ecmaVersion: 2017,
     },

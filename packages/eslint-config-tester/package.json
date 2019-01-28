@@ -13,8 +13,9 @@
     "type": "git",
     "url": "https://github.com/udemy/js-tooling.git"
   },
-  "peerDependencies": {
-    "eslint": "^5.9.0"
+  "dependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.6.0"
   },
   "engines": {
     "node": ">=8.12.0",

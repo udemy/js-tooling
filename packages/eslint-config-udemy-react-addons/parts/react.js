@@ -3,14 +3,10 @@
 module.exports = {
     plugins: ['react'],
     rules: {
-        // specify whether double or single quotes should be used in JSX attributes
-        'jsx-quotes': ['error', 'prefer-double'],
         // disallow <img> tags in JSX
         'react/forbid-elements': ['error', {forbid: ['img']}],
         // enforce boolean attributes notation in JSX
         'react/jsx-boolean-value': ['error', 'never'],
-        // enforce or disallow spaces inside of curly braces in JSX attributes
-        'react/jsx-curly-spacing': ['error', {when: 'always', children: true}],
         // prevent usage of .bind() in JSX props
         'react/jsx-no-bind': [
             'error',
@@ -24,8 +20,6 @@ module.exports = {
         'react/jsx-no-undef': 'error',
         // enforce PascalCase for user-defined JSX components
         'react/jsx-pascal-case': ['error', {allowAllCaps: true, ignore: []}],
-        // enforce spaces before the closing bracket of self-closing JSX elements
-        'react/jsx-tag-spacing': ['error', {beforeSelfClosing: 'always'}],
         // prevent React to be incorrectly marked as unused
         'react/jsx-uses-react': 'error',
         // prevent variables used in JSX to be incorrectly marked as unused
@@ -69,12 +63,6 @@ module.exports = {
         'react/sort-comp': 'error',
         // enforce style prop value being an object
         'react/style-prop-object': 'error',
-        // prevent missing parentheses around multilines JSX
-        'react/jsx-wrap-multilines': ['error', {declaration: true, assignment: true, return: true}],
-        // enforce spacing around jsx equals signs
-        'react/jsx-equals-spacing': ['error', 'never'],
-        // enforce JSX indentation
-        'react/jsx-indent': ['error', 4],
         // disallow target="_blank" on links
         'react/jsx-no-target-blank': 'error',
         // only .jsx files may have JSX
