@@ -31,17 +31,21 @@ ruleTester.run('no-action-bound', rule, {
             code: `class myClass {
                        @action.bound mymethod() { return true; }
                    }`,
-            errors: [{
-                message: 'Avoid using `@action.bound`; instead use `@autobind @action`.',
-            }],
+            errors: [
+                {
+                    message: 'Avoid using `@action.bound`; instead use `@autobind @action`.',
+                },
+            ],
         },
         {
             code: `class myClass {
                        @observer @action.bound mymethod() { return true; }
                    }`,
-            errors: [{
-                message: 'Avoid using `@action.bound`; instead use `@autobind @action`.',
-            }],
+            errors: [
+                {
+                    message: 'Avoid using `@action.bound`; instead use `@autobind @action`.',
+                },
+            ],
         },
     ],
 });

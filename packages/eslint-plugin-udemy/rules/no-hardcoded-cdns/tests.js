@@ -11,12 +11,14 @@ const ruleTester = new RuleTester({
     },
 });
 
-const options = [[
-    {
-        cdn: 'udemy-images.udemy.com',
-        fixWith: 'udLink.toS3Images()',
-    },
-]];
+const options = [
+    [
+        {
+            cdn: 'udemy-images.udemy.com',
+            fixWith: 'udLink.toS3Images()',
+        },
+    ],
+];
 
 ruleTester.run('no-hardcoded-cdns', rule, {
     valid: [
@@ -32,13 +34,23 @@ ruleTester.run('no-hardcoded-cdns', rule, {
     invalid: [
         {
             code: "'https://udemy-images.udemy.com/user/123/foo.png'",
-            errors: [{ message: 'Please do not hardcode the CDN udemy-images.udemy.com. Instead, build the url with udLink.toS3Images().' }],
+            errors: [
+                {
+                    message:
+                        'Please do not hardcode the CDN udemy-images.udemy.com. Instead, build the url with udLink.toS3Images().',
+                },
+            ],
             options,
         },
         {
             // eslint-disable-next-line no-template-curly-in-string
             code: '`https://udemy-images.udemy.com/user/${user.id}/foo.png`',
-            errors: [{ message: 'Please do not hardcode the CDN udemy-images.udemy.com. Instead, build the url with udLink.toS3Images().' }],
+            errors: [
+                {
+                    message:
+                        'Please do not hardcode the CDN udemy-images.udemy.com. Instead, build the url with udLink.toS3Images().',
+                },
+            ],
             options,
         },
     ],

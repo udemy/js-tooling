@@ -38,10 +38,13 @@ ruleTester.run('no-function-prototype', rule, {
     invalid: [
         {
             code: 'x = Function.prototype',
-            errors: [{
-                message: 'Avoid using `Function.prototype`; instead use `_.noop` from Underscore.js, ' +
-                'or `_.noop` from Lodash, or () => {} otherwise.',
-            }],
+            errors: [
+                {
+                    message:
+                        'Avoid using `Function.prototype`; instead use `_.noop` from Underscore.js, ' +
+                        'or `_.noop` from Lodash, or () => {} otherwise.',
+                },
+            ],
         },
     ],
 });

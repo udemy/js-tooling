@@ -1,10 +1,11 @@
 'use strict';
 
 module.exports = {
-    plugins: [
-        'filenames',
-    ],
+    plugins: ['filenames'],
     rules: {
-        'filenames/match-regex': ['error', '^(?:\\.eslintrc|Gruntfile|[a-z0-9\\-]+)$'],
+        'filenames/match-regex': [
+            'error',
+            '^(?:\\.eslintrc|Gruntfile|prettier.config|[a-z0-9\\-]+)$',
+        ],
     },
 };

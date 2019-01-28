@@ -9,30 +9,32 @@ function interpolate(string, matches) {
 module.exports.rules = {
     'import-blacklist': {
         meta: {
-            schema: [{
-                type: 'array',
-                items: {
-                    type: 'object',
-                    properties: {
-                        source: {
-                            type: 'string',
-                        },
-                        specifier: {
-                            type: 'string',
-                        },
-                        message: {
-                            type: 'string',
-                        },
-                        exceptions: {
-                            type: 'array',
-                            items: {
+            schema: [
+                {
+                    type: 'array',
+                    items: {
+                        type: 'object',
+                        properties: {
+                            source: {
                                 type: 'string',
                             },
+                            specifier: {
+                                type: 'string',
+                            },
+                            message: {
+                                type: 'string',
+                            },
+                            exceptions: {
+                                type: 'array',
+                                items: {
+                                    type: 'string',
+                                },
+                            },
                         },
+                        required: ['source', 'message'],
                     },
-                    required: ['source', 'message'],
                 },
-            }],
+            ],
         },
         create: function create(context) {
             const blacklist = context.options[0] || [];
@@ -48,19 +50,23 @@ module.exports.rules = {
                             return;
                         }
 
-                        const sourceMatches = (node.source.value || '')
-                            .match(new RegExp(rule.source));
+                        const sourceMatches = (node.source.value || '').match(
+                            new RegExp(rule.source),
+                        );
                         let isBlacklisted = !!sourceMatches;
                         let specifierMatches = null;
                         if (rule.specifier) {
-                            isBlacklisted = isBlacklisted && node.specifiers.some(specifier => {
-                                if (!specifier.imported) {
-                                    return false;
-                                }
-                                specifierMatches = (specifier.imported.name || '')
-                                    .match(new RegExp(rule.specifier));
-                                return !!specifierMatches;
-                            });
+                            isBlacklisted =
+                                isBlacklisted &&
+                                node.specifiers.some(specifier => {
+                                    if (!specifier.imported) {
+                                        return false;
+                                    }
+                                    specifierMatches = (specifier.imported.name || '').match(
+                                        new RegExp(rule.specifier),
+                                    );
+                                    return !!specifierMatches;
+                                });
                         }
                         if (isBlacklisted) {
                             let matchedGroups = [];

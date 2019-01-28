@@ -2,8 +2,7 @@ Udemy Basic ESLint Config
 =========================
 
 This configuration provides a basis for any ES2015 JavaScript code developed at Udemy. 
-It is mainly used by [`udemy/website-django/axe`](https://github.com/udemy/website-django/tree/master/axe/.eslintrc.js) 
-and [`udemy/website-django/e2e`](https://github.com/udemy/website-django/tree/master/e2e/.eslintrc.js).
+It is mainly used by [`udemy/website-django/e2e`](https://github.com/udemy/website-django/tree/master/e2e/.eslintrc.js).
 
 # Installation
 

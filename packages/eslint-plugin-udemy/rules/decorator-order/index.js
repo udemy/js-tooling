@@ -6,7 +6,9 @@ module.exports.rules = {
             return {
                 MethodDefinition(node) {
                     const decorators = node.decorators;
-                    if (!decorators) { return; }
+                    if (!decorators) {
+                        return;
+                    }
                     const decoratorNames = decorators.map(d => d.expression.name);
                     const bi = decoratorNames.indexOf('autobind');
                     const ci = decoratorNames.indexOf('action');
@@ -20,7 +22,9 @@ module.exports.rules = {
                 },
                 ClassDeclaration(node) {
                     const decorators = node.decorators;
-                    if (!decorators) { return; }
+                    if (!decorators) {
+                        return;
+                    }
                     const decoratorNames = decorators.map(d => d.expression.name);
                     const oi = decoratorNames.indexOf('observer');
                     if (oi >= 0 && oi < decorators.length - 1) {

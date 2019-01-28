@@ -16,15 +16,19 @@ ruleTester.run('no-settimeout', rule, {
     invalid: [
         {
             code: 'setTimeout()',
-            errors: [{
-                message: 'Found `setTimeout` called. Please use `await delay()` instead.',
-            }],
+            errors: [
+                {
+                    message: 'Found `setTimeout` called. Please use `await delay()` instead.',
+                },
+            ],
         },
         {
             code: 'window.setTimeout()',
-            errors: [{
-                message: 'Found `setTimeout` called. Please use `await delay()` instead.',
-            }],
+            errors: [
+                {
+                    message: 'Found `setTimeout` called. Please use `await delay()` instead.',
+                },
+            ],
         },
     ],
 });

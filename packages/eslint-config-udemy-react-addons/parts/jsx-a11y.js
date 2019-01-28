@@ -18,7 +18,10 @@ module.exports = {
         // ensure <hX> tags have content and are not aria-hidden
         'jsx-a11y/heading-has-content': 'error',
         // disallow href "#"
-        'jsx-a11y/anchor-is-valid': ['error', { aspects: ['invalidHref'], components: ['Link'], specialLink: ['to'] }],
+        'jsx-a11y/anchor-is-valid': [
+            'error',
+            {aspects: ['invalidHref'], components: ['Link'], specialLink: ['to']},
+        ],
         // require HTML elements to have a "lang" prop
         'jsx-a11y/html-has-lang': 'error',
         // enforce iframe elements have a title attribute
@@ -42,7 +45,7 @@ module.exports = {
         // enforce that visible elements with onClick handlers must be focusable. Visible means that it is not hidden from a screen reader
         'jsx-a11y/interactive-supports-focus': 'error',
         // enforce visible, non-interactive elements with click handlers use role attribute
-        'jsx-a11y/no-static-element-interactions': ['error', { handlers: ['onClick'] }],
+        'jsx-a11y/no-static-element-interactions': ['error', {handlers: ['onClick']}],
         // enforce that elements with ARIA roles must have all required attributes for that role
         'jsx-a11y/role-has-required-aria-props': 'error',
         // enforce that elements with explicit or implicit roles defined contain only aria-* properties supported by that role

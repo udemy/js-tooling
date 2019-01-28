@@ -7,9 +7,7 @@ module.exports = {
             legacyDecorators: true,
         },
     },
-    plugins: [
-        'babel',
-    ],
+    plugins: ['babel'],
     rules: {
         // require use of semicolons, includes class properties
         'babel/semi': ['error', 'always'],

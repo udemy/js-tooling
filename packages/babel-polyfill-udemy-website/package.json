@@ -21,7 +21,8 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.9.0",
     "eslint-config-udemy-basics": "^6.0.4",
-    "eslint-config-udemy-website": "^10.1.0"
+    "eslint-config-udemy-website": "^10.1.0",
+    "prettier": "^1.16.1"
   },
   "dependencies": {
     "@babel/cli": "^7.1.2",

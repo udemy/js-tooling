@@ -39,24 +39,32 @@ ruleTester.run('match-their-paths', rule, {
     invalid: [
         {
             code: 'angular.module("bar/foo")',
-            errors: [{ message: 'Angular module name must match file\'s relative path: `foo/bar`' }],
+            errors: [{message: "Angular module name must match file's relative path: `foo/bar`"}],
             filename: filename1,
             settings,
         },
         {
             code: 'angular.module("foo/bar")',
-            errors: [{ message: 'Angular module name must match file\'s relative path: `bar/foo`' }],
+            errors: [{message: "Angular module name must match file's relative path: `bar/foo`"}],
             filename: filename2,
             settings,
         },
         {
             code: 'angular.module("bar/foo")',
-            errors: [{ message: `Angular module name must match file's relative path: \`${relativePath}/foo/bar\`` }],
+            errors: [
+                {
+                    message: `Angular module name must match file's relative path: \`${relativePath}/foo/bar\``,
+                },
+            ],
             filename: filename1,
         },
         {
             code: 'angular.module("foo/bar")',
-            errors: [{ message: `Angular module name must match file's relative path: \`${relativePath}/bar/foo\`` }],
+            errors: [
+                {
+                    message: `Angular module name must match file's relative path: \`${relativePath}/bar/foo\``,
+                },
+            ],
             filename: filename2,
         },
     ],

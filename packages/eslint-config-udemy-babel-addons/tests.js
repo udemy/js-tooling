@@ -9,5 +9,5 @@ console.log('test eslint-config-udemy-babel-addons');
 eslintConfigTester.runOnText(
     path.resolve(__dirname, 'index.js'),
     // This is a minimal JS code, just to make sure config has no errors.
-    "const hello = 'world';\nexport default hello;\n"
+    "const hello = 'world';\nexport default hello;\n",
 );

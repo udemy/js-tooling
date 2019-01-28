@@ -1,6 +1,6 @@
 import '@babel/polyfill';
 
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 import baseStyles from './css-modules.global.less';
 import styles from './css-modules.less';
@@ -13,9 +13,7 @@ export default class CssModules extends Component {
         // for baseStyles as it will for styles since I'm doing a dynamic styleName.
         return (
             <div className="colorful" styleName="styles.greeting">
-                <span styleName={ 'baseStyles.colorful' }>
-                    Hello World!
-                </span>
+                <span styleName={'baseStyles.colorful'}>Hello World!</span>
             </div>
         );
     }

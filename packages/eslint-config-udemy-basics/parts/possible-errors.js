@@ -11,7 +11,7 @@ module.exports = {
         // disallow use of console
         'no-console': 'error',
         // disallow constant expressions in conditions
-        'no-constant-condition': ['error', { checkLoops: false }],
+        'no-constant-condition': ['error', {checkLoops: false}],
         // disallow control characters in regular expressions
         'no-control-regex': 'error',
         // disallow use of debugger

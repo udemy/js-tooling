@@ -19,7 +19,7 @@ module.exports = {
         // disallow lexical declarations in case/default clauses
         'no-case-declarations': 'error',
         // disallow empty functions, except for standalone funcs/arrows
-        'no-empty-function': ['error', { allow: ['arrowFunctions', 'functions', 'methods'] }],
+        'no-empty-function': ['error', {allow: ['arrowFunctions', 'functions', 'methods']}],
         // disallow empty destructuring patterns
         'no-empty-pattern': 'error',
         // disallow comparisons to null without a type-checking operator
@@ -43,7 +43,7 @@ module.exports = {
         // disallow usage of __iterator__ property
         'no-iterator': 'error',
         // disallow use of labels for anything other then loops and switches
-        'no-labels': ['error', { allowLoop: false, allowSwitch: false }],
+        'no-labels': ['error', {allowLoop: false, allowSwitch: false}],
         // disallow unnecessary nested blocks
         'no-lone-blocks': 'error',
         // disallow function declarations and expressions inside loop statements
@@ -87,7 +87,7 @@ module.exports = {
         // restrict what can be thrown as an exception
         'no-throw-literal': 'error',
         // disallow usage of expressions in statement position
-        'no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true }],
+        'no-unused-expressions': ['error', {allowShortCircuit: true, allowTernary: true}],
         // disallow unused labels
         'no-unused-labels': 'error',
         // disallow useless string concatenation
