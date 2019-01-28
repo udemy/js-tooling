@@ -3,7 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-       <a name="8.0.0"></a>
+ <a name="8.0.1"></a>
+## [8.0.1](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@8.0.0...eslint-config-udemy-basics@8.0.1) (2019-01-28)
+
+
+### Bug Fixes
+
+* Add `eslint-config-prettier` import back. ([178373f](https://github.com/udemy/js-tooling/commit/178373f))
+
+
+
+
+ <a name="8.0.0"></a>
 # [8.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@7.0.0...eslint-config-udemy-basics@8.0.0) (2019-01-28)
 
 
@@ -19,7 +30,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-       <a name="7.0.0"></a>
+<a name="7.0.0"></a>
 # [7.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@6.0.3...eslint-config-udemy-basics@7.0.0) (2019-01-28)
 
 
