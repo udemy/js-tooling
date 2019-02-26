@@ -6,7 +6,7 @@ module.exports = {
         // disallow <img> tags in JSX
         'react/forbid-elements': ['error', {forbid: ['img']}],
         // enforce boolean attributes notation in JSX
-        'react/jsx-boolean-value': ['error', 'never'],
+        'react/jsx-boolean-value': ['error', 'always'],
         // prevent usage of .bind() in JSX props
         'react/jsx-no-bind': [
             'error',
