@@ -3,7 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-       <a name="9.0.0"></a>
+ <a name="10.0.0"></a>
+# [10.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@9.0.0...eslint-config-udemy-react-addons@10.0.0) (2019-02-28)
+
+
+### Bug Fixes
+
+* react/jsx-boolean-value - put "always" option instead of "never". ([9630e3a](https://github.com/udemy/js-tooling/commit/9630e3a))
+
+
+### BREAKING CHANGES
+
+* explicit true is now required for boolean prop values.
+
+
+
+
+ <a name="9.0.0"></a>
 # [9.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@8.0.0...eslint-config-udemy-react-addons@9.0.0) (2019-01-28)
 
 
@@ -19,7 +35,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-       <a name="8.0.0"></a>
+<a name="8.0.0"></a>
 # [8.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@7.0.0...eslint-config-udemy-react-addons@8.0.0) (2019-01-28)
 
 
