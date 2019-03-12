@@ -41,32 +41,45 @@ process.argv.forEach(val => {
 // eslint-disable-next-line no-console
 console.log('test babel-preset-udemy-website');
 
-fs.readdirSync(join(__dirname, 'tests/source'))
-    .filter(name => name.endsWith('.js'))
-    .forEach(name => {
-        const result = babel.transformFileSync(join(__dirname, 'tests/source', name), preset())
-            .code;
-        const expected = fs.readFileSync(join(__dirname, 'tests/result', name), {
-            encoding: 'UTF-8',
-        });
-
-        // eslint-disable-next-line no-console
-        console.log(`\tcheck ${name}`);
-
-        if (verbose && result.trim() !== expected.trim()) {
-            /* eslint-disable no-console */
-            console.log('===== expected =====');
-            console.log(expected);
-            console.log('===== result =====');
-            console.log(result);
-            /* eslint-enable no-console */
-        }
-
-        if (mode === MODE.TEST) {
-            assert.equal(result.trim(), expected.trim());
-        } else if (mode === MODE.UPDATE) {
-            fs.writeFileSync(join(__dirname, 'tests/result', name), `${result}\n`, {
+const environments = ['legacy', 'modern'];
+const testEnvironment = environment => {
+    fs.readdirSync(join(__dirname, 'tests/source'))
+        .filter(name => name.endsWith('.js'))
+        .forEach(name => {
+            const result = babel.transformFileSync(
+                join(__dirname, 'tests/source', name),
+                preset(babel, {environment}),
+            ).code;
+            const expected = fs.readFileSync(join(__dirname, 'tests/result', environment, name), {
                 encoding: 'UTF-8',
             });
-        }
-    });
+
+            // eslint-disable-next-line no-console
+            console.log(`\tcheck ${name} -- ${environment}`);
+
+            if (verbose && result.trim() !== expected.trim()) {
+                /* eslint-disable no-console */
+                console.log('===== expected =====');
+                console.log(expected);
+                console.log('===== result =====');
+                console.log(result);
+                /* eslint-enable no-console */
+            }
+
+            if (mode === MODE.TEST) {
+                assert.equal(result.trim(), expected.trim());
+            } else if (mode === MODE.UPDATE) {
+                fs.writeFileSync(
+                    join(__dirname, 'tests/result', environment, name),
+                    `${result}\n`,
+                    {
+                        encoding: 'UTF-8',
+                    },
+                );
+            }
+        });
+};
+
+environments.forEach(e => {
+    testEnvironment(e);
+});
