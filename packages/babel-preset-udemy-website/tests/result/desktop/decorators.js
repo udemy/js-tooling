@@ -8,9 +8,7 @@ import "core-js/modules/es6.array.from";
 import "core-js/modules/es7.array.includes";
 import "core-js/modules/es6.array.iterator";
 import "core-js/modules/es6.array.of";
-import "core-js/modules/es6.array.sort";
 import "core-js/modules/es6.array.species";
-import "core-js/modules/es6.date.to-json";
 import "core-js/modules/es6.date.to-primitive";
 import "core-js/modules/es6.function.has-instance";
 import "core-js/modules/es6.function.name";
@@ -60,7 +58,6 @@ import "core-js/modules/es6.object.is-sealed";
 import "core-js/modules/es6.object.is-extensible";
 import "core-js/modules/es6.object.keys";
 import "core-js/modules/es6.object.seal";
-import "core-js/modules/es6.object.set-prototype-of";
 import "core-js/modules/es7.object.values";
 import "core-js/modules/es6.promise";
 import "core-js/modules/es7.promise.finally";
@@ -127,10 +124,12 @@ import "core-js/modules/web.immediate";
 import "core-js/modules/web.dom.iterable";
 import "regenerator-runtime/runtime";
 
-function f() {
-  return import('./arrows').then(function () {
-    return undefined;
-  });
-}
+var _class;
 
-export default f();
+import someDecorator from 'some-decorator';
+
+var SomeClass = someDecorator(_class = function SomeClass() {
+  babelHelpers.classCallCheck(this, SomeClass);
+}) || _class;
+
+export { SomeClass as default };

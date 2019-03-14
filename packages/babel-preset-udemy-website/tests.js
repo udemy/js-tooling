@@ -41,32 +41,41 @@ process.argv.forEach(val => {
 // eslint-disable-next-line no-console
 console.log('test babel-preset-udemy-website');
 
-fs.readdirSync(join(__dirname, 'tests/source'))
-    .filter(name => name.endsWith('.js'))
-    .forEach(name => {
-        const result = babel.transformFileSync(join(__dirname, 'tests/source', name), preset())
-            .code;
-        const expected = fs.readFileSync(join(__dirname, 'tests/result', name), {
-            encoding: 'UTF-8',
-        });
-
-        // eslint-disable-next-line no-console
-        console.log(`\tcheck ${name}`);
-
-        if (verbose && result.trim() !== expected.trim()) {
-            /* eslint-disable no-console */
-            console.log('===== expected =====');
-            console.log(expected);
-            console.log('===== result =====');
-            console.log(result);
-            /* eslint-enable no-console */
-        }
-
-        if (mode === MODE.TEST) {
-            assert.equal(result.trim(), expected.trim());
-        } else if (mode === MODE.UPDATE) {
-            fs.writeFileSync(join(__dirname, 'tests/result', name), `${result}\n`, {
+const devices = ['desktop', 'mobile'];
+const testDevice = device => {
+    fs.readdirSync(join(__dirname, 'tests/source'))
+        .filter(name => name.endsWith('.js'))
+        .forEach(name => {
+            const result = babel.transformFileSync(
+                join(__dirname, 'tests/source', name),
+                preset(babel, {device}),
+            ).code;
+            const expected = fs.readFileSync(join(__dirname, 'tests/result', device, name), {
                 encoding: 'UTF-8',
             });
-        }
-    });
+
+            // eslint-disable-next-line no-console
+            console.log(`\tcheck ${name} -- ${device}`);
+
+            if (verbose && result.trim() !== expected.trim()) {
+                /* eslint-disable no-console */
+                console.log('===== expected =====');
+                console.log(expected);
+                console.log('===== result =====');
+                console.log(result);
+                /* eslint-enable no-console */
+            }
+
+            if (mode === MODE.TEST) {
+                assert.equal(result.trim(), expected.trim());
+            } else if (mode === MODE.UPDATE) {
+                fs.writeFileSync(join(__dirname, 'tests/result', device, name), `${result}\n`, {
+                    encoding: 'UTF-8',
+                });
+            }
+        });
+};
+
+devices.forEach(e => {
+    testDevice(e);
+});

@@ -8,9 +8,7 @@ import "core-js/modules/es6.array.from";
 import "core-js/modules/es7.array.includes";
 import "core-js/modules/es6.array.iterator";
 import "core-js/modules/es6.array.of";
-import "core-js/modules/es6.array.sort";
 import "core-js/modules/es6.array.species";
-import "core-js/modules/es6.date.to-json";
 import "core-js/modules/es6.date.to-primitive";
 import "core-js/modules/es6.function.has-instance";
 import "core-js/modules/es6.function.name";
@@ -60,7 +58,6 @@ import "core-js/modules/es6.object.is-sealed";
 import "core-js/modules/es6.object.is-extensible";
 import "core-js/modules/es6.object.keys";
 import "core-js/modules/es6.object.seal";
-import "core-js/modules/es6.object.set-prototype-of";
 import "core-js/modules/es7.object.values";
 import "core-js/modules/es6.promise";
 import "core-js/modules/es7.promise.finally";
@@ -126,13 +123,33 @@ import "core-js/modules/web.timers";
 import "core-js/modules/web.immediate";
 import "core-js/modules/web.dom.iterable";
 import "regenerator-runtime/runtime";
+var array = new Array(1e3).fill(1);
+var counter = 0;
+var _iteratorNormalCompletion = true;
+var _didIteratorError = false;
+var _iteratorError = undefined;
 
-var _class;
+try {
+  for (var _iterator = array.entries()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+    var _step$value = babelHelpers.slicedToArray(_step.value, 2),
+        i = _step$value[0],
+        val = _step$value[1];
 
-import someDecorator from 'some-decorator';
+    counter += i + val;
+  }
+} catch (err) {
+  _didIteratorError = true;
+  _iteratorError = err;
+} finally {
+  try {
+    if (!_iteratorNormalCompletion && _iterator.return != null) {
+      _iterator.return();
+    }
+  } finally {
+    if (_didIteratorError) {
+      throw _iteratorError;
+    }
+  }
+}
 
-var SomeClass = someDecorator(_class = function SomeClass() {
-  babelHelpers.classCallCheck(this, SomeClass);
-}) || _class;
-
-export { SomeClass as default };
+export default counter;
