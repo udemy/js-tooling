@@ -5,11 +5,10 @@ const {declare} = require('@babel/helper-plugin-utils');
 const plugins = require('./plugins');
 
 module.exports = declare((api, options) => {
-    const mobileBrowsers =
-        'last 2 ChromeAndroid version, last 1 FirefoxAndroid version, last 4 iOS versions, last 1 OperaMobile version';
-    const desktopBrowsers =
-        'last 2 Edge versions, last 5 Chrome versions, last 2 Firefox versions, IE 11, last 1 Opera version, last 2 Safari versions';
-    const browsers = options.device === 'mobile' ? mobileBrowsers : desktopBrowsers;
+    const modernBrowsers =
+        'Chrome >= 71, Firefox >= 64, Safari >= 12, Opera >= 58, ChromeAndroid >= 71, FirefoxAndroid >= 64, iOS >= 12, OperaMobile >= 46';
+    const legacyBrowsers = '> 0.2%, last 1 version, not dead';
+    const browsers = options.environment === 'modern' ? modernBrowsers : legacyBrowsers;
 
     return {
         presets: [
@@ -30,6 +29,7 @@ module.exports = declare((api, options) => {
                     },
                     modules: false,
                     useBuiltIns: 'entry',
+                    corejs: 2,
                     // Our current versions of webpack and UglifyJS don't understand the
                     // latest JS syntax, so force all transforms for now.
                     forceAllTransforms: true,

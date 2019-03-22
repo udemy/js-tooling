@@ -30,7 +30,7 @@
     "@babel/plugin-proposal-decorators": "^7.1.2",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-transform-strict-mode": "^7.0.0",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
     "babel-plugin-react-css-modules": "3.4.2",
     "postcss-less": "^1.1.5"
