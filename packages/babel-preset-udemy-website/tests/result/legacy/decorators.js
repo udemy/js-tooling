@@ -4,11 +4,14 @@ import "core-js/modules/es6.array.copy-within";
 import "core-js/modules/es6.array.fill";
 import "core-js/modules/es6.array.find";
 import "core-js/modules/es6.array.find-index";
+import "core-js/modules/es7.array.flat-map";
 import "core-js/modules/es6.array.from";
 import "core-js/modules/es7.array.includes";
 import "core-js/modules/es6.array.iterator";
 import "core-js/modules/es6.array.of";
+import "core-js/modules/es6.array.sort";
 import "core-js/modules/es6.array.species";
+import "core-js/modules/es6.date.to-json";
 import "core-js/modules/es6.date.to-primitive";
 import "core-js/modules/es6.function.has-instance";
 import "core-js/modules/es6.function.name";
@@ -52,12 +55,14 @@ import "core-js/modules/es6.object.get-prototype-of";
 import "core-js/modules/es7.object.lookup-getter";
 import "core-js/modules/es7.object.lookup-setter";
 import "core-js/modules/es6.object.prevent-extensions";
+import "core-js/modules/es6.object.to-string";
 import "core-js/modules/es6.object.is";
 import "core-js/modules/es6.object.is-frozen";
 import "core-js/modules/es6.object.is-sealed";
 import "core-js/modules/es6.object.is-extensible";
 import "core-js/modules/es6.object.keys";
 import "core-js/modules/es6.object.seal";
+import "core-js/modules/es6.object.set-prototype-of";
 import "core-js/modules/es7.object.values";
 import "core-js/modules/es6.promise";
 import "core-js/modules/es7.promise.finally";
@@ -107,6 +112,8 @@ import "core-js/modules/es6.string.starts-with";
 import "core-js/modules/es6.string.strike";
 import "core-js/modules/es6.string.sub";
 import "core-js/modules/es6.string.sup";
+import "core-js/modules/es7.string.trim-left";
+import "core-js/modules/es7.string.trim-right";
 import "core-js/modules/es6.typed.array-buffer";
 import "core-js/modules/es6.typed.int8-array";
 import "core-js/modules/es6.typed.uint8-array";
@@ -123,4 +130,13 @@ import "core-js/modules/web.timers";
 import "core-js/modules/web.immediate";
 import "core-js/modules/web.dom.iterable";
 import "regenerator-runtime/runtime";
-export default babelHelpers.toConsumableArray('abcde');
+
+var _class;
+
+import someDecorator from 'some-decorator';
+
+var SomeClass = someDecorator(_class = function SomeClass() {
+  babelHelpers.classCallCheck(this, SomeClass);
+}) || _class;
+
+export { SomeClass as default };

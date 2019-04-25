@@ -41,21 +41,21 @@ process.argv.forEach(val => {
 // eslint-disable-next-line no-console
 console.log('test babel-preset-udemy-website');
 
-const devices = ['desktop', 'mobile'];
-const testDevice = device => {
+const environments = ['legacy', 'modern'];
+const testEnvironment = environment => {
     fs.readdirSync(join(__dirname, 'tests/source'))
         .filter(name => name.endsWith('.js'))
         .forEach(name => {
             const result = babel.transformFileSync(
                 join(__dirname, 'tests/source', name),
-                preset(babel, {device}),
+                preset(babel, {environment}),
             ).code;
-            const expected = fs.readFileSync(join(__dirname, 'tests/result', device, name), {
+            const expected = fs.readFileSync(join(__dirname, 'tests/result', environment, name), {
                 encoding: 'UTF-8',
             });
 
             // eslint-disable-next-line no-console
-            console.log(`\tcheck ${name} -- ${device}`);
+            console.log(`\tcheck ${name} -- ${environment}`);
 
             if (verbose && result.trim() !== expected.trim()) {
                 /* eslint-disable no-console */
@@ -69,13 +69,17 @@ const testDevice = device => {
             if (mode === MODE.TEST) {
                 assert.equal(result.trim(), expected.trim());
             } else if (mode === MODE.UPDATE) {
-                fs.writeFileSync(join(__dirname, 'tests/result', device, name), `${result}\n`, {
-                    encoding: 'UTF-8',
-                });
+                fs.writeFileSync(
+                    join(__dirname, 'tests/result', environment, name),
+                    `${result}\n`,
+                    {
+                        encoding: 'UTF-8',
+                    },
+                );
             }
         });
 };
 
-devices.forEach(e => {
-    testDevice(e);
+environments.forEach(e => {
+    testEnvironment(e);
 });

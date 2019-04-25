@@ -4,11 +4,14 @@ import "core-js/modules/es6.array.copy-within";
 import "core-js/modules/es6.array.fill";
 import "core-js/modules/es6.array.find";
 import "core-js/modules/es6.array.find-index";
+import "core-js/modules/es7.array.flat-map";
 import "core-js/modules/es6.array.from";
 import "core-js/modules/es7.array.includes";
 import "core-js/modules/es6.array.iterator";
 import "core-js/modules/es6.array.of";
+import "core-js/modules/es6.array.sort";
 import "core-js/modules/es6.array.species";
+import "core-js/modules/es6.date.to-json";
 import "core-js/modules/es6.date.to-primitive";
 import "core-js/modules/es6.function.has-instance";
 import "core-js/modules/es6.function.name";
@@ -52,12 +55,14 @@ import "core-js/modules/es6.object.get-prototype-of";
 import "core-js/modules/es7.object.lookup-getter";
 import "core-js/modules/es7.object.lookup-setter";
 import "core-js/modules/es6.object.prevent-extensions";
+import "core-js/modules/es6.object.to-string";
 import "core-js/modules/es6.object.is";
 import "core-js/modules/es6.object.is-frozen";
 import "core-js/modules/es6.object.is-sealed";
 import "core-js/modules/es6.object.is-extensible";
 import "core-js/modules/es6.object.keys";
 import "core-js/modules/es6.object.seal";
+import "core-js/modules/es6.object.set-prototype-of";
 import "core-js/modules/es7.object.values";
 import "core-js/modules/es6.promise";
 import "core-js/modules/es7.promise.finally";
@@ -107,6 +112,8 @@ import "core-js/modules/es6.string.starts-with";
 import "core-js/modules/es6.string.strike";
 import "core-js/modules/es6.string.sub";
 import "core-js/modules/es6.string.sup";
+import "core-js/modules/es7.string.trim-left";
+import "core-js/modules/es7.string.trim-right";
 import "core-js/modules/es6.typed.array-buffer";
 import "core-js/modules/es6.typed.int8-array";
 import "core-js/modules/es6.typed.uint8-array";
@@ -124,12 +131,65 @@ import "core-js/modules/web.immediate";
 import "core-js/modules/web.dom.iterable";
 import "regenerator-runtime/runtime";
 
-var _class;
+var _class, _class2, _descriptor;
 
-import someDecorator from 'some-decorator';
+function React() {}
 
-var SomeClass = someDecorator(_class = function SomeClass() {
-  babelHelpers.classCallCheck(this, SomeClass);
-}) || _class;
+function Component() {}
 
-export { SomeClass as default };
+function Element() {}
+
+function deco() {}
+
+var Class = deco(_class = (_class2 =
+/*#__PURE__*/
+function (_Component) {
+  babelHelpers.inherits(Class, _Component);
+
+  function Class() {
+    var _babelHelpers$getProt;
+
+    var _this;
+
+    babelHelpers.classCallCheck(this, Class);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = babelHelpers.possibleConstructorReturn(this, (_babelHelpers$getProt = babelHelpers.getPrototypeOf(Class)).call.apply(_babelHelpers$getProt, [this].concat(args)));
+    babelHelpers.initializerDefineProperty(_this, "prop1", _descriptor, babelHelpers.assertThisInitialized(_this));
+    _this.prop2 = 14;
+    return _this;
+  }
+
+  babelHelpers.createClass(Class, [{
+    key: "method1",
+    value: function method1() {}
+  }, {
+    key: "method2",
+    value: function method2() {}
+  }, {
+    key: "render",
+    value: function render() {
+      return React.createElement("div", null, React.createElement(Element, {
+        store: this.store
+      }));
+    }
+  }, {
+    key: "getter",
+    get: function get() {
+      return 42;
+    }
+  }]);
+  return Class;
+}(Component), (_descriptor = babelHelpers.applyDecoratedDescriptor(_class2.prototype, "prop1", [deco], {
+  configurable: true,
+  enumerable: true,
+  writable: true,
+  initializer: function initializer() {
+    return 13;
+  }
+}), babelHelpers.applyDecoratedDescriptor(_class2.prototype, "method1", [deco], Object.getOwnPropertyDescriptor(_class2.prototype, "method1"), _class2.prototype), babelHelpers.applyDecoratedDescriptor(_class2.prototype, "getter", [deco], Object.getOwnPropertyDescriptor(_class2.prototype, "getter"), _class2.prototype)), _class2)) || _class;
+
+export { Class as default };
