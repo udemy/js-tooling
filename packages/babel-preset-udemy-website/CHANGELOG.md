@@ -3,7 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
- <a name="10.1.0"></a>
+       <a name="11.0.0"></a>
+# [11.0.0](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@10.1.0...babel-preset-udemy-website@11.0.0) (2019-04-25)
+
+
+### Features
+
+* **babel-preset-udemy-website:** Split config based on legacy/modern browsers ([d1295ad](https://github.com/udemy/js-tooling/commit/d1295ad))
+
+
+### BREAKING CHANGES
+
+* **babel-preset-udemy-website:** 'device' config option has been renamed to 'environment', which has valid values 'legacy' and 'modern'
+
+
+
+
+       <a name="10.1.0"></a>
 # [10.1.0](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@10.0.3...babel-preset-udemy-website@10.1.0) (2019-03-14)
 
 
@@ -14,7 +30,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
- <a name="10.0.3"></a>
+<a name="10.0.3"></a>
 ## [10.0.3](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@10.0.2...babel-preset-udemy-website@10.0.3) (2019-02-28)
 
 
