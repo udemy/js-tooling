@@ -27,7 +27,7 @@ module.exports = {
                     '(?:\\.spec)?)$', // allows group to be a spec file
                 ].join(''),
                 '|^\\.eslintrc$', // files named .eslintrc.js
-                '|^[a-z0-9\\-]+\\.config$', // files named *.config.js
+                '|^[a-z0-9\\-]+\\.(?:config|stories)$', // files named *.config.js or *.stories.js
             ].join(''),
         ],
         'udemy/angular-path-based-module-names': ['error', 'always'],
