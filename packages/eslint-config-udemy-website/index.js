@@ -16,7 +16,20 @@ module.exports = {
     rules: {
         'filenames/match-regex': [
             'error',
-            '^(?:[a-z0-9\\-]+(?:\\.(?:ng-(?:constant|controller|directive|factory|filter|provider|service)|videojs-component|react-(?:component|proptypes)|mobx-(?:model|store)))?(?:\\.spec)?)$',
+            [
+                [
+                    '^(?:_?[a-z0-9\\-]+', // allows underscore start and any lowercase filename
+                    '(?:\\.(?:', // any dot must be:
+                    'ng-(?:constant|controller|directive|factory|filter|provider|service)', // an Angular file
+                    '|videojs-component', // or a videojs-component
+                    '|react-(?:isocomponent|component|proptypes)', // or a React file
+                    '|mobx-(?:model|store)', // or a Mobx file
+                    '))?',
+                    '(?:\\.spec)?)$', // allows group to be a spec file
+                ].join(''),
+                '|^\\.eslintrc$', // files named .eslintrc.js
+                '|^[a-z0-9\\-]+\\.(?:config|stories)$', // files named *.config.js or *.stories.js
+            ].join(''),
         ],
         'udemy/angular-path-based-module-names': ['error', 'always'],
         'udemy/decorator-order': ['error', 'always'],
