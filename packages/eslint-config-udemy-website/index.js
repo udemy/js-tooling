@@ -21,9 +21,10 @@ module.exports = {
                     '^(?:_?[a-z0-9\\-]+', // allows underscore start and any lowercase filename
                     '(?:\\.(?:', // any dot must be:
                     'ng-(?:constant|controller|directive|factory|filter|provider|service)', // an Angular file
-                    '|videojs-component', // or a videojs-compenent
+                    '|videojs-component', // or a videojs-component
                     '|react-(?:isocomponent|component|proptypes)', // or a React file
-                    '|mobx-(?:model|store)))?', // or a Mobx file
+                    '|mobx-(?:model|store)', // or a Mobx file
+                    '))?',
                     '(?:\\.spec)?)$', // allows group to be a spec file
                 ].join(''),
                 '|^\\.eslintrc$', // files named .eslintrc.js
