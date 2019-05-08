@@ -36,8 +36,6 @@ module.exports = {
         'react/no-direct-mutation-state': 'error',
         // prevent usage of isMounted
         'react/no-is-mounted': 'error',
-        // prevent multiple component definition per file
-        'react/no-multi-comp': ['error', {ignoreStateless: true}],
         // prevent usage of setState
         // https://medium.com/@mweststrate/3-reasons-why-i-stopped-using-react-setstate-ab73fc67a42e
         'react/no-set-state': 'error',
