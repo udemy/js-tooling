@@ -3,7 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
- <a name="10.0.0"></a>
+       <a name="10.0.1"></a>
+## [10.0.1](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@10.0.0...eslint-config-udemy-react-addons@10.0.1) (2019-05-08)
+
+
+
+
+**Note:** Version bump only for package eslint-config-udemy-react-addons
+
+       <a name="10.0.0"></a>
 # [10.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@9.0.0...eslint-config-udemy-react-addons@10.0.0) (2019-02-28)
 
 
@@ -19,7 +27,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
- <a name="9.0.0"></a>
+<a name="9.0.0"></a>
 # [9.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-react-addons@8.0.0...eslint-config-udemy-react-addons@9.0.0) (2019-01-28)
 
 
