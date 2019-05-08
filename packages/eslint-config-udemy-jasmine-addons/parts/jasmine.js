@@ -13,8 +13,6 @@ module.exports = {
         'jasmine/no-spec-dupes': ['error', 'branch'],
         // enforce that a suites's callback does not contain any arguments
         'jasmine/no-suite-callback-args': 'error',
-        // enforce spies to be defined in before/after/it blocks
-        'jasmine/no-unsafe-spy': 'error',
         // enforce valid expect() usage
         'jasmine/valid-expect': 'error',
     },
