@@ -3,7 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
- <a name="8.0.1"></a>
+       <a name="8.0.2"></a>
+## [8.0.2](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@8.0.1...eslint-config-udemy-basics@8.0.2) (2019-05-20)
+
+
+
+
+**Note:** Version bump only for package eslint-config-udemy-basics
+
+       <a name="8.0.1"></a>
 ## [8.0.1](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@8.0.0...eslint-config-udemy-basics@8.0.1) (2019-01-28)
 
 
@@ -14,7 +22,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
- <a name="8.0.0"></a>
+<a name="8.0.0"></a>
 # [8.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@7.0.0...eslint-config-udemy-basics@8.0.0) (2019-01-28)
 
 
