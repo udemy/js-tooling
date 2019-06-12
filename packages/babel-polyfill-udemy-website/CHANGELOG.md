@@ -3,7 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
- <a name="9.0.8"></a>
+       <a name="9.0.9"></a>
+## [9.0.9](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@9.0.8...babel-polyfill-udemy-website@9.0.9) (2019-06-12)
+
+
+
+
+**Note:** Version bump only for package babel-polyfill-udemy-website
+
+       <a name="9.0.8"></a>
 ## [9.0.8](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@9.0.7...babel-polyfill-udemy-website@9.0.8) (2019-05-29)
 
 
@@ -11,7 +19,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package babel-polyfill-udemy-website
 
- <a name="9.0.7"></a>
+<a name="9.0.7"></a>
 ## [9.0.7](https://github.com/udemy/js-tooling/compare/babel-polyfill-udemy-website@9.0.6...babel-polyfill-udemy-website@9.0.7) (2019-05-20)
 
 

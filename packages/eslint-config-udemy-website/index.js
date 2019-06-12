@@ -120,6 +120,24 @@ module.exports = {
                         "not `import { Link } from 'react-router-dom';`.",
                     exceptions: ['base-components/link.react-component(?:\\.spec)?\\.js$'],
                 },
+                {
+                    // Tapen only lib
+                    source: '^react-table(?:\\.js)?$',
+                    message: 'react-table is only allowed in tapen',
+                    exceptions: ['tapen/.*?\\.js$'],
+                },
+                {
+                    // Tapen only lib
+                    source: '^react-treebeard(?:\\.js)?$',
+                    message: 'react-treebeard is only allowed in tapen',
+                    exceptions: ['tapen/.*?\\.js$'],
+                },
+                {
+                    // Tapen only lib
+                    source: '^vis-react(?:\\.js)?$',
+                    message: 'vis-react is only allowed in tapen',
+                    exceptions: ['tapen/.*?\\.js$'],
+                },
             ],
         ],
         'udemy/no-action-bound': ['error', 'always'],
