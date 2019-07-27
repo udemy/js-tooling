@@ -141,6 +141,7 @@ module.exports = {
             ],
         ],
         'udemy/no-action-bound': ['error', 'always'],
+        'udemy/no-gettext-template': ['error', 'always'],
         'udemy/no-hardcoded-cdns': [
             'error',
             [
