@@ -3,7 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
- <a name="9.0.1"></a>
+       <a name="9.0.2"></a>
+## [9.0.2](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@9.0.1...eslint-plugin-udemy@9.0.2) (2019-07-29)
+
+
+
+
+**Note:** Version bump only for package eslint-plugin-udemy
+
+       <a name="9.0.1"></a>
 ## [9.0.1](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@9.0.0...eslint-plugin-udemy@9.0.1) (2019-01-28)
 
 
@@ -11,7 +19,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package eslint-plugin-udemy
 
- <a name="9.0.0"></a>
+<a name="9.0.0"></a>
 # [9.0.0](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@8.0.0...eslint-plugin-udemy@9.0.0) (2019-01-28)
 
 
