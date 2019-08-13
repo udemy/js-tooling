@@ -13,18 +13,18 @@ Install [Prettier](https://github.com/prettier/prettier) locally.
 
 Install the Udemy Prettier Config locally.
 
-    $ yarn add prettier-config-udemy --dev
+    $ yarn add prettier-config-udemy-website --dev
 
 # Configuration
 
-Add a `require` section to your `.prettierrc.js` and specify `prettier-config-udemy` a required module.
+Add a `require` section to your `.prettierrc.js` and specify `prettier-config-udemy-website` a required module.
 You can additionally adjust rules by overriding them. E.g.:
 
 ```js
 // A .prettierrc.js
 
 module.exports = {
-    ...require("prettier-config-udemy"),
+    ...require("prettier-config-udemy-website"),
     
     // Any overwrites.
     printWidth: 140,

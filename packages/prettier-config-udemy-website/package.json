@@ -1,6 +1,6 @@
 {
-  "name": "prettier-config-udemy",
-  "version": "1.0.1",
+  "name": "prettier-config-udemy-website",
+  "version": "1.0.2",
   "description": "Udemy's Prettier configuration",
   "main": "index.js",
   "author": {
@@ -8,7 +8,7 @@
     "url": "https://www.udemy.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/udemy/js-tooling/packages/prettier-config-udemy",
+  "homepage": "https://github.com/udemy/js-tooling/packages/prettier-config-udemy-website",
   "repository": {
     "type": "git",
     "url": "https://github.com/udemy/js-tooling.git"
