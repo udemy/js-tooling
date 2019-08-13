@@ -8,7 +8,7 @@
     "url": "https://www.udemy.com"
   },
   "license": "MIT",
-  "homepage": "https://github.com/udemy/js-tooling/packages/prettier-config-udemy",
+  "homepage": "https://github.com/udemy/js-tooling/packages/prettier-config-udemy-website",
   "repository": {
     "type": "git",
     "url": "https://github.com/udemy/js-tooling.git"
