@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-udemy-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Udemy's Prettier configuration",
   "main": "index.js",
   "author": {
