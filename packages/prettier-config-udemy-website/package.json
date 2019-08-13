@@ -1,0 +1,20 @@
+{
+  "name": "prettier-config-udemy-website",
+  "version": "1.0.0",
+  "description": "Udemy's Prettier configuration",
+  "main": "index.js",
+  "author": {
+    "name": "Udemy Developers",
+    "url": "https://www.udemy.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/udemy/js-tooling/packages/prettier-config-udemy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/udemy/js-tooling.git"
+  },
+  "engines": {
+    "node": ">=8.12.0",
+    "yarn": "^1.9.4"
+  }
+}
