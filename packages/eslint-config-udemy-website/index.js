@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = {
     extends: ['udemy-basics', 'udemy-babel-addons', 'udemy-react-addons', 'udemy-jasmine-addons'],
-    plugins: ['udemy', 'filenames', 'underscore'],
+    plugins: ['udemy', 'filenames', 'lodash'],
     settings: {
         'import/resolver': {
             webpack: {
@@ -155,7 +155,7 @@ module.exports = {
                 },
             ],
         ],
-        'underscore/prefer-noop': ['error', 'always'],
+        'lodash/prefer-noop': ['error', 'always'],
     },
     overrides: [
         {
