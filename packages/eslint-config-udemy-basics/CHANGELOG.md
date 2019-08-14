@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@8.0.3...eslint-config-udemy-basics@9.0.0) (2019-08-14)
+
+
+### Features
+
+* Enable ESLint lines-between-class-members ([9983e66](https://github.com/udemy/js-tooling/commit/9983e66))
+
+
+### BREAKING CHANGES
+
+* https://eslint.org/docs/rules/lines-between-class-members is enabled. See https://github.com/udemy/website-django/pull/35570 for discussion.
+
+
+
+
+
 ## [8.0.6](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@8.0.3...eslint-config-udemy-basics@8.0.6) (2019-08-13)
 
 **Note:** Version bump only for package eslint-config-udemy-basics
