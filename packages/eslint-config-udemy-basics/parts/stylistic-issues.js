@@ -17,6 +17,8 @@ module.exports = {
         ],
         // enforce consistent linebreak style
         'linebreak-style': ['error', 'unix'],
+        // enforce consistent number of newlines between class members
+        'lines-between-class-members': ['error', 'always', {exceptAfterSingleLine: true}],
         // specify the maximum number of statement allowed in a function
         'max-statements': ['error', 40],
         // require a capital letter for constructors

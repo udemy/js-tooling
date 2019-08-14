@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tester",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "ESLint configuration tester",
   "main": "index.js",
   "author": {
