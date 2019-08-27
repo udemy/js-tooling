@@ -131,6 +131,14 @@ desired npm package name.
 1. Make sure `package.json` has the necessary information, per existing examples.
 1. Make sure the new package has a meaningful `README.md` and a valid `LICENSE` file.
 1. Follow the regular pull request and `lerna publish` flow as described above.
+1. After publishing the package, make sure that everyone in the `udemy:developers` npm group has read-write permissions for the package:
+    ```
+    # Grant permissions.
+    npm access grant read-write udemy:developers <package name>
+    
+    # Should list everyone in https://www.npmjs.com/settings/udemy/teams/team/developers/users
+    npm access ls-collaborators <package name>
+    ```
 
 ## Writing commit messages
 
