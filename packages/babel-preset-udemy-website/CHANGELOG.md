@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.11](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@11.0.10...babel-preset-udemy-website@11.0.11) (2019-08-27)
+
+**Note:** Version bump only for package babel-preset-udemy-website
+
+
+
+
+
 ## [11.0.10](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@11.0.6...babel-preset-udemy-website@11.0.10) (2019-08-14)
 
 **Note:** Version bump only for package babel-preset-udemy-website
