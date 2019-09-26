@@ -65,6 +65,8 @@ module.exports = {
         'react/jsx-no-target-blank': 'error',
         // only .jsx files may have JSX
         'react/jsx-filename-extension': ['error', {extensions: ['.js']}],
+        // enforce shorthand syntax for React fragments
+        'react/jsx-fragments': ['error', 'syntax'],
         // prevent accidental JS comments from being injected into JSX as text
         'react/jsx-no-comment-textnodes': 'error',
         // disallow using React.render/ReactDOM.render's return value
