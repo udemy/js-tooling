@@ -2,7 +2,7 @@ Udemy's JS tooling related public NPM packages [![CircleCI Status](https://circl
 ==============================================
 
 This repository has [*Babel*](https://www.github.com/babel/babel) and [*ESLint*](https://www.github.com/eslint/eslint) 
-related packages used by various Udemy projects. It is owned by [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f), 
+related packages used by various Udemy projects. It is owned by [@udemy/web-frontend](https://github.com/orgs/udemy/teams/web-frontend), 
 but everyone is welcome to contribute. Please refer to the [Contributing](#contributing) section to learn more.
 
 This repository uses [*Lerna*](https://github.com/lerna/lerna) to manage multiple [*npm*](https://www.npmjs.com/) packages. We 
@@ -94,7 +94,7 @@ Run tests to verify everything is working.
 1. Run `yarn test` to make sure all tests pass.
 1. Commit/push your changes.
 1. Create a pull request against master.
-1. Get your pull request approved by a Team-F member.
+1. Get your pull request approved by a member of the Web Frontend team.
 1. Run `git fetch origin --tags`. This is important for the `lerna publish` step below, as lerna checks git tags to determine what changed. See [https://github.com/lerna/lerna#updated](https://github.com/lerna/lerna#updated).
 1. Get the latest code from master, via either pull or rebase. This is important for the `lerna publish` step below. If you have a merge conflict, lerna will fail to automatically push its "Publish" commit to your branch.
 1. Run `lerna publish` in order to publish your changes to npm.
@@ -103,7 +103,7 @@ Run tests to verify everything is working.
      directly to master.
    - If this is your first time running `lerna publish`, you will be prompted to first run
      `npm adduser`. If you don't have an npm account, create one at <https://www.npmjs.com/signup>,
-     and ping [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f) to add your account to
+     and ping [@udemy/web-frontend](https://github.com/orgs/udemy/teams/web-frontend) to add your account to
      the [Udemy npm organization](https://www.npmjs.com/org/udemy).
    - If `lerna publish` doesn't pick up your changes (this happens if you had to run `npm adduser`),
      you can manually publish a package via e.g. `cd packages/eslint-config-udemy-website; npm publish`.
@@ -117,13 +117,13 @@ Run tests to verify everything is working.
 1. Update the `package.json` dependencies to any `babel|eslint-*-udemy-*` package as necessary.
 1. Run `yarn install` to install the changes and to be able to start using the package.
 
-You can always reach out to [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f) on the 
-[#dev-team-f Slack channel](https://udemy.slack.com/messages/dev-team-f).
+You can always reach out to [@udemy/web-frontend](https://github.com/orgs/udemy/teams/web-frontend) on the 
+[#dev-team-web-frontend Slack channel](https://udemy.slack.com/messages/dev-team-web-frontend).
 
 ## Adding a new package
 
-1. Get in touch with [@udemy/team-f](https://github.com/orgs/udemy/teams/team-f) on the 
-[#dev-team-f Slack channel](https://udemy.slack.com/messages/dev-team-f) to assess the need for a
+1. Get in touch with [@udemy/web-frontend](https://github.com/orgs/udemy/teams/web-frontend) on the 
+[#dev-team-web-frontend Slack channel](https://udemy.slack.com/messages/dev-team-web-frontend) to assess the need for a
 new npm package to avoid any duplicate work.
 1. Once there is consensus, create a new folder under [packages](packages/) folder under the
 desired npm package name.
