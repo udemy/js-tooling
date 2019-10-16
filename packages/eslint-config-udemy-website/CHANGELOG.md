@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.1.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@12.0.15...eslint-config-udemy-website@12.1.0) (2019-10-16)
+
+
+### Features
+
+* add udlite-import-blacklist ([b832fc0](https://github.com/udemy/js-tooling/commit/b832fc0))
+
+
+
+
+
 ## [12.0.15](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@12.0.14...eslint-config-udemy-website@12.0.15) (2019-09-26)
 
 **Note:** Version bump only for package eslint-config-udemy-website
