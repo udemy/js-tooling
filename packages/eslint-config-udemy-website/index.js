@@ -108,7 +108,7 @@ module.exports = {
                         "Please `import MemoizedBrowserRouter from 'base-components/memoized-browser-router.react-component';`, " +
                         "not `import { BrowserRouter, HashRouter, Router } from 'react-router-dom';`.",
                     exceptions: [
-                        'base-components/memoized-browser-router.react-component(?:\\.spec)?\\.js$',
+                        'base-components/udlite/router/memoized-browser-router.react-component(?:\\.spec)?\\.js$',
                     ],
                 },
                 {
@@ -118,7 +118,9 @@ module.exports = {
                     message:
                         "Please `import Link from 'base-components/link.react-component';`, " +
                         "not `import { Link } from 'react-router-dom';`.",
-                    exceptions: ['base-components/link.react-component(?:\\.spec)?\\.js$'],
+                    exceptions: [
+                        'base-components/udlite/router/link.react-component(?:\\.spec)?\\.js$',
+                    ],
                 },
                 {
                     // Tapen only lib
@@ -137,6 +139,80 @@ module.exports = {
                     source: '^vis-react(?:\\.js)?$',
                     message: 'vis-react is only allowed in tapen',
                     exceptions: ['tapen/.*?\\.js$'],
+                },
+            ],
+        ],
+        'udemy/udlite-import-blacklist': [
+            'error',
+            [
+                {
+                    source: 'base-components/(?!udlite/)',
+                    message:
+                        'UDLite files may not import UDHeavy base-components. ' +
+                        'Replace the following with a base-components/udlite/ component:',
+                },
+                {
+                    source: '(react-bootstrap|react-overlays|react-router-bootstrap)',
+                    message:
+                        'UDLite files may not import React-Bootstrap libs. ' +
+                        'Replace the following with a base-components/udlite/ component:',
+                },
+                {
+                    source: '(react-popper|popper.js)',
+                    message:
+                        'UDLite files may not import Popper. ' +
+                        'Replace the following with a base-components/udlite/ component:',
+                },
+                {
+                    source: '(react-slick|slick-carousel)',
+                    message:
+                        'UDLite files may not import Slick carousel. ' +
+                        'Replace the following with ' +
+                        'base-components/udlite/carousel/carousel.react-component:',
+                },
+                {
+                    source: 'react-waypoint',
+                    message:
+                        'UDLite files may not import React Waypoint. ' +
+                        'Replace the following with ' +
+                        '@researchgate/react-intersection-observer:',
+                },
+                {
+                    source: 'velocity',
+                    message:
+                        'UDLite files may not import Velociy. ' +
+                        'Only CSS animations are allowed:',
+                },
+                {
+                    source: 'utils/ud-utils$',
+                    message:
+                        'UDLite files may not import utils/ud-utils. ' +
+                        'Replace udUtils.Feedback with ui-feedback/udlite. ' +
+                        'The rest is split up into smaller utils/ files:',
+                },
+                {
+                    source: '(lodash|lodash-es)/(?!noop)',
+                    message:
+                        'UDLite files may not use Lodash. ' +
+                        'Replace the following with ES6 or one of our own utils/ functions:',
+                },
+                {
+                    source: '(jquery|jQuery)',
+                    message: 'UDLite files may not use jQuery:',
+                },
+                {
+                    source: 'jsuri',
+                    message: 'UDLite files may not use jsuri. Replace with URLSearchParams:',
+                },
+                {
+                    source: '(^moment$|ud-moment)',
+                    message:
+                        'UDLite files may not use moment. ' +
+                        'Ask #dev-team-web-frontend about your use-case:',
+                },
+                {
+                    source: '(^numeral$|ud-numeral)',
+                    message: 'UDLite files may not use numeral. Replace with udlite-numeral:',
                 },
             ],
         ],
