@@ -95,12 +95,15 @@ Run tests to verify everything is working.
 1. Commit/push your changes.
 1. Create a pull request against master.
 1. Get your pull request approved by a member of the Web Frontend team.
+1. Merge your pull request.
+
+## Publish changed packages
+After changed packages are merged into master, you need to publish the package to npm. Note: you need permission to publish to npm and must also be a github admin of the `js-tooling` repo. **All steps must be done on the master branch.**
+
+1. Checkout the `master` branch on your machine.
 1. Run `git fetch origin --tags`. This is important for the `lerna publish` step below, as lerna checks git tags to determine what changed. See [https://github.com/lerna/lerna#updated](https://github.com/lerna/lerna#updated).
-1. Get the latest code from master, via either pull or rebase. This is important for the `lerna publish` step below. If you have a merge conflict, lerna will fail to automatically push its "Publish" commit to your branch.
+1. Get the latest code from master via `git pull origin`. This is important for the `lerna publish` step below. If you have a merge conflict, lerna will fail to automatically push its "Publish" commit.
 1. Run `lerna publish` in order to publish your changes to npm.
-   - Ideally we would first merge the pull request to master, then publish master to npm, but `lerna publish`
-     creates a "Publish" commit which would have to be pushed to master, and non-admins cannot push
-     directly to master.
    - If this is your first time running `lerna publish`, you will be prompted to first run
      `npm adduser`. If you don't have an npm account, create one at <https://www.npmjs.com/signup>,
      and ping [@udemy/web-frontend](https://github.com/orgs/udemy/teams/web-frontend) to add your account to
@@ -111,8 +114,7 @@ Run tests to verify everything is working.
    e.g. <https://www.npmjs.com/package/eslint-config-udemy-website>.
 1. `lerna publish` should have created a "Publish" commit, which includes changes to CHANGELOG.md and package.json.
    See [#4a7ba34](https://github.com/udemy/js-tooling/commit/4a7ba340cee2bbbabe37b88efe5404a820bc1316) for example.
-   Push this commit. Merge your pull request.
-   - Do *NOT* squash merge after publishing since it confuses Lerna.
+   Push this commit directly to master. You nee admin privileges to do this.
 1. Go to the repository where you'd use these new package changes.
 1. Update the `package.json` dependencies to any `babel|eslint-*-udemy-*` package as necessary.
 1. Run `yarn install` to install the changes and to be able to start using the package.
@@ -168,3 +170,10 @@ in a major version change.
 
 The commit message format is 
 important because these messages are used to create a changelog for each release.
+
+## Repairing Lerna
+In case things go wrong, you might have to manually repair lerna. Lerna uses tags to keep track of the latest version of packages when doing `lerna publish`. It compares the current `HEAD` with the most recently tagged commit to see if there are any changes that should be published.
+
+Lerna tags look like this: `package-name@version`, as in `prettier-config-udemy-website@1.0.7`
+
+The HEAD commit of `master` should be tagged with the most recently published packages. If that's not the case, and you need to manually add Lerna tags, use this `git` command to create them: `git tag {tag} -m {tag}`, as in `git tag prettier-config-udemy-website@1.0.7 -m prettier-config-udemy-website@1.0.7`. This creates an "annotated tag", which Lerna requires.
