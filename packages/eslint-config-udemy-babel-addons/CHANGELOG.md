@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.8](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-babel-addons@6.0.7...eslint-config-udemy-babel-addons@6.0.8) (2019-12-12)
+
+**Note:** Version bump only for package eslint-config-udemy-babel-addons
+
+
+
+
+
 ## [6.0.7](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-babel-addons@6.0.6...eslint-config-udemy-babel-addons@6.0.7) (2019-10-16)
 
 **Note:** Version bump only for package eslint-config-udemy-babel-addons

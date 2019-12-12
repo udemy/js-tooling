@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.9](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-jasmine-addons@8.0.8...eslint-config-udemy-jasmine-addons@8.0.9) (2019-12-12)
+
+**Note:** Version bump only for package eslint-config-udemy-jasmine-addons
+
+
+
+
+
 ## [8.0.8](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-jasmine-addons@8.0.7...eslint-config-udemy-jasmine-addons@8.0.8) (2019-10-16)
 
 **Note:** Version bump only for package eslint-config-udemy-jasmine-addons
