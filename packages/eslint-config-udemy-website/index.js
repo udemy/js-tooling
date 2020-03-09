@@ -31,6 +31,7 @@ module.exports = {
                 '|^[a-z0-9\\-]+\\.(?:config|stories)$', // files named *.config.js or *.stories.js
             ].join(''),
         ],
+        'gettext/no-variable-string': 'error',
         'udemy/angular-path-based-module-names': ['error', 'always'],
         'udemy/decorator-order': ['error', 'always'],
         'udemy/import-blacklist': [
