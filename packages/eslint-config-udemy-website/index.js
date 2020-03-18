@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = {
     extends: ['udemy-basics', 'udemy-babel-addons', 'udemy-react-addons', 'udemy-jasmine-addons'],
-    plugins: ['udemy', 'filenames', 'lodash'],
+    plugins: ['udemy', 'filenames', 'lodash', 'gettext'],
     settings: {
         'import/resolver': {
             webpack: {
