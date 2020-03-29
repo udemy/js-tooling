@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = {
     extends: ['udemy-basics', 'udemy-babel-addons', 'udemy-react-addons', 'udemy-jasmine-addons'],
-    plugins: ['udemy', 'filenames', 'lodash'],
+    plugins: ['udemy', 'filenames', 'lodash', 'gettext'],
     settings: {
         'import/resolver': {
             webpack: {
@@ -31,6 +31,7 @@ module.exports = {
                 '|^[a-z0-9\\-]+\\.(?:config|stories)$', // files named *.config.js or *.stories.js
             ].join(''),
         ],
+        'gettext/no-variable-string': 'error',
         'udemy/angular-path-based-module-names': ['error', 'always'],
         'udemy/decorator-order': ['error', 'always'],
         'udemy/import-blacklist': [
