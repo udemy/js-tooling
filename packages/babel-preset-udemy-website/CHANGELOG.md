@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@11.0.16...babel-preset-udemy-website@11.1.0) (2020-04-13)
+
+
+### Features
+
+* add babel/plugin-proposal-optional-chaining ([#85](https://github.com/udemy/js-tooling/issues/85)) ([6689dec](https://github.com/udemy/js-tooling/commit/6689dec))
+
+
+
+
+
 ## [11.0.16](https://github.com/udemy/js-tooling/compare/babel-preset-udemy-website@11.0.15...babel-preset-udemy-website@11.0.16) (2020-03-29)
 
 **Note:** Version bump only for package babel-preset-udemy-website
