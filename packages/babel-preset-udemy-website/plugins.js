@@ -16,6 +16,9 @@ module.exports = [
     // Adds 'use strict'; to each file - Webpack adds it only for modules with ES6+ import / export
     ['@babel/plugin-transform-strict-mode'],
 
+    // Stage-4 optional chaining https://babeljs.io/docs/en/babel-plugin-proposal-optional-chaining
+    ['@babel/plugin-proposal-optional-chaining'],
+
     // babel-plugin-react-css-modules
     [
         'babel-plugin-react-css-modules',
