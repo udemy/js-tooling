@@ -29,5 +29,6 @@
     "lint": "eslint ./",
     "lint-fix": "eslint --fix ./",
     "test": "lerna bootstrap && lerna run build && yarn lint && node tests"
-  }
+  },
+  "dependencies": {}
 }
