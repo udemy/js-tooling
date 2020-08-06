@@ -1,5 +1,7 @@
 'use strict';
 
+const {isUDLiteFile} = require('../../helpers/is-udlite-file.js');
+
 module.exports.rules = {
     'udlite-import-blacklist': {
         meta: {
@@ -25,7 +27,7 @@ module.exports.rules = {
             const blacklist = context.options[0] || [];
             const filename = context.getFilename();
 
-            if (!filename.includes('/udlite/')) {
+            if (!isUDLiteFile(filename)) {
                 return {};
             }
 
