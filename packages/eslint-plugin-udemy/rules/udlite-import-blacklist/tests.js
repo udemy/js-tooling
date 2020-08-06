@@ -1,7 +1,6 @@
 'use strict';
 
 const RuleTester = require('eslint').RuleTester;
-const path = require('path');
 
 const rule = require('./index').rules['udlite-import-blacklist'];
 
@@ -25,17 +24,17 @@ ruleTester.run('udlite-import-blacklist', rule, {
     valid: [
         {
             code: "import 'lightweight-lib';",
-            filename: path.join(__dirname, 'js/udlite/example.js'),
+            filename: '/path/to/static/src/udemy/js/udlite/example.js',
             options,
         },
         {
             code: "import 'heavyweight-lib';",
-            filename: path.join(__dirname, 'js/udheavy/example.js'),
+            filename: '/path/to/static/src/udemy/js/udheavy/example.js',
             options,
         },
         {
             code: "import 'heavyweight-lib';",
-            filename: path.join(__dirname, 'js/udlite/example.spec.js'),
+            filename: '/path/to/static/src/udemy/js/udlite/example.spec.js',
             options,
         },
     ],
@@ -47,7 +46,7 @@ ruleTester.run('udlite-import-blacklist', rule, {
                     message: 'UDLite files may not import Heavyweight lib:\nheavyweight-lib\n',
                 },
             ],
-            filename: path.join(__dirname, 'js/udlite/example.js'),
+            filename: '/path/to/static/src/udemy/js/udlite/example.js',
             options,
         },
     ],
