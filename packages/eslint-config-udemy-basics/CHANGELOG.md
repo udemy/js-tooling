@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.6](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@9.0.5...eslint-config-udemy-basics@9.0.6) (2020-08-06)
+
+**Note:** Version bump only for package eslint-config-udemy-basics
+
+
+
+
+
 ## [9.0.5](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-basics@9.0.4...eslint-config-udemy-basics@9.0.5) (2019-12-12)
 
 **Note:** Version bump only for package eslint-config-udemy-basics

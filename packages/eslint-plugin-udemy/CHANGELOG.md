@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.2.0](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@9.1.1...eslint-plugin-udemy@9.2.0) (2020-08-06)
+
+
+### Features
+
+* More accurate check for whether a file is UDLite ([#90](https://github.com/udemy/js-tooling/issues/90)) ([1ab0fe1](https://github.com/udemy/js-tooling/commit/1ab0fe1))
+
+
+
+
+
 ## [9.1.1](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@9.1.0...eslint-plugin-udemy@9.1.1) (2019-12-12)
 
 **Note:** Version bump only for package eslint-plugin-udemy
