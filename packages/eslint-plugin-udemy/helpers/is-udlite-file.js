@@ -24,16 +24,15 @@ function findUDLiteDirs(dir) {
     }
 
     const udliteDirs = [];
-    if (
-        fs.existsSync(path.join(dir, 'udlite-app.js')) &&
-        !fs.existsSync(path.join(dir, 'app.js'))
-    ) {
+    const children = fs.readdirSync(dir);
+    const childrenSet = new Set(children);
+    if (childrenSet.has('udlite-app.js') && !childrenSet.has('app.js')) {
         udliteDirs.push(dir);
-    } else if (fs.existsSync(path.join(dir, 'udlite.md'))) {
+    } else if (childrenSet.has('udlite.md')) {
         udliteDirs.push(dir);
     }
 
-    fs.readdirSync(dir).forEach(child => {
+    children.forEach(child => {
         const childPath = path.join(dir, child);
         if (fs.lstatSync(childPath).isDirectory()) {
             udliteDirs.push(...findUDLiteDirs(childPath));
