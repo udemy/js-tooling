@@ -27,7 +27,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* add udlite-import-blacklist ([b832fc0](https://github.com/udemy/js-tooling/commit/b832fc0))
+* add udlite-import-disallow ([b832fc0](https://github.com/udemy/js-tooling/commit/b832fc0))
 
 
 
@@ -269,7 +269,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* Add a way to blacklist import specifiers. ([a310ea7](https://github.com/udemy/js-tooling/commit/a310ea7))
+* Add a way to disallow import specifiers. ([a310ea7](https://github.com/udemy/js-tooling/commit/a310ea7))
 
 
 
@@ -280,7 +280,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* Add a way to blacklist import specifiers. ([a310ea7](https://github.com/udemy/js-tooling/commit/a310ea7))
+* Add a way to disallow import specifiers. ([a310ea7](https://github.com/udemy/js-tooling/commit/a310ea7))
 
 
 
@@ -299,7 +299,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* Introduce udemy/import-blacklist ([3e922cd](https://github.com/udemy/js-tooling/commit/3e922cd))
+* Introduce udemy/import-disallow ([3e922cd](https://github.com/udemy/js-tooling/commit/3e922cd))
 
 
 

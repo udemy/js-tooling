@@ -32,7 +32,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* add udlite-import-blacklist ([b832fc0](https://github.com/udemy/js-tooling/commit/b832fc0))
+* add udlite-import-disallow ([b832fc0](https://github.com/udemy/js-tooling/commit/b832fc0))
 
 
 
@@ -377,7 +377,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* import blacklist Link from react-router-dom ([3db4b23](https://github.com/udemy/js-tooling/commit/3db4b23))
+* import disallow Link from react-router-dom ([3db4b23](https://github.com/udemy/js-tooling/commit/3db4b23))
 
 
 
@@ -445,7 +445,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* import blacklist enzyme/build/index ([8568456](https://github.com/udemy/js-tooling/commit/8568456))
+* import disallow enzyme/build/index ([8568456](https://github.com/udemy/js-tooling/commit/8568456))
 
 
 
@@ -472,8 +472,8 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* Add a way to blacklist import specifiers. ([a310ea7](https://github.com/udemy/js-tooling/commit/a310ea7))
-* Blacklist BrowserRouter, HashRouter, Router from react-router-dom ([60b299a](https://github.com/udemy/js-tooling/commit/60b299a))
+* Add a way to disallow import specifiers. ([a310ea7](https://github.com/udemy/js-tooling/commit/a310ea7))
+* Disallow BrowserRouter, HashRouter, Router from react-router-dom ([60b299a](https://github.com/udemy/js-tooling/commit/60b299a))
 
 
 
@@ -484,8 +484,8 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* Add a way to blacklist import specifiers. ([a310ea7](https://github.com/udemy/js-tooling/commit/a310ea7))
-* Blacklist BrowserRouter, HashRouter, Router from react-router-dom ([60b299a](https://github.com/udemy/js-tooling/commit/60b299a))
+* Add a way to disallow import specifiers. ([a310ea7](https://github.com/udemy/js-tooling/commit/a310ea7))
+* Disallow BrowserRouter, HashRouter, Router from react-router-dom ([60b299a](https://github.com/udemy/js-tooling/commit/60b299a))
 
 
 
@@ -512,7 +512,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* Introduce udemy/import-blacklist ([3e922cd](https://github.com/udemy/js-tooling/commit/3e922cd))
+* Introduce udemy/import-disallow ([3e922cd](https://github.com/udemy/js-tooling/commit/3e922cd))
 
 
 

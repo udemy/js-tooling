@@ -3,7 +3,7 @@
 const RuleTester = require('eslint').RuleTester;
 const path = require('path');
 
-const rule = require('./index').rules['import-blacklist'];
+const rule = require('./index').rules['import-disallow'];
 
 const ruleTester = new RuleTester({
     parserOptions: {
@@ -50,7 +50,7 @@ const options = [
     ],
 ];
 
-ruleTester.run('import-blacklist', rule, {
+ruleTester.run('import-disallow', rule, {
     valid: [
         {
             code: "import apple from 'apple.js';",

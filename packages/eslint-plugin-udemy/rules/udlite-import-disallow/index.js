@@ -3,7 +3,7 @@
 const {isUDLiteFile} = require('../../helpers/is-udlite-file.js');
 
 module.exports.rules = {
-    'udlite-import-blacklist': {
+    'udlite-import-disallow': {
         meta: {
             schema: [
                 {
@@ -24,7 +24,7 @@ module.exports.rules = {
             ],
         },
         create: function create(context) {
-            const blacklist = context.options[0] || [];
+            const disallowedImports = context.options[0] || [];
             const filename = context.getFilename();
 
             if (!isUDLiteFile(filename)) {
@@ -37,7 +37,7 @@ module.exports.rules = {
 
             return {
                 ImportDeclaration: function ImportDeclaration(node) {
-                    blacklist.forEach(rule => {
+                    disallowedImports.forEach(rule => {
                         const sourceValue = node.source.value || '';
                         const sourceMatches = sourceValue.match(new RegExp(rule.source));
                         if (sourceMatches) {

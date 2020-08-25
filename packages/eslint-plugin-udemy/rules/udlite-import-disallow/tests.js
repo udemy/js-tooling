@@ -2,7 +2,7 @@
 
 const RuleTester = require('eslint').RuleTester;
 
-const rule = require('./index').rules['udlite-import-blacklist'];
+const rule = require('./index').rules['udlite-import-disallow'];
 
 const ruleTester = new RuleTester({
     parserOptions: {
@@ -20,7 +20,7 @@ const options = [
     ],
 ];
 
-ruleTester.run('udlite-import-blacklist', rule, {
+ruleTester.run('udlite-import-disallow', rule, {
     valid: [
         {
             code: "import 'lightweight-lib';",
