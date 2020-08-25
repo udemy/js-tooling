@@ -13,8 +13,7 @@ will only work properly if it is imported via the wrapper.
 
 ## Rule details
 
-The disallowed list is configured by regexes. You may optionally specify a list of exception regexes to allow 
-certain files in the disallowed list.
+The disallowed list is configured by regexes. You may optionally specify a list of exception regexes.
 
 Assuming the following configuration:
 
