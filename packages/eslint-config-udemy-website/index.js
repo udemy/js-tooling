@@ -159,6 +159,12 @@ module.exports = {
                         'Replace the following with a base-components/udlite/ component:',
                 },
                 {
+                    source: 'react-autosuggest',
+                    message:
+                        'UDLite files may not import React Autosuggest. ' +
+                        'Replace the following with the Autosuggest base-component:',
+                },
+                {
                     source: '(react-popper|popper.js)',
                     message:
                         'UDLite files may not import Popper. ' +
