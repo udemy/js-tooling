@@ -7,7 +7,7 @@ function interpolate(string, matches) {
 }
 
 module.exports.rules = {
-    'import-blacklist': {
+    'import-disallow': {
         meta: {
             schema: [
                 {
@@ -37,12 +37,12 @@ module.exports.rules = {
             ],
         },
         create: function create(context) {
-            const blacklist = context.options[0] || [];
+            const disallowedImports = context.options[0] || [];
             const filename = context.getFilename();
 
             return {
                 ImportDeclaration: function ImportDeclaration(node) {
-                    blacklist.forEach(rule => {
+                    disallowedImports.forEach(rule => {
                         const isException = (rule.exceptions || []).some(pattern => {
                             return new RegExp(pattern).test(filename);
                         });
@@ -53,11 +53,11 @@ module.exports.rules = {
                         const sourceMatches = (node.source.value || '').match(
                             new RegExp(rule.source),
                         );
-                        let isBlacklisted = !!sourceMatches;
+                        let isDisallowed = !!sourceMatches;
                         let specifierMatches = null;
                         if (rule.specifier) {
-                            isBlacklisted =
-                                isBlacklisted &&
+                            isDisallowed =
+                                isDisallowed &&
                                 node.specifiers.some(specifier => {
                                     if (!specifier.imported) {
                                         return false;
@@ -68,7 +68,7 @@ module.exports.rules = {
                                     return !!specifierMatches;
                                 });
                         }
-                        if (isBlacklisted) {
+                        if (isDisallowed) {
                             let matchedGroups = [];
                             if (sourceMatches) {
                                 matchedGroups = matchedGroups.concat(sourceMatches.slice(1));

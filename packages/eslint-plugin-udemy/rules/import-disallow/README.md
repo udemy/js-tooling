@@ -1,6 +1,6 @@
-# Import Blacklist
+# Import Disallow
 
-`udemy/import-blacklist` blacklists certain imports in JS files. For example, it might tell you to 
+`udemy/import-disallow` disallows certain imports in JS files. For example, it might tell you to 
 `please import from e.g. foo/lib/bar, not from foo directly`. There are several reasons we enforce this rule:
 
 - Sometimes, a more specific import, e.g. `import bar from 'foo/lib/bar';`, can significantly reduce JS bundle size 
@@ -13,13 +13,12 @@ will only work properly if it is imported via the wrapper.
 
 ## Rule details
 
-The blacklist is configured by a list of regexes. You may optionally specify a list of exception regexes to whitelist 
-certain files from the blacklist.
+The disallowed list is configured by regexes. You may optionally specify a list of exception regexes.
 
 Assuming the following configuration:
 
 ```js
-'udemy/import-blacklist': ['error', [
+'udemy/import-disallow': ['error', [
     {
         source: '^foo(?:\\.js)?$',
         message: 'Please import from foo/lib/, not from foo',

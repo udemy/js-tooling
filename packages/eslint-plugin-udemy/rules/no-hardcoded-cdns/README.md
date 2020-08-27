@@ -4,7 +4,7 @@
 
 ## Rule details
 
-The blacklist is configured by a list of `{cdn, fixWith}` objects. The `cdn` is the name of the CDN to forbid. The `fixWith` is the code that should be used instead of hardcoding the CDN.
+The disallowed list is configured by `{cdn, fixWith}` objects. The `cdn` is the name of the CDN to forbid. The `fixWith` is the code that should be used instead of hardcoding the CDN.
 
 Assuming the following configuration:
 

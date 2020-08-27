@@ -18,6 +18,9 @@
     "lerna": "3.16.4",
     "prettier": "^1.16.1"
   },
+  "resolutions": {
+    "compare-func": "2.0.0"
+  },
   "workspaces": [
     "packages/*"
   ],

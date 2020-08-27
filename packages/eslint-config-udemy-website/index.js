@@ -34,7 +34,7 @@ module.exports = {
         'gettext/no-variable-string': 'error',
         'udemy/angular-path-based-module-names': ['error', 'always'],
         'udemy/decorator-order': ['error', 'always'],
-        'udemy/import-blacklist': [
+        'udemy/import-disallow': [
             'error',
             [
                 {
@@ -143,7 +143,7 @@ module.exports = {
                 },
             ],
         ],
-        'udemy/udlite-import-blacklist': [
+        'udemy/udlite-import-disallow': [
             'error',
             [
                 {
@@ -157,6 +157,12 @@ module.exports = {
                     message:
                         'UDLite files may not import React-Bootstrap libs. ' +
                         'Replace the following with a base-components/udlite/ component:',
+                },
+                {
+                    source: 'react-autosuggest',
+                    message:
+                        'UDLite files may not import React Autosuggest. ' +
+                        'Replace the following with the Autosuggest base-component:',
                 },
                 {
                     source: '(react-popper|popper.js)',
