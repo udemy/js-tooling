@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.3.0](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@9.2.0...eslint-plugin-udemy@9.3.0) (2020-08-27)
+
+
+### Features
+
+* Update list of disallowed UDLite imports, resolve GitHub security alerts ([#91](https://github.com/udemy/js-tooling/issues/91)) ([5bb7304](https://github.com/udemy/js-tooling/commit/5bb7304))
+
+
+
+
+
 # [9.2.0](https://github.com/udemy/js-tooling/compare/eslint-plugin-udemy@9.1.1...eslint-plugin-udemy@9.2.0) (2020-08-06)
 
 

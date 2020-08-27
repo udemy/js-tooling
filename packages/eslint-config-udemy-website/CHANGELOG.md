@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.2.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@12.1.3...eslint-config-udemy-website@12.2.0) (2020-08-27)
+
+
+### Features
+
+* Update list of disallowed UDLite imports, resolve GitHub security alerts ([#91](https://github.com/udemy/js-tooling/issues/91)) ([5bb7304](https://github.com/udemy/js-tooling/commit/5bb7304))
+
+
+
+
+
 ## [12.1.3](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@12.1.2...eslint-config-udemy-website@12.1.3) (2020-08-06)
 
 **Note:** Version bump only for package eslint-config-udemy-website
