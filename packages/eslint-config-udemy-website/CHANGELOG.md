@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.3.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@12.2.0...eslint-config-udemy-website@12.3.0) (2020-09-29)
+
+
+### Features
+
+* ETSS-581 Update no-hardcoded-cdns rule for new cdn path ([#92](https://github.com/udemy/js-tooling/issues/92)) ([550e579](https://github.com/udemy/js-tooling/commit/550e579))
+
+
+
+
+
 # [12.2.0](https://github.com/udemy/js-tooling/compare/eslint-config-udemy-website@12.1.3...eslint-config-udemy-website@12.2.0) (2020-08-27)
 
 
