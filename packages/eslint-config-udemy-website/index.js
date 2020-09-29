@@ -229,12 +229,12 @@ module.exports = {
             'error',
             [
                 {
-                    cdn: 'udemy-images.udemy.com',
-                    fixWith: 'udLink.toS3Images()',
+                    cdn: 's.udemycdn.com',
+                    fixWith: 'udLink.toStorageStaticAsset()',
                 },
                 {
-                    cdn: 's3.amazonaws.com/udemy-images',
-                    fixWith: 'udLink.toS3Images()',
+                    cdn: 'udemy-prod-static-assets.s3.amazonaws.com',
+                    fixWith: 'udLink.toStorageStaticAsset()',
                 },
             ],
         ],

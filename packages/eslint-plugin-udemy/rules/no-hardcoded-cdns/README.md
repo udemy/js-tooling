@@ -11,8 +11,8 @@ Assuming the following configuration:
 ```js
 'udemy/no-hardcoded-cdns': ['error', [
     {
-        cdn: 'udemy-images.udemy.com',
-        fixWith: 'udLink.toS3Images()',
+        cdn: 's.udemycdn.com',
+        fixWith: 'udLink.toStorageStaticAsset()',
     },
 ]]
 ```
@@ -20,16 +20,16 @@ Assuming the following configuration:
 The following would error:
 
 ```js 
-'https://udemy-images.udemy.com/user/123/abc.png'
-`https://udemy-images.udemy.com/user/${user.id}/abc.png`
+'https://s.udemycdn.com/partner-logos/logo.svg'
+`https://s.udemycdn.com/partner-logos/${logo.img}`
 ```
 
 The following would not error:
 
 ```js
 // This outsmarts the rule, but please don't do this!
-['https://udemy-images', 'udemy', 'com'].join('.') + '/user/123/abc.png'
+['https://s', 'udemycdn', 'com'].join('.') + '/partner-logos/logo.svg'
 
 // This is the correct way.
-udLink.toS3Images('user/123/abc.png')
+udLink.toStorageStaticAsset('partner-logos/logo.svg')
 ```
