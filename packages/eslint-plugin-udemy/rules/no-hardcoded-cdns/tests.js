@@ -18,7 +18,7 @@ const options = [
             fixWith: 'udLink.toStorageStaticAsset()',
         },
         {
-            cdn: 'udemy-prod-static-assets.s3.amazonaws.com',
+            cdn: 'udemy-prod-static-assets',
             fixWith: 'udLink.toStorageStaticAsset()',
         },
     ],
@@ -66,7 +66,17 @@ ruleTester.run('no-hardcoded-cdns', rule, {
             errors: [
                 {
                     message:
-                        'Please do not hardcode the CDN udemy-prod-static-assets.s3.amazonaws.com. Instead, build the url with udLink.toStorageStaticAsset().',
+                        'Please do not hardcode the CDN udemy-prod-static-assets. Instead, build the url with udLink.toStorageStaticAsset().',
+                },
+            ],
+            options,
+        },
+        {
+            code: "'https://s3.amazonaws.com/udemy-prod-static-assets/partner-logos/logo.svg'",
+            errors: [
+                {
+                    message:
+                        'Please do not hardcode the CDN udemy-prod-static-assets. Instead, build the url with udLink.toStorageStaticAsset().',
                 },
             ],
             options,

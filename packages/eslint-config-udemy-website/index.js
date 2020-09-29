@@ -233,7 +233,7 @@ module.exports = {
                     fixWith: 'udLink.toStorageStaticAsset()',
                 },
                 {
-                    cdn: 'udemy-prod-static-assets.s3.amazonaws.com',
+                    cdn: 'udemy-prod-static-assets',
                     fixWith: 'udLink.toStorageStaticAsset()',
                 },
             ],
