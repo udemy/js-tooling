@@ -14,8 +14,12 @@ const ruleTester = new RuleTester({
 const options = [
     [
         {
-            cdn: 'udemy-images.udemy.com',
-            fixWith: 'udLink.toS3Images()',
+            cdn: 's.udemycdn.com',
+            fixWith: 'udLink.toStorageStaticAsset()',
+        },
+        {
+            cdn: 'udemy-prod-static-assets',
+            fixWith: 'udLink.toStorageStaticAsset()',
         },
     ],
 ];
@@ -23,32 +27,56 @@ const options = [
 ruleTester.run('no-hardcoded-cdns', rule, {
     valid: [
         {
-            code: "udLink.toS3Images('user/123/foo.png')",
+            code: "udLink.toStorageStaticAsset('partner-logos/logo.svg')",
             options,
         },
         {
-            code: '// We used to use udemy-images.udemy.com for S3 images.',
+            code: '// s.udemycdn.com is the domain for our static assets',
+            options,
+        },
+        {
+            code: '// they live in an S3 bucket called udemy-prod-static-assets',
             options,
         },
     ],
     invalid: [
         {
-            code: "'https://udemy-images.udemy.com/user/123/foo.png'",
+            code: "'https://s.udemycdn.com/partner-logos/logo.svg'",
             errors: [
                 {
                     message:
-                        'Please do not hardcode the CDN udemy-images.udemy.com. Instead, build the url with udLink.toS3Images().',
+                        'Please do not hardcode the CDN s.udemycdn.com. Instead, build the url with udLink.toStorageStaticAsset().',
                 },
             ],
             options,
         },
         {
             // eslint-disable-next-line no-template-curly-in-string
-            code: '`https://udemy-images.udemy.com/user/${user.id}/foo.png`',
+            code: '`https://s.udemycdn.com/partner-logos/${logo.img}`',
             errors: [
                 {
                     message:
-                        'Please do not hardcode the CDN udemy-images.udemy.com. Instead, build the url with udLink.toS3Images().',
+                        'Please do not hardcode the CDN s.udemycdn.com. Instead, build the url with udLink.toStorageStaticAsset().',
+                },
+            ],
+            options,
+        },
+        {
+            code: "'https://udemy-prod-static-assets.s3.amazonaws.com/partner-logos/logo.svg'",
+            errors: [
+                {
+                    message:
+                        'Please do not hardcode the CDN udemy-prod-static-assets. Instead, build the url with udLink.toStorageStaticAsset().',
+                },
+            ],
+            options,
+        },
+        {
+            code: "'https://s3.amazonaws.com/udemy-prod-static-assets/partner-logos/logo.svg'",
+            errors: [
+                {
+                    message:
+                        'Please do not hardcode the CDN udemy-prod-static-assets. Instead, build the url with udLink.toStorageStaticAsset().',
                 },
             ],
             options,
