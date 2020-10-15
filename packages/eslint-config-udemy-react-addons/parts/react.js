@@ -15,7 +15,7 @@ module.exports = {
         // prevent duplicate props in JSX
         'react/jsx-no-duplicate-props': ['error', {ignoreCase: false}],
         // enforce l10n wrapping of strings literals
-        'react/jsx-no-literals': 'error',
+        // 'react/jsx-no-literals': 'error',
         // disallow undeclared variables in JSX
         'react/jsx-no-undef': 'error',
         // enforce PascalCase for user-defined JSX components

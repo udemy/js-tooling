@@ -14,10 +14,10 @@
     "url": "https://github.com/udemy/js-tooling.git"
   },
   "dependencies": {
-    "eslint-config-udemy-babel-addons": "^6.0.8",
-    "eslint-config-udemy-basics": "^9.0.8",
-    "eslint-config-udemy-jasmine-addons": "^8.0.9",
-    "eslint-config-udemy-react-addons": "^10.0.10",
+    "eslint-config-udemy-babel-addons": "file:/Users/epokhe/js-tooling/packages/eslint-config-udemy-babel-addons",
+    "eslint-config-udemy-basics": "file:/Users/epokhe/js-tooling/packages/eslint-config-udemy-basics",
+    "eslint-config-udemy-jasmine-addons": "file:/Users/epokhe/js-tooling/packages/eslint-config-udemy-jasmine-addons",
+    "eslint-config-udemy-react-addons": "file:/Users/epokhe/js-tooling/packages/eslint-config-udemy-react-addons",
     "eslint-import-resolver-webpack": "^0.10.1",
     "eslint-plugin-filenames": "^1.3.2",
     "eslint-plugin-gettext": "git+https://github.com/udemy/eslint-plugin-gettext.git#a75a0f479dfe187fdae144d6aa3aaaf271d9b831",

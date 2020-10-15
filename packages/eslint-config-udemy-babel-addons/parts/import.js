@@ -13,19 +13,19 @@ module.exports = {
         // forbid CommonJS imports
         'import/no-commonjs': 'error',
         // ensure imports point to files / modules that can be resolved
-        'import/no-unresolved': ['error', {commonjs: true, amd: true}],
+        // 'import/no-unresolved': ['error', {commonjs: true, amd: true}],
         // disallow invalid exports, e.g. multiple defaults
-        'import/export': 'error',
+        // 'import/export': 'error',
         // forbid import of modules using absolute paths
         'import/no-absolute-path': 'error',
         // forbid `require()` calls with expressions
         'import/no-dynamic-require': 'error',
         // do not allow a default import name to match a named export
-        'import/no-named-as-default': 'error',
+        // 'import/no-named-as-default': 'error',
         // warn on accessing default export property names that are also named exports
-        'import/no-named-as-default-member': 'error',
+        // 'import/no-named-as-default-member': 'error',
         // forbid named default exports
-        'import/no-named-default': 'error',
+        // 'import/no-named-default': 'error',
         // forbid mutable exports
         'import/no-mutable-exports': 'error',
         // disallow non-import statements appearing before import statements

@@ -8,13 +8,13 @@ module.exports = {
         // enforce braces for all control statements
         curly: ['error', 'all'],
         // enforce a convention in the order of require() and import statements with alphabetical sorting
-        'import-order-alphabetical/order': [
-            'error',
-            {
-                'newlines-between': 'always',
-                groups: [['builtin', 'external'], 'internal', ['parent', 'sibling', 'index']],
-            },
-        ],
+        // 'import-order-alphabetical/order': [
+        //     'error',
+        //     {
+        //         'newlines-between': 'always',
+        //         groups: [['builtin', 'external'], 'internal', ['parent', 'sibling', 'index']],
+        //     },
+        // ],
         // enforce consistent linebreak style
         'linebreak-style': ['error', 'unix'],
         // enforce consistent number of newlines between class members
