@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-udemy-website",
-  "version": "12.3.0",
+  "version": "12.3.1",
   "description": "Udemy Website's ESLint configuration",
   "main": "index.js",
   "author": {
@@ -20,7 +20,7 @@
     "eslint-config-udemy-react-addons": "^10.0.10",
     "eslint-import-resolver-webpack": "^0.10.1",
     "eslint-plugin-filenames": "^1.3.2",
-    "eslint-plugin-gettext": "git+https://github.com/udemy/eslint-plugin-gettext.git#a75a0f479dfe187fdae144d6aa3aaaf271d9b831",
+    "eslint-plugin-gettext": "git+https://github.com/udemy/eslint-plugin-gettext.git#1608ef32f51efb2f21be8e7051695a667b7834e8",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-lodash": "^6.0.0"
   },
