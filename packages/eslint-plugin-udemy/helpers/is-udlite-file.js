@@ -29,6 +29,7 @@ function findUDLiteDirs(dir) {
     if (childrenSet.has('udheavy.md')) {
         return udliteDirs;
     }
+    udliteDirs.push(dir);
 
     children.forEach(child => {
         const childPath = path.join(dir, child);
