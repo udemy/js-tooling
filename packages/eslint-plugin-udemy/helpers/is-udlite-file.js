@@ -26,10 +26,8 @@ function findUDLiteDirs(dir) {
     const udliteDirs = [];
     const children = fs.readdirSync(dir);
     const childrenSet = new Set(children);
-    if (childrenSet.has('udlite-app.js') && !childrenSet.has('app.js')) {
-        udliteDirs.push(dir);
-    } else if (childrenSet.has('udlite.md')) {
-        udliteDirs.push(dir);
+    if (childrenSet.has('udheavy.md')) {
+        return udliteDirs;
     }
 
     children.forEach(child => {
