@@ -31,7 +31,11 @@ module.exports.rules = {
                 return {};
             }
 
-            if (filename.endsWith('.spec.js') || filename.endsWith('/spec-helpers.js')) {
+            if (
+                ['.spec.js', '.spec.ts', '.spec.tsx', '/spec-helpers.js', '/spec-helpers.ts'].some(
+                    name => filename.endsWith(name),
+                )
+            ) {
                 return {};
             }
 
