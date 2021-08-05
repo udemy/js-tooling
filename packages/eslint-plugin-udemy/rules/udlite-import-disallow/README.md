@@ -5,7 +5,7 @@
 - UDHeavy base-components, in favor of UDLite base-components.
 - most third-party libs that UDHeavy uses, in favor of smaller alternatives (in terms of JS size).
 
-Test files (`.spec.js` files, `spec-helpers.js`) are exempt from the rule.
+Test files (`.spec.js` files, `spec-helpers.js` and typescript equivalents) are exempt from the rule.
 
 ## Rule details
 
