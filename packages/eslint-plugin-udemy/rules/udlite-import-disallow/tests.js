@@ -29,11 +29,6 @@ ruleTester.run('udlite-import-disallow', rule, {
         },
         {
             code: "import 'heavyweight-lib';",
-            filename: '/path/to/static/src/udemy/js/udheavy/example.js',
-            options,
-        },
-        {
-            code: "import 'heavyweight-lib';",
             filename: '/path/to/static/src/udemy/js/udlite/example.spec.js',
             options,
         },
