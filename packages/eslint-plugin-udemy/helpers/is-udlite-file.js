@@ -3,40 +3,40 @@
 const fs = require('fs');
 const path = require('path');
 
-let cachedUDLiteDirs = null;
+let cachedUDHeavyDirs = null;
 
 exports.isUDLiteFile = filename => {
     if (!filename.includes('/static/src/udemy/js/')) {
         return false;
     }
 
-    if (cachedUDLiteDirs === null) {
+    if (cachedUDHeavyDirs === null) {
         const jsDir = path.join(filename.split('/static/src/udemy/js/')[0], 'static/src/udemy/js');
-        cachedUDLiteDirs = findUDLiteDirs(jsDir);
+        cachedUDHeavyDirs = findUDHeavyDirs(jsDir);
     }
 
-    return filename.includes('udlite') || cachedUDLiteDirs.some(dir => filename.startsWith(dir));
+    return filename.includes('udlite') || !cachedUDHeavyDirs.some(dir => filename.startsWith(dir));
 };
 
-function findUDLiteDirs(dir) {
+function findUDHeavyDirs(dir) {
     if (!fs.existsSync(dir)) {
         return [];
     }
 
-    const udliteDirs = [];
+    const udHeavyDirs = [];
     const children = fs.readdirSync(dir);
     const childrenSet = new Set(children);
     if (childrenSet.has('udheavy.md')) {
-        return udliteDirs;
+        udHeavyDirs.push(dir);
+        return udHeavyDirs;
     }
-    udliteDirs.push(dir);
 
     children.forEach(child => {
         const childPath = path.join(dir, child);
         if (fs.lstatSync(childPath).isDirectory()) {
-            udliteDirs.push(...findUDLiteDirs(childPath));
+            udHeavyDirs.push(...findUDHeavyDirs(childPath));
         }
     });
 
-    return udliteDirs;
+    return udHeavyDirs;
 }
